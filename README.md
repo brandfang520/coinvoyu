@@ -1,2 +1,3 @@
-# CoinVoyu V4
-静态中文数字资产与区块链知识站。首页 + 6篇基础文章 + 分类导航 + 移动端适配 + 基础SEO。
+# CoinVoyu V5
+
+分类页 + 文章列表 + 文章详情 + robots.txt + sitemap.xml。
