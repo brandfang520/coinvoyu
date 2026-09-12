@@ -20,3 +20,37 @@
 .v13-prevnext a.next{text-align:right}
 .v13-prevnext strong{display:inline-block;color:#14213d;line-height:1.5;margin-top:5px}
 @media(max-width:760px){.v13-related-grid{grid-template-columns:1fr}.v13-prevnext{grid-template-columns:1fr}.v13-prevnext a.next{text-align:left}.v13-section-title{align-items:start;flex-direction:column}}
+
+/* CoinVoyu V13.3: header, breadcrumb and mobile polish */
+.nav-wrap{height:72px;display:flex;align-items:center;justify-content:space-between;max-width:1120px;width:min(1120px,calc(100% - 40px));margin:auto}
+.nav-wrap nav{display:flex;gap:28px}
+.nav-wrap nav a{font-size:14px;color:#697487}
+.nav-wrap nav a:hover{color:#14213d}
+.brand-mark{width:34px;height:34px;border-radius:10px;background:#14213d;color:#fff;display:grid;place-items:center;font-weight:800}
+.article-page{max-width:1120px}
+.article-page>.eyebrow{padding-top:4px}
+.article-page>h1{max-width:900px;font-size:42px;line-height:1.35;letter-spacing:-.025em;margin:14px 0 20px;color:#111b31}
+.article-page>.lead{max-width:850px}
+.article-content{max-width:900px;background:#fff;border:1px solid #e2e7ef;border-radius:16px;padding:42px 48px;margin-top:28px}
+.article-content h2{font-size:25px;line-height:1.4;margin:10px 0 14px;color:#17233b}
+.article-content p{font-size:16px;color:#536075;margin:0 0 22px}
+.v13-breadcrumb{display:flex;align-items:center;gap:9px;flex-wrap:wrap;font-size:13px;color:#8993a3;margin:0 0 28px;padding-top:2px}
+.v13-breadcrumb a:hover{color:#14213d}
+.v13-breadcrumb span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:min(650px,100%)}
+@media(max-width:700px){
+ .nav-wrap{height:auto;padding:14px 0;align-items:flex-start;gap:14px}
+ .nav-wrap nav{gap:10px;flex-wrap:wrap;justify-content:flex-end}
+ .article-page{padding-top:28px}
+ .article-page>h1{font-size:31px;line-height:1.4}
+ .article-content{padding:28px 22px;margin-top:22px}
+ .article-content h2{font-size:22px}
+ .article-content p{font-size:15px}
+ .v13-meta{gap:7px}
+ .v13-meta span{padding:6px 9px}
+}
+@media(max-width:480px){
+ .nav-wrap{width:calc(100% - 28px);display:block}
+ .nav-wrap nav{margin-top:8px;justify-content:flex-start}
+ .article-page>h1{font-size:28px}
+ .v13-breadcrumb{font-size:12px;margin-bottom:22px}
+}
