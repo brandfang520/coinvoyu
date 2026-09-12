@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.coinvoyu.com/</loc></url>
   <url><loc>https://www.coinvoyu.com/articles.html</loc></url>
+  <url><loc>https://www.coinvoyu.com/categories.html</loc></url>
+  <url><loc>https://www.coinvoyu.com/about.html</loc></url>
   <url><loc>https://www.coinvoyu.com/beginner.html</loc></url>
   <url><loc>https://www.coinvoyu.com/bitcoin.html</loc></url>
   <url><loc>https://www.coinvoyu.com/bitcoin-usdt.html</loc></url>
@@ -10,9 +12,17 @@
   <url><loc>https://www.coinvoyu.com/mnemonic.html</loc></url>
   <url><loc>https://www.coinvoyu.com/kline.html</loc></url>
   <url><loc>https://www.coinvoyu.com/spot-trading.html</loc></url>
-  <url><loc>https://www.coinvoyu.com/categories.html</loc></url>
   <url><loc>https://www.coinvoyu.com/security.html</loc></url>
   <url><loc>https://www.coinvoyu.com/exchange.html</loc></url>
   <url><loc>https://www.coinvoyu.com/web3.html</loc></url>
-  <url><loc>https://www.coinvoyu.com/about.html</loc></url>
+  <url><loc>https://www.coinvoyu.com/ethereum.html</loc></url>
+  <url><loc>https://www.coinvoyu.com/eth.html</loc></url>
+  <url><loc>https://www.coinvoyu.com/stablecoin.html</loc></url>
+  <url><loc>https://www.coinvoyu.com/defi.html</loc></url>
+  <url><loc>https://www.coinvoyu.com/web3-deep.html</loc></url>
+  <url><loc>https://www.coinvoyu.com/cold-wallet.html</loc></url>
+  <url><loc>https://www.coinvoyu.com/hot-cold-wallet.html</loc></url>
+  <url><loc>https://www.coinvoyu.com/private-key.html</loc></url>
+  <url><loc>https://www.coinvoyu.com/gas-fee.html</loc></url>
+  <url><loc>https://www.coinvoyu.com/block-confirmation.html</loc></url>
 </urlset>
