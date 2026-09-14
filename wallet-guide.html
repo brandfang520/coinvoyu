@@ -1,43 +1,193 @@
 <!doctype html>
-<html lang="zh-CN"><head>
-<meta charset="utf-8"><meta name="description" content="数字资产钱包主要用于管理账户和签名交易。理解地址、私钥、助记词和钱包应用之间的关系，是新手安全入门的重要一步。">
-<link rel="canonical" href="https://www.coinvoyu.com/wallet-guide.html">
-<meta property="og:title" content="数字钱包是什么？新手如何理解钱包｜CoinVoyu">
-<meta property="og:description" content="数字资产钱包主要用于管理账户和签名交易。理解地址、私钥、助记词和钱包应用之间的关系，是新手安全入门的重要一步。">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://www.coinvoyu.com/wallet-guide.html">
-<meta property="og:site_name" content="CoinVoyu">
-<meta name="twitter:card" content="summary">
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>数字钱包是什么？新手如何理解钱包｜CoinVoyu</title><meta name="theme-color" content="#14213d">
-<link rel="stylesheet" href="style.css"><script type="application/ld+json">
+<title>钱包与资产安全新手学习中心：从钱包到安全操作｜CoinVoyu</title>
+<meta name="description" content="CoinVoyu 钱包与资产安全新手学习中心：从钱包、区块链地址、私钥、助记词，到转账网络和常见风险，按顺序建立安全基础。">
+<link rel="canonical" href="https://www.coinvoyu.com/wallet-guide.html">
+<link rel="stylesheet" href="style.css">
+<style>
+.wallet-hub{background:#f7f9fc;min-height:calc(100vh - 72px);padding:54px 0 80px}
+.wallet-wrap{max-width:1120px}
+.wallet-crumb{font-size:13px;color:#7d8798;margin:0 0 26px}
+.wallet-crumb a{color:#52627d}
+.wallet-hero{display:grid;grid-template-columns:1.25fr .75fr;gap:26px;align-items:stretch}
+.wallet-card,.wallet-path,.wallet-article,.wallet-note{background:#fff;border:1px solid #e2e7ef;border-radius:18px}
+.wallet-card{padding:44px 48px}
+.wallet-eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;color:#71809a;margin:0 0 14px}
+.wallet-card h1{font-size:44px;line-height:1.2;letter-spacing:-.035em;color:#111b31;margin:0 0 20px}
+.wallet-lead{font-size:17px;line-height:1.8;color:#59677d;margin:0}
+.wallet-side{padding:34px;background:#14213d;color:#fff;border-radius:18px}
+.wallet-side small{font-size:11px;letter-spacing:.12em;opacity:.72}
+.wallet-side h2{font-size:25px;margin:12px 0 18px}
+.wallet-side p{font-size:14px;line-height:1.8;opacity:.82;margin:0}
+.wallet-section{margin-top:26px}
+.wallet-section-head{margin:0 0 16px}
+.wallet-section-head .wallet-eyebrow{margin-bottom:8px}
+.wallet-section-head h2{font-size:29px;color:#17233b;margin:0 0 7px}
+.wallet-section-head p{color:#6b7587;margin:0}
+.wallet-path{padding:24px}
+.wallet-steps{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.wallet-step{padding:17px;border:1px solid #e4e8ef;border-radius:13px}
+.wallet-step i{font-style:normal;font-size:12px;font-weight:800;color:#7b8799}
+.wallet-step strong{display:block;color:#1b2943;margin:10px 0 6px;font-size:15px}
+.wallet-step span{font-size:13px;line-height:1.6;color:#68758a}
+.wallet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.wallet-article{padding:25px;display:block;color:inherit;text-decoration:none;transition:.18s}
+.wallet-article:hover{transform:translateY(-2px);border-color:#cbd4e1}
+.wallet-tag{font-size:11px;font-weight:800;color:#71809a;letter-spacing:.08em}
+.wallet-article h3{font-size:20px;line-height:1.45;color:#17233b;margin:10px 0 9px}
+.wallet-article p{font-size:14px;line-height:1.7;color:#657287;margin:0}
+.wallet-article .arrow{display:inline-block;margin-top:16px;font-size:13px;font-weight:700;color:#233657}
+.wallet-note{padding:25px 28px;color:#536075;line-height:1.8}
+.wallet-note strong{color:#1c2b45}
+.wallet-footer{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:28px 0 0}
+.wallet-footer a{color:#233657;font-weight:700;font-size:14px}
+@media(max-width:900px){
+ .wallet-hero{grid-template-columns:1fr}.wallet-steps{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:650px){
+ .wallet-hub{padding:35px 0 55px}.wallet-card{padding:30px 24px}.wallet-card h1{font-size:34px}
+ .wallet-steps,.wallet-grid{grid-template-columns:1fr}.wallet-path{padding:18px}.wallet-footer{display:block}
+ .wallet-footer a{display:inline-block;margin-top:14px}
+}
+</style>
+<script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "数字钱包是什么？新手如何理解钱包｜CoinVoyu",
-  "description": "数字资产钱包主要用于管理账户和签名交易。理解地址、私钥、助记词和钱包应用之间的关系，是新手安全入门的重要一步。",
-  "url": "https://www.coinvoyu.com/wallet-guide.html",
-  "publisher": {
-    "@type": "Organization",
-    "name": "CoinVoyu"
-  }
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"首页","item":"https://www.coinvoyu.com/"},
+    {"@type":"ListItem","position":2,"name":"新手入门","item":"https://www.coinvoyu.com/beginner.html"},
+    {"@type":"ListItem","position":3,"name":"钱包与资产安全","item":"https://www.coinvoyu.com/wallet-guide.html"}
+  ]
 }
 </script>
 </head>
 <body>
-<header class="site-header"><div class="container nav">
+<header class="site-header">
+<div class="container nav">
 <a class="brand" href="index.html"><span class="logo">C</span><span>CoinVoyu</span></a>
-<nav><a href="index.html">首页</a><a href="categories.html">分类</a><a href="articles.html">文章</a><a href="about.html">关于</a></nav>
-</div></header>
-<main class="article-page"><div class="container article-wrap">
-<p class="crumb"><a href="index.html">首页</a> / 文章</p>
-<div class="article-head"><span class="tag">02 · 钱包安全</span><h1>数字钱包是什么？新手如何理解钱包</h1><p class="intro">数字资产钱包主要用于管理账户和签名交易。理解地址、私钥、助记词和钱包应用之间的关系，是新手安全入门的重要一步。</p><div class="v13-meta"><span>钱包安全</span><span>更新于 2026年9月</span><span>阅读约 3 分钟</span></div></div>
-<article>
-<h2>一、钱包到底是什么？</h2><p>数字钱包可以看作管理区块链账户和交易签名的工具。它帮助用户查看资产、生成地址，并在需要时使用密钥对交易进行签名。</p><h2>二、钱包里真的“存着”币吗？</h2><p>区块链资产的记录存在对应的区块链网络中。钱包更重要的作用，是帮助用户管理能够控制这些资产的密钥，并与链上应用进行交互。</p><h2>三、地址、私钥和助记词有什么区别？</h2><ul><li>地址通常用于接收资产，可以公开给别人</li><li>私钥用于证明对账户的控制权，必须严格保密</li><li>助记词通常用于备份和恢复钱包，泄露后可能导致资产被控制</li></ul><h2>四、新手使用钱包时注意什么？</h2><ul><li>确认下载来源和官方网站</li><li>首次转账可以先进行小额测试</li><li>认真核对网络和收款地址</li><li>不要向任何人提供助记词、私钥或验证码</li></ul><h2>五、一个简单原则</h2><p>钱包可以帮助你管理资产，但安全责任也需要自己承担。遇到“解冻”“验证”“领取奖励”等要求时，不要因为着急而泄露密钥或随意授权。</p>
-<div class="disclaimer">本文仅用于数字资产知识教育，不构成投资、财务或其他专业建议。数字资产及相关应用存在风险，请在充分了解风险后独立判断。</div>
-</article>
-<section class="v13-related"><div class="v13-section-title"><div><p class="eyebrow">RELATED ARTICLES</p><h2>相关文章</h2></div><a href="articles.html">查看全部 →</a></div><div class="v13-related-grid"><a href="security.html"><span>钱包安全</span><strong>先保护好资产，再考虑交易。</strong><em>阅读文章 →</em></a><a href="private-key.html"><span>钱包安全</span><strong>什么是私钥？为什么私钥不能泄露</strong><em>阅读文章 →</em></a><a href="mnemonic.html"><span>钱包安全</span><strong>什么是助记词？为什么一定要保护好</strong><em>阅读文章 →</em></a></div></section><nav class="v13-prevnext"><a href="utxo.html">← 上一篇<br><strong>什么是 UTXO？新手如何理解比特币余额</strong></a><a class="next" href="security.html">下一篇 →<br><strong>先保护好资产，再考虑交易。</strong></a></nav>
-<div class="back"><a href="articles.html">← 返回文章列表</a></div>
-</div></main>
-<footer><div class="container copy">© 2026 CoinVoyu. Educational content only. Digital assets involve risk.</div></footer>
-</body></html>
+<nav>
+<a href="index.html">首页</a>
+<a href="beginner.html">新手入门</a>
+<a href="bitcoin-guide.html">Bitcoin</a>
+<a href="exchange.html">交易所</a>
+<a class="active" href="wallet-guide.html">钱包安全</a>
+<a href="ethereum-guide.html">Ethereum / Web3</a>
+<a href="articles.html">文章</a>
+<a href="about.html">关于</a>
+</nav>
+</div>
+</header>
+
+<main class="wallet-hub">
+<div class="container wallet-wrap">
+<p class="wallet-crumb"><a href="index.html">首页</a> / <a href="beginner.html">新手入门</a> / 钱包与资产安全</p>
+
+<section class="wallet-hero">
+<div class="wallet-card">
+<p class="wallet-eyebrow">WALLET / ASSET SECURITY BEGINNER CENTER</p>
+<h1>钱包与资产安全新手，从这里开始</h1>
+<p class="wallet-lead">很多新手不是不懂买币，而是不清楚钱包、地址、私钥、助记词和网络之间的关系。先把这些基础概念弄明白，再学习转账和实际操作，会更安全。</p>
+</div>
+<div class="wallet-side">
+<small>推荐学习顺序</small>
+<h2>保管 → 核对 → 再操作</h2>
+<p>先理解钱包和密钥，再学地址、网络和转账。第一次操作时，核对地址、网络和金额，并警惕陌生链接与私聊诱导。</p>
+</div>
+</section>
+
+<section class="wallet-section">
+<div class="wallet-section-head">
+<p class="wallet-eyebrow">WALLET / SECURITY PATH</p>
+<h2>6 步建立钱包与安全基础</h2>
+<p>按照顺序学习，比直接上手转账更不容易出错。</p>
+</div>
+<div class="wallet-path">
+<div class="wallet-steps">
+<div class="wallet-step"><i>01</i><strong>先懂钱包</strong><span>理解钱包到底保存什么，以及它和交易所的区别。</span></div>
+<div class="wallet-step"><i>02</i><strong>认识地址</strong><span>知道区块链地址是什么，以及为什么不能随便填。</span></div>
+<div class="wallet-step"><i>03</i><strong>理解私钥</strong><span>明白私钥为什么是控制资产的重要凭证。</span></div>
+<div class="wallet-step"><i>04</i><strong>保护助记词</strong><span>了解助记词的作用、备份方式和泄露风险。</span></div>
+<div class="wallet-step"><i>05</i><strong>核对转账</strong><span>操作前检查地址、网络、金额和手续费。</span></div>
+<div class="wallet-step"><i>06</i><strong>建立安全习惯</strong><span>最后学习常见骗局和日常资产安全清单。</span></div>
+</div>
+</div>
+</section>
+
+<section class="wallet-section">
+<div class="wallet-section-head">
+<p class="wallet-eyebrow">CORE LESSONS</p>
+<h2>先学这 6 篇</h2>
+<p>每一篇解决一个钱包或资产安全方面的新手问题。</p>
+</div>
+<div class="wallet-grid">
+<a class="wallet-article" href="wallet-basics.html">
+<span class="wallet-tag">01 · 钱包</span>
+<h3>钱包到底是什么？新手先搞懂</h3>
+<p>先理解钱包、交易所账户和区块链资产之间的基本关系。</p>
+<span class="arrow">开始阅读 →</span>
+</a>
+<a class="wallet-article" href="bitcoin-address.html">
+<span class="wallet-tag">02 · 地址</span>
+<h3>什么是区块链地址？</h3>
+<p>了解地址的基本用途，以及转账时为什么必须认真核对。</p>
+<span class="arrow">开始阅读 →</span>
+</a>
+<a class="wallet-article" href="private-key.html">
+<span class="wallet-tag">03 · 私钥</span>
+<h3>私钥是什么？为什么不能泄露？</h3>
+<p>理解私钥和资产控制之间的关系，避免把敏感信息交给别人。</p>
+<span class="arrow">开始阅读 →</span>
+</a>
+<a class="wallet-article" href="mnemonic.html">
+<span class="wallet-tag">04 · 助记词</span>
+<h3>助记词是什么？为什么一定要备份？</h3>
+<p>了解助记词的作用，以及为什么截图、网盘和聊天发送都存在风险。</p>
+<span class="arrow">开始阅读 →</span>
+</a>
+<a class="wallet-article" href="wrong-address.html">
+<span class="wallet-tag">05 · 转账</span>
+<h3>转错地址怎么办？新手转账最容易踩的坑</h3>
+<p>从地址、网络和确认操作几个方面，认识转账前最值得检查的事项。</p>
+<span class="arrow">开始阅读 →</span>
+</a>
+<a class="wallet-article" href="crypto-security-first.html">
+<span class="wallet-tag">06 · 安全</span>
+<h3>加密货币安全第一：新手最应该防什么？</h3>
+<p>把私钥、助记词、验证码、陌生链接和假客服等风险一次梳理清楚。</p>
+<span class="arrow">开始阅读 →</span>
+</a>
+</div>
+</section>
+
+<section class="wallet-section">
+<div class="wallet-section-head">
+<p class="wallet-eyebrow">SECURITY CHECKLIST</p>
+<h2>真正操作前，先记住这几件事</h2>
+</div>
+<div class="wallet-note">
+<strong>第一：</strong>不要把私钥、助记词或验证码交给任何人。<br>
+<strong>第二：</strong>转账前同时核对收款地址、网络和金额，第一次可以先进行小额测试。<br>
+<strong>第三：</strong>不要因为“客服”“空投”“解冻资产”等理由，点击陌生链接或向陌生地址付款。<br>
+<strong>第四：</strong>任何“稳赚”“保证收益”或催你立即操作的说法，都应该保持警惕。
+</div>
+<div class="wallet-footer">
+<span>学会钱包与安全后，再回到交易所学习买币和充值提现。</span>
+<a href="exchange.html">进入交易所新手教程 →</a>
+</div>
+</section>
+</div>
+</main>
+
+<footer>
+<div class="container foot">
+<div><strong>CoinVoyu</strong><p>把数字资产知识，讲得简单一点。</p></div>
+<div><a href="categories.html">分类</a><a href="articles.html">文章</a><a href="about.html">关于</a></div>
+</div>
+<div class="container copy">© 2026 CoinVoyu. Educational content only. Digital assets involve risk.</div>
+</footer>
+</body>
+</html>
