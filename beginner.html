@@ -2,81 +2,197 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="数字资产新手完整入门：从基础概念、安全知识、钱包到交易和风险，建立系统的数字资产基础知识。">
-<link rel="canonical" href="https://www.coinvoyu.com/beginner.html">
-<meta property="og:title" content="数字资产新手完整入门：第一次接触加密货币，先学什么？｜CoinVoyu">
-<meta property="og:description" content="数字资产新手完整入门：从基础概念、安全知识、钱包到交易和风险，建立系统的数字资产基础知识。">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://www.coinvoyu.com/beginner.html">
-<meta property="og:site_name" content="CoinVoyu">
-<meta name="twitter:card" content="summary">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>数字资产新手完整入门：第一次接触加密货币，先学什么？｜CoinVoyu</title><meta name="theme-color" content="#14213d">
+<meta name="description" content="CoinVoyu 新手学习中心：按照基础概念、Bitcoin、交易所、第一次买币、钱包转账和资产安全的顺序，帮助完全新手一步一步学习加密货币。">
+<link rel="canonical" href="https://www.coinvoyu.com/beginner.html">
+<title>加密货币新手学习中心：从0开始学什么？｜CoinVoyu</title>
 <link rel="stylesheet" href="style.css">
+<style>
+.learn-hero{padding:78px 0 70px;background:linear-gradient(#f7f9fc,#fff)}
+.learn-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+.learn-hero h1{font-size:clamp(40px,5.5vw,62px);line-height:1.14;letter-spacing:-.04em;margin:0 0 22px;color:#111b31}
+.learn-lead{font-size:18px;color:#667085;max-width:690px}
+.learn-note{border:1px solid #e1e7ef;border-radius:18px;background:#fff;padding:28px;box-shadow:0 18px 50px rgba(20,33,61,.07)}
+.learn-note h2{font-size:23px;margin:0 0 14px}
+.learn-note ol{margin:0;padding-left:22px;color:#596579}
+.learn-note li{margin:8px 0}
+.learn-section{padding:76px 0}
+.learn-section.soft{background:#f7f9fc}
+.learn-heading{margin-bottom:30px}
+.learn-heading h2{font-size:34px;line-height:1.25;margin:0 0 8px}
+.learn-heading p{color:#7a8495;margin:0}
+.learn-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.learn-card{display:block;border:1px solid #e2e7ef;border-radius:16px;background:#fff;padding:25px;transition:.2s}
+.learn-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(20,33,61,.07)}
+.learn-num{font-size:12px;font-weight:800;letter-spacing:.12em;color:#8a95a6}
+.learn-card h3{font-size:21px;margin:11px 0 8px}
+.learn-card p{font-size:14px;color:#707b8e;margin:0 0 15px}
+.learn-card b{font-size:13px}
+.learn-check{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.learn-check>div{border:1px solid #e2e7ef;border-radius:15px;background:#fff;padding:24px}
+.learn-check h3{margin:0 0 12px;font-size:19px}
+.learn-check ul{margin:0;padding-left:20px;color:#596579}
+.learn-check li{margin:7px 0}
+.learn-final{padding:60px 0;background:#14213d;color:#fff}
+.learn-final-in{display:flex;justify-content:space-between;align-items:center;gap:35px}
+.learn-final h2{margin:0 0 10px;font-size:31px}
+.learn-final p{margin:0;color:#c5cedc;max-width:720px}
+@media(max-width:850px){.learn-grid{grid-template-columns:1fr}.learn-steps{grid-template-columns:1fr 1fr}.learn-check{grid-template-columns:1fr}.learn-final-in{display:block}}
+@media(max-width:520px){.learn-hero{padding:58px 0}.learn-section{padding:60px 0}.learn-steps{grid-template-columns:1fr}.learn-hero h1{font-size:42px}.learn-heading h2{font-size:29px}}
+</style>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "数字资产新手完整入门：第一次接触加密货币，先学什么？｜CoinVoyu",
-  "description": "数字资产新手完整入门：从基础概念、安全知识、钱包到交易和风险，建立系统的数字资产基础知识。",
-  "url": "https://www.coinvoyu.com/beginner.html",
-  "publisher": {
-    "@type": "Organization",
-    "name": "CoinVoyu"
-  }
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"首页","item":"https://www.coinvoyu.com/"},
+    {"@type":"ListItem","position":2,"name":"新手入门","item":"https://www.coinvoyu.com/beginner.html"}
+  ]
 }
 </script>
 </head>
 <body>
-<header class="site-header"><div class="container nav">
-<a class="brand" href="index.html"><span class="logo">C</span><span>CoinVoyu</span></a>
-<nav><a href="index.html">首页</a><a href="categories.html">分类</a><a class="active" href="articles.html">文章</a><a href="about.html">关于</a></nav>
-</div></header>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><span class="logo">C</span><span>CoinVoyu</span></a>
+    <nav>
+      <a href="index.html">首页</a>
+      <a class="active" href="beginner.html">新手入门</a>
+      <a href="bitcoin.html">Bitcoin</a>
+      <a href="exchange.html">交易所</a>
+      <a href="security.html">钱包安全</a>
+      <a href="web3.html">Ethereum / Web3</a>
+      <a href="articles.html">文章</a>
+      <a href="about.html">关于</a>
+    </nav>
+  </div>
+</header>
 
-<main class="article-page">
-<div class="container article-wrap">
-<p class="crumb"><a href="index.html">首页</a> / <a href="articles.html">文章</a> / 新手入门</p>
-<div class="article-head">
-<span class="tag">新手入门</span>
-<h1>数字资产新手完整入门：第一次接触加密货币，先学什么？</h1>
-<p class="intro">如果你刚开始接触数字资产，不需要一次弄懂所有专业术语。按照“基础概念 → 安全 → 钱包 → 交易 → 风险”的顺序学习，会更容易建立完整的认识。</p><div class="v13-meta"><span>新手入门</span><span>更新于 2026年9月</span><span>阅读约 3 分钟</span></div>
-</div>
+<main>
+<section class="learn-hero">
+  <div class="container learn-grid">
+    <div>
+      <p class="eyebrow">BEGINNER LEARNING CENTER</p>
+      <h1>加密货币新手，<br>从这里开始学习</h1>
+      <p class="learn-lead">如果你刚接触 Bitcoin、交易所和钱包，不需要一次把所有术语都学会。按照一条清晰的顺序，从基础概念到资产安全，先把最重要的知识建立起来。</p>
+      <div class="actions">
+        <a class="btn primary" href="bitcoin.html">先认识 Bitcoin</a>
+        <a class="btn" href="exchange.html">了解交易所</a>
+      </div>
+    </div>
+    <aside class="learn-note">
+      <small>推荐学习顺序</small>
+      <h2>6 步建立基础</h2>
+      <ol>
+        <li>什么是加密货币</li>
+        <li>认识 Bitcoin</li>
+        <li>选择交易所</li>
+        <li>第一次买币</li>
+        <li>钱包与转账</li>
+        <li>资产安全与风险</li>
+      </ol>
+    </aside>
+  </div>
+</section>
 
-<article>
-<h2>一、先搞懂什么是数字资产</h2>
-<p>数字资产可以简单理解为存在于区块链网络中的数字化资产。比特币是最具代表性的数字资产之一，除此之外，还有以太坊、稳定币以及其他基于区块链网络运行的资产。</p>
-<p>刚开始学习时，不需要急着研究复杂技术。先理解数字资产是什么、区块链是什么，以及不同资产可能有什么用途，就已经是一个很好的开始。</p>
+<section class="learn-section">
+  <div class="container">
+    <div class="learn-heading">
+      <p class="eyebrow">START HERE</p>
+      <h2>新手按这 6 步学，最不容易乱</h2>
+      <p>每一步只解决一个问题。看完当前内容，再进入下一步。</p>
+    </div>
+    <div class="learn-steps">
+      <a class="learn-card" href="bitcoin.html">
+        <span class="learn-num">01</span><h3>先搞懂什么是加密货币</h3>
+        <p>了解数字资产、区块链、Bitcoin 等最基础的概念。</p><b>开始学习 →</b>
+      </a>
+      <a class="learn-card" href="bitcoin.html">
+        <span class="learn-num">02</span><h3>认识 Bitcoin</h3>
+        <p>从 BTC 的用途、总量、价值和价格波动开始认识比特币。</p><b>学习 Bitcoin →</b>
+      </a>
+      <a class="learn-card" href="exchange.html">
+        <span class="learn-num">03</span><h3>了解交易所</h3>
+        <p>先弄清交易所是什么，再了解注册、充值、买币等基础操作。</p><b>进入交易所教程 →</b>
+      </a>
+      <a class="learn-card" href="btc-buying-methods.html">
+        <span class="learn-num">04</span><h3>第一次购买 BTC</h3>
+        <p>了解常见购买方式，以及新手第一次操作应该注意什么。</p><b>学习购买方法 →</b>
+      </a>
+      <a class="learn-card" href="wallet-basics.html">
+        <span class="learn-num">05</span><h3>钱包与转账</h3>
+        <p>理解地址、钱包、网络、手续费和转账确认这些基础概念。</p><b>学习钱包基础 →</b>
+      </a>
+      <a class="learn-card" href="crypto-security-first.html">
+        <span class="learn-num">06</span><h3>最后学资产安全</h3>
+        <p>掌握助记词、私钥、验证码和常见骗局等安全常识。</p><b>学习安全知识 →</b>
+      </a>
+    </div>
+  </div>
+</section>
 
-<h2>二、先学安全，再考虑交易</h2>
-<p>这是新手非常容易忽略的一步。在了解怎么买卖之前，应该先知道哪些信息不能随便泄露。</p>
-<ul><li>钱包助记词</li><li>私钥</li><li>登录密码</li><li>短信或身份验证代码</li></ul>
-<p>尤其是助记词和私钥，属于非常重要的安全信息。任何人如果以“帮你操作”“保证收益”“帮你追回资产”等理由索要这些信息，都应该保持警惕。</p>
+<section class="learn-section soft">
+  <div class="container">
+    <div class="learn-heading">
+      <p class="eyebrow">BEFORE YOU TRADE</p>
+      <h2>新手暂时不用急着学这些</h2>
+      <p>刚开始最重要的是建立基础，不是把交易功能全部打开。</p>
+    </div>
+    <div class="learn-check">
+      <div>
+        <h3>可以先放一放</h3>
+        <ul>
+          <li>杠杆和合约交易</li>
+          <li>复杂技术指标</li>
+          <li>高频短线策略</li>
+          <li>所谓“稳赚”或“带单”方法</li>
+        </ul>
+      </div>
+      <div>
+        <h3>应该优先掌握</h3>
+        <ul>
+          <li>Bitcoin 和稳定币的基本区别</li>
+          <li>交易所与钱包的区别</li>
+          <li>地址和网络是否匹配</li>
+          <li>助记词、私钥和验证码安全</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-<h2>三、了解钱包是什么</h2>
-<p>钱包可以理解为管理数字资产和区块链账户的重要工具。学习钱包时，可以先掌握四个基础概念：</p>
-<p><strong>地址、私钥、助记词、网络。</strong></p>
-<p>钱包地址通常可以用于接收资产，而私钥和助记词属于非常重要的安全信息。不同区块链网络的资产转账规则也可能不同，因此操作前要确认网络和地址是否匹配。</p>
+<section class="learn-section">
+  <div class="container">
+    <div class="learn-heading">
+      <p class="eyebrow">CONTINUE LEARNING</p>
+      <h2>学完基础，再继续深入</h2>
+      <p>下面这些内容可以作为第二阶段学习。</p>
+    </div>
+    <div class="learn-steps">
+      <a class="learn-card" href="bitcoin-value.html"><h3>比特币为什么会有价值？</h3><p>从稀缺性、网络效应和市场共识理解 BTC 的价值来源。</p><b>阅读文章 →</b></a>
+      <a class="learn-card" href="bitcoin-supply.html"><h3>为什么比特币只有 2100 万枚？</h3><p>理解比特币供应量和稀缺性。</p><b>阅读文章 →</b></a>
+      <a class="learn-card" href="btc-usdt-difference.html"><h3>BTC 和 USDT 有什么区别？</h3><p>理解波动型资产与稳定币的基础差异。</p><b>阅读文章 →</b></a>
+    </div>
+  </div>
+</section>
 
-<h2>四、再了解交易平台</h2>
-<p>当基础知识和安全知识掌握之后，再学习交易平台会更合适。</p>
-<p>新手可以先了解<strong>现货交易、买入、卖出、K线、成交量、手续费</strong>等基础概念。不需要一开始就研究复杂的杠杆、合约等高风险产品。</p>
-
-<h2>五、最后学习风险</h2>
-<p>数字资产价格可能出现较大波动。看到某个资产上涨，并不代表未来一定继续上涨；看到某种K线形态，也不能保证未来价格一定按照某个方向运行。</p>
-<p>所以学习数字资产，最重要的不是寻找“稳赚的方法”，而是逐渐建立自己的知识、判断能力和风险意识。</p>
-
-<div class="note"><strong>新手可以记住：</strong>先学习，再操作；先了解风险，再考虑交易。</div>
-
-<h2>写在最后</h2>
-<p>如果你完全是新手，可以从最基础的概念开始，不要急着追热点，也不要因为别人的一句话就进行资金操作。把基础知识、安全常识和风险意识建立起来，再逐步学习更复杂的内容。</p>
-
-<div class="disclaimer"><strong>风险提示：</strong>本文仅用于数字资产知识学习，不构成投资建议。数字资产具有较高波动性，请在充分了解相关风险后谨慎做出决定。</div>
-</article>
-
-<section class="v13-related"><div class="v13-section-title"><div><p class="eyebrow">RELATED ARTICLES</p><h2>相关文章</h2></div><a href="articles.html">查看全部 →</a></div><div class="v13-related-grid"><a href="beginner-mistakes.html"><span>新手入门</span><strong>数字资产新手最容易犯的 10 个错误</strong><em>阅读文章 →</em></a><a href="bitcoin.html"><span>比特币</span><strong>比特币是什么？2026 新手入门</strong><em>阅读文章 →</em></a><a href="wallet-guide.html"><span>钱包安全</span><strong>数字钱包是什么？新手如何理解钱包</strong><em>阅读文章 →</em></a></div></section><nav class="v13-prevnext"><span></span><a class="next" href="beginner-mistakes.html">下一篇 →<br><strong>数字资产新手最容易犯的 10 个错误</strong></a></nav>
-<div class="back"><a href="articles.html">← 返回全部文章</a></div>
-</div>
+<section class="learn-final">
+  <div class="container learn-final-in">
+    <div>
+      <h2>第一次接触加密货币，不用急。</h2>
+      <p>先把基础、安全和风险意识建立起来，再逐步学习交易与钱包操作。</p>
+    </div>
+    <a class="btn light" href="index.html">返回首页</a>
+  </div>
+</section>
 </main>
 
-<footer><div class="container foot"><div><strong>CoinVoyu</strong><p>把数字资产知识，讲得简单一点。</p></div><div><a href="categories.html">分类</a><a href="articles.html">文章</a><a href="about.html">关于</a></div></div><div class="container copy">© 2026 CoinVoyu. Educational content only. Digital assets involve risk.</div></footer>
-</body></html>
+<footer>
+  <div class="container foot">
+    <div><strong>CoinVoyu</strong><p>把数字资产知识，讲得简单一点。</p></div>
+    <div><a href="categories.html">分类</a><a href="articles.html">文章</a><a href="about.html">关于</a></div>
+  </div>
+  <div class="container copy">© 2026 CoinVoyu. Educational content only. Digital assets involve risk.</div>
+</footer>
+</body>
+</html>
