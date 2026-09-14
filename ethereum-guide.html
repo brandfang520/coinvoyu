@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ethereum / Web3 新手学习中心：从认识 ETH 到开始使用｜CoinVoyu</title>
+<meta name="description" content="CoinVoyu Ethereum / Web3 新手学习中心：从 Ethereum、ETH、Gas，到智能合约、DeFi 和 Web3，按顺序建立基础认识。">
+<link rel="canonical" href="https://www.coinvoyu.com/ethereum-guide.html">
+<link rel="stylesheet" href="style.css">
+<style>
+.ethereum-hub{background:#f7f9fc;min-height:calc(100vh - 72px);padding:54px 0 80px}
+.eth-wrap{max-width:1120px}
+.eth-crumb{font-size:13px;color:#7d8798;margin:0 0 26px}
+.eth-crumb a{color:#52627d}
+.eth-hero{display:grid;grid-template-columns:1.25fr .75fr;gap:26px;align-items:stretch}
+.eth-card,.eth-path,.eth-article,.eth-note{background:#fff;border:1px solid #e2e7ef;border-radius:18px}
+.eth-card{padding:44px 48px}
+.eth-eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;color:#71809a;margin:0 0 14px}
+.eth-card h1{font-size:44px;line-height:1.2;letter-spacing:-.035em;color:#111b31;margin:0 0 20px}
+.eth-lead{font-size:17px;line-height:1.8;color:#59677d;margin:0}
+.eth-side{padding:34px;background:#14213d;color:#fff;border-radius:18px}
+.eth-side small{font-size:11px;letter-spacing:.12em;opacity:.72}
+.eth-side h2{font-size:25px;margin:12px 0 18px}
+.eth-side p{font-size:14px;line-height:1.8;opacity:.82;margin:0}
+.eth-section{margin-top:26px}
+.eth-section-head{margin:0 0 16px}
+.eth-section-head .eth-eyebrow{margin-bottom:8px}
+.eth-section-head h2{font-size:29px;color:#17233b;margin:0 0 7px}
+.eth-section-head p{color:#6b7587;margin:0}
+.eth-path{padding:24px}
+.eth-steps{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.eth-step{padding:17px;border:1px solid #e4e8ef;border-radius:13px}
+.eth-step i{font-style:normal;font-size:12px;font-weight:800;color:#7b8799}
+.eth-step strong{display:block;color:#1b2943;margin:10px 0 6px;font-size:15px}
+.eth-step span{font-size:13px;line-height:1.6;color:#68758a}
+.eth-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.eth-article{padding:25px;display:block;color:inherit;text-decoration:none;transition:.18s}
+.eth-article:hover{transform:translateY(-2px);border-color:#cbd4e1}
+.eth-tag{font-size:11px;font-weight:800;color:#71809a;letter-spacing:.08em}
+.eth-article h3{font-size:20px;line-height:1.45;color:#17233b;margin:10px 0 9px}
+.eth-article p{font-size:14px;line-height:1.7;color:#657287;margin:0}
+.eth-article .arrow{display:inline-block;margin-top:16px;font-size:13px;font-weight:700;color:#233657}
+.eth-note{padding:25px 28px;color:#536075;line-height:1.8}
+.eth-note strong{color:#1c2b45}
+.eth-footer{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:28px 0 0}
+.eth-footer a{color:#233657;font-weight:700;font-size:14px}
+@media(max-width:900px){
+ .eth-hero{grid-template-columns:1fr}.eth-steps{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:650px){
+ .ethereum-hub{padding:35px 0 55px}.eth-card{padding:30px 24px}.eth-card h1{font-size:34px}
+ .eth-steps,.eth-grid{grid-template-columns:1fr}.eth-path{padding:18px}.eth-footer{display:block}
+ .eth-footer a{display:inline-block;margin-top:14px}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"首页","item":"https://www.coinvoyu.com/"},
+    {"@type":"ListItem","position":2,"name":"新手入门","item":"https://www.coinvoyu.com/beginner.html"},
+    {"@type":"ListItem","position":3,"name":"Ethereum / Web3 新手学习中心","item":"https://www.coinvoyu.com/ethereum-guide.html"}
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+<div class="container nav">
+<a class="brand" href="index.html"><span class="logo">C</span><span>CoinVoyu</span></a>
+<nav>
+<a href="index.html">首页</a>
+<a href="beginner.html">新手入门</a>
+<a class="active" href="ethereum-guide.html">Ethereum / Web3</a>
+<a href="exchange.html">交易所</a>
+<a href="security.html">钱包安全</a>
+<a href="ethereum-guide.html">Ethereum / Web3</a>
+<a href="articles.html">文章</a>
+<a href="about.html">关于</a>
+</nav>
+</div>
+</header>
+
+<main class="ethereum-hub">
+<div class="container eth-wrap">
+<p class="eth-crumb"><a href="index.html">首页</a> / <a href="beginner.html">新手入门</a> / Ethereum / Web3</p>
+
+<section class="eth-hero">
+<div class="eth-card">
+<p class="eth-eyebrow">ETHEREUM / WEB3 BEGINNER CENTER</p>
+<h1>Ethereum / Web3 新手，从这里开始认识 ETH</h1>
+<p class="eth-lead">如果你刚接触 Ethereum 或 Web3，不需要一开始就研究复杂协议。先弄清楚 Ethereum 是什么、ETH 有什么作用、Gas 是什么，再了解智能合约、DeFi 和 Web3 的基本使用方式。</p>
+</div>
+<div class="eth-side">
+<small>推荐学习顺序</small>
+<h2>认识 → 理解 → 使用</h2>
+<p>先把 Ethereum、ETH 和 Gas 弄明白，再了解钱包、智能合约和 Web3。真正第一次使用时，先小额测试并核对网络。</p>
+</div>
+</section>
+
+<section class="eth-section">
+<div class="eth-section-head">
+<p class="eth-eyebrow">ETHEREUM / WEB3 PATH</p>
+<h2>6 步建立 Ethereum / Web3 基础</h2>
+<p>按照这个顺序阅读，不需要一次看完。</p>
+</div>
+<div class="eth-path">
+<div class="eth-steps">
+<div class="eth-step"><i>01</i><strong>认识 Ethereum</strong><span>先知道 Ethereum 是什么、能做什么。</span></div>
+<div class="eth-step"><i>02</i><strong>认识 ETH</strong><span>理解 ETH 在网络中的基本作用。</span></div>
+<div class="eth-step"><i>03</i><strong>理解 Gas</strong><span>知道为什么 Ethereum 交易需要支付 Gas。</span></div>
+<div class="eth-step"><i>04</i><strong>智能合约与 DApp</strong><span>理解程序如何运行在 Ethereum 上。</span></div>
+<div class="eth-step"><i>05</i><strong>认识 DeFi</strong><span>了解去中心化金融的基本概念。</span></div>
+<div class="eth-step"><i>06</i><strong>开始 Web3</strong><span>最后再了解钱包连接和基础使用。</span></div>
+</div>
+</div>
+</section>
+
+<section class="eth-section">
+<div class="eth-section-head">
+<p class="eth-eyebrow">CORE LESSONS</p>
+<h2>先学这 6 篇</h2>
+<p>每一篇只解决一个新手最常见的问题。</p>
+</div>
+<div class="eth-grid">
+<a class="eth-article" href="ethereum.html">
+<span class="eth-tag">01 · 基础</span>
+<h3>以太坊是什么？它和比特币有什么不同？</h3>
+<p>从 Ethereum 的基本概念开始，理解它和 Bitcoin 的核心区别。</p>
+<span class="arrow">开始阅读 →</span>
+</a>
+<a class="eth-article" href="eth.html">
+<span class="eth-tag">02 · ETH</span>
+<h3>ETH 是什么？在 Ethereum 中有什么作用？</h3>
+<p>理解 ETH 为什么既是数字资产，也是 Ethereum 网络的重要基础。</p>
+<span class="arrow">开始阅读 →</span>
+</a>
+<a class="eth-article" href="gas-fee.html">
+<span class="eth-tag">03 · Gas</span>
+<h3>Ethereum Gas 是什么？</h3>
+<p>了解 Gas、网络费用和交易复杂度之间的基本关系。</p>
+<span class="arrow">开始阅读 →</span>
+</a>
+<a class="eth-article" href="web3-deep.html">
+<span class="eth-tag">04 · 智能合约</span>
+<h3>智能合约与 Web3 是什么关系？</h3>
+<p>从智能合约和去中心化应用理解 Web3 的基础逻辑。</p>
+<span class="arrow">开始阅读 →</span>
+</a>
+<a class="eth-article" href="defi.html">
+<span class="eth-tag">05 · DeFi</span>
+<h3>DeFi 是什么？新手先了解哪些概念？</h3>
+<p>认识去中心化金融，以及它与传统金融服务的基本区别。</p>
+<span class="arrow">开始阅读 →</span>
+</a>
+<a class="eth-article" href="web3.html">
+<span class="eth-tag">06 · Web3</span>
+<h3>什么是 Web3？小白也能看懂</h3>
+<p>最后把 Ethereum、钱包和去中心化应用串起来理解 Web3。</p>
+<span class="arrow">开始阅读 →</span>
+</a>
+</div>
+</section>
+
+<section class="eth-section">
+<div class="eth-section-head">
+<p class="eth-eyebrow">AFTER ETHEREUM / WEB3</p>
+<h2>学完 Ethereum / Web3，下一步学什么？</h2>
+</div>
+<div class="eth-note">
+<strong>建议顺序：</strong>先学习钱包基础 → 再了解地址与网络 → 最后重点学习资产安全。
+不要因为刚看懂 Ethereum 或 Web3 就急着连接陌生应用，也不要把学习内容理解成投资建议。
+</div>
+<div class="eth-footer">
+<span>想从更完整的路线开始？</span>
+<a href="beginner.html">返回新手学习中心 →</a>
+</div>
+</section>
+</div>
+</main>
+
+<footer>
+<div class="container foot">
+<div><strong>CoinVoyu</strong><p>把数字资产知识，讲得简单一点。</p></div>
+<div><a href="categories.html">分类</a><a href="articles.html">文章</a><a href="about.html">关于</a></div>
+</div>
+<div class="container copy">© 2026 CoinVoyu. Educational content only. Digital assets involve risk.</div>
+</footer>
+</body>
+</html>
