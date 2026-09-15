@@ -50,6 +50,21 @@
   ]
 }
 </script>
+
+<style>
+.v24-nav{margin-top:28px;background:#fff;border:1px solid #e2e7ef;border-radius:18px;padding:24px}
+.v24-nav h2{margin:0 0 7px;color:#17233b;font-size:25px}
+.v24-nav p{margin:0 0 17px;color:#68758a;font-size:14px;line-height:1.7}
+.v24-nav-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.v24-nav-card{display:block;text-decoration:none;border:1px solid #e4e8ef;border-radius:13px;padding:17px;color:#17233b;transition:.18s}
+.v24-nav-card:hover{transform:translateY(-2px);border-color:#cbd4e1}
+.v24-nav-card span{display:block;font-size:11px;font-weight:800;letter-spacing:.08em;color:#71809a;margin-bottom:7px}
+.v24-nav-card strong{font-size:15px}
+.v24-nav-card small{display:block;color:#6b7587;margin-top:7px;line-height:1.5}
+@media(max-width:800px){.v24-nav-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.v24-nav-grid{grid-template-columns:1fr}}
+</style>
+
 </head>
 <body>
 <header class="site-header">
@@ -186,6 +201,13 @@
   </div>
 </section>
 </main>
+
+
+<section class="v24-nav">
+  <h2>继续学习</h2>
+  <p>从新手基础出发，你可以继续进入不同专题，按自己的节奏学习。</p>
+  <div class="v24-nav-grid"><a class="v24-nav-card" href="bitcoin-guide.html"><span>01 · BITCOIN</span><strong>Bitcoin</strong><small>认识 BTC 的基础知识</small></a><a class="v24-nav-card" href="exchange.html"><span>02 · 交易所</span><strong>交易所</strong><small>了解注册、买币与基础操作</small></a><a class="v24-nav-card" href="wallet-guide.html"><span>03 · 钱包安全</span><strong>钱包安全</strong><small>学习钱包、地址、私钥与助记词</small></a><a class="v24-nav-card" href="ethereum-guide.html"><span>04 · ETHEREUM / WEB3</span><strong>Ethereum / Web3</strong><small>认识 ETH、Gas、DeFi 与 Web3</small></a></div>
+</section>
 
 <footer>
   <div class="container foot">
