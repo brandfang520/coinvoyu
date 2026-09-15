@@ -50,7 +50,9 @@
   .v25-toolbar-top{align-items:flex-start;flex-direction:column}
 }
 </style>
-</head>
+<style>
+.v28-article-search{display:flex;gap:10px;margin:18px 0 10px;max-width:760px}.v28-article-search input{flex:1;min-width:0;border:1px solid #d9e0ea;border-radius:12px;padding:12px 14px;font-size:14px;outline:none}.v28-article-search button{border:0;border-radius:12px;padding:0 18px;background:#14213d;color:#fff;font-weight:700;cursor:pointer}.v28-result{font-size:13px;color:#6b7587;margin:4px 0 16px}.v28-empty{display:none;padding:30px 18px;text-align:center;background:#fff;border:1px dashed #d6dde8;border-radius:16px;color:#6b7587}@media(max-width:760px){.v28-article-search{flex-direction:column}.v28-article-search button{height:44px}}
+</style></head>
 <body>
 <header class="site-header"><div class="container nav">
 <a class="brand" href="index.html"><span class="logo">C</span><span>CoinVoyu</span></a>
@@ -88,6 +90,8 @@
 <h2>全部文章</h2>
 <span class="v25-count" id="v25-count">42 篇内容</span>
 </div>
+<form class="v28-article-search" onsubmit="return v28ApplySearch()"><input id="v28ArticleSearch" type="search" placeholder="搜索文章，例如：BTC、钱包、助记词、K线、USDT" autocomplete="off"><button type="submit">搜索</button></form><div id="v28Result" class="v28-result"></div><div id="v28Empty" class="v28-empty">没有找到匹配内容。可以换一个关键词试试，例如 Bitcoin、钱包、交易所。</div>
+
 <div class="v25-filters" role="tablist" aria-label="文章分类">
 <button class="v25-filter active" data-filter="all">全部</button>
 <button class="v25-filter" data-filter="beginner">新手入门</button>
@@ -325,22 +329,12 @@
 <footer><div class="container foot"><div><strong>CoinVoyu</strong><p>把数字资产知识，讲得简单一点。</p></div><div><a href="articles.html">文章</a><a href="about.html">关于</a></div></div><div class="container copy">© 2026 CoinVoyu. Educational content only. Digital assets involve risk.</div></footer>
 
 <script>
-(function(){
-  const buttons=[...document.querySelectorAll('.v25-filter')];
-  const cards=[...document.querySelectorAll('.v25-article-card')];
-  const count=document.getElementById('v25-count');
-  function apply(filter){
-    let shown=0;
-    cards.forEach(card=>{
-      const ok=filter==='all'||card.dataset.category===filter;
-      card.style.display=ok?'flex':'none';
-      if(ok) shown++;
-    });
-    count.textContent=shown+' 篇内容';
-    buttons.forEach(btn=>btn.classList.toggle('active',btn.dataset.filter===filter));
-  }
-  buttons.forEach(btn=>btn.addEventListener('click',()=>apply(btn.dataset.filter)));
-})();
+const buttons=[...document.querySelectorAll('.v25-filter')],cards=[...document.querySelectorAll('.v25-article-card')],input=document.getElementById('v28ArticleSearch'),result=document.getElementById('v28Result'),empty=document.getElementById('v28Empty');let activeFilter='all';
+function norm(s){return(s||'').toLowerCase().replace(/\s+/g,'')}
+function apply(){const q=norm(input.value);let shown=0;cards.forEach(c=>{const ok=(activeFilter==='all'||c.dataset.category===activeFilter)&&(!q||norm(c.textContent).includes(q));c.style.display=ok?'flex':'none';if(ok)shown++});empty.style.display=shown?'none':'block';result.textContent=q?'找到 '+shown+' 篇相关内容':'共 '+shown+' 篇内容'}
+function applyFilter(f){activeFilter=f;buttons.forEach(b=>b.classList.toggle('active',b.dataset.filter===f));apply()}
+function v28ApplySearch(){apply();return false}
+buttons.forEach(b=>b.addEventListener('click',()=>applyFilter(b.dataset.filter)));input.addEventListener('input',apply);const initial=new URLSearchParams(location.search).get('search')||'';if(initial)input.value=initial;apply();
 </script>
 </body>
 </html>

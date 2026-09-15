@@ -7,7 +7,10 @@
 <title>CoinVoyu｜中文加密货币新手指南</title>
 <link rel="canonical" href="https://www.coinvoyu.com/">
 <link rel="stylesheet" href="style.css">
-</head>
+<style>
+.v28-search-wrap{margin-top:8px;background:#fff;border:1px solid #e2e7ef;border-radius:18px;padding:18px;box-shadow:0 8px 24px rgba(20,33,61,.05)}
+.v28-search-title{font-size:14px;font-weight:700;color:#17233b;margin-bottom:10px}.v28-search{display:flex;gap:10px;max-width:760px}.v28-search input{flex:1;min-width:0;border:1px solid #d9e0ea;border-radius:12px;padding:13px 15px;font-size:14px;outline:none}.v28-search button{border:0;border-radius:12px;padding:0 20px;background:#14213d;color:#fff;font-weight:700;cursor:pointer}.v28-search-hint{font-size:12px;color:#7b8494;margin-top:9px}.v28-popular{margin-top:26px}.v28-popular-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:16px}.v28-popular-card{display:block;background:#fff;border:1px solid #e2e7ef;border-radius:16px;padding:18px;text-decoration:none;color:#17233b;transition:.18s}.v28-popular-card:hover{transform:translateY(-2px);border-color:#cbd4e1}.v28-popular-card span{display:inline-block;font-size:12px;color:#69758a;margin-bottom:8px}.v28-popular-card h3{font-size:16px;line-height:1.45;margin:0 0 7px}.v28-popular-card p{font-size:13px;line-height:1.65;color:#6b7587;margin:0}@media(max-width:760px){.v28-search{flex-direction:column}.v28-search button{height:44px}.v28-popular-grid{grid-template-columns:1fr}}
+</style></head>
 <body>
 <header class="site-header">
   <div class="container nav">
@@ -70,6 +73,21 @@
     </aside>
   </div>
 </section>
+
+<!-- V28 SEARCH + POPULAR -->
+<section class="section"><div class="container">
+<div class="v28-search-wrap"><div class="v28-search-title">不知道从哪里开始？直接搜索你想了解的内容</div>
+<form class="v28-search" onsubmit="return v28Search()"><input id="v28SearchInput" type="search" placeholder="例如：BTC、钱包、助记词、K线、USDT" autocomplete="off"><button type="submit">搜索文章</button></form>
+<div class="v28-search-hint">支持关键词搜索，结果会在文章中心直接筛选。</div></div>
+<div class="v28-popular"><div class="heading inline"><div><p class="eyebrow">POPULAR</p><h2>热门新手文章</h2><p>从最常见的问题开始，快速进入学习状态。</p></div><a href="articles.html">查看全部文章 →</a></div>
+<div class="v28-popular-grid">
+<a class="v28-popular-card" href="bitcoin.html"><span>Bitcoin</span><h3>比特币是什么？2026 新手入门</h3><p>先理解 Bitcoin 是什么，再继续学习买币与钱包。</p></a>
+<a class="v28-popular-card" href="btc-usdt-difference.html"><span>新手入门</span><h3>BTC 和 USDT 有什么区别？</h3><p>搞懂两种常见数字资产的用途差异。</p></a>
+<a class="v28-popular-card" href="wallet-basics.html"><span>钱包安全</span><h3>数字货币钱包到底是什么？</h3><p>理解钱包、地址与资产控制权之间的关系。</p></a>
+<a class="v28-popular-card" href="private-key.html"><span>钱包安全</span><h3>什么是私钥？</h3><p>理解私钥为什么是资产安全的核心。</p></a>
+<a class="v28-popular-card" href="kline.html"><span>交易基础</span><h3>K线最基础的几个概念</h3><p>从开盘价、收盘价到涨跌，一次看懂基础 K 线。</p></a>
+<a class="v28-popular-card" href="crypto-security-first.html"><span>安全入门</span><h3>新手第一次买币，应该注意哪些安全问题？</h3><p>先建立基本安全习惯，再开始操作。</p></a>
+</div></div></div></section>
 
 <!-- LEARNING PATH -->
 <section class="section">
@@ -212,7 +230,7 @@
   <div class="container copy">© 2026 CoinVoyu. Educational content only. Digital assets involve risk.</div>
 </footer>
 
-<script>
+<script>function v28Search(){var q=document.getElementById('v28SearchInput').value.trim();if(!q){document.getElementById('v28SearchInput').focus();return false;}window.location.href='articles.html?search='+encodeURIComponent(q);return false;}</script><script>
 document.querySelectorAll('[data-code]').forEach(function(btn){
   btn.addEventListener('click',function(){
     var code=btn.getAttribute('data-code');
