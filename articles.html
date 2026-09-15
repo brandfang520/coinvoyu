@@ -1,63 +1,346 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="CoinVoyu 数字资产与区块链知识站，持续更新比特币、钱包安全、交易基础、区块链与 Web3 入门内容。">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="CoinVoyu 文章中心：按新手入门、Bitcoin、交易所、钱包安全、Ethereum、Web3 和区块链基础分类，快速找到适合自己的加密货币学习内容。">
 <link rel="canonical" href="https://www.coinvoyu.com/articles.html">
-<title>全部文章｜CoinVoyu</title>
+<title>加密货币文章中心｜新手入门、Bitcoin、钱包安全、Ethereum、Web3｜CoinVoyu</title>
 <link rel="stylesheet" href="style.css">
+<style>
+.v25-page{background:#f7f9fc;min-height:100vh;padding:54px 0 80px}
+.v25-wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.v25-breadcrumb{font-size:13px;color:#71809a;margin-bottom:22px}
+.v25-breadcrumb a{color:#52627d;text-decoration:none}
+.v25-hero{background:#fff;border:1px solid #e2e7ef;border-radius:20px;padding:38px 42px;margin-bottom:26px}
+.v25-eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;color:#71809a;margin:0 0 12px}
+.v25-hero h1{font-size:42px;line-height:1.2;color:#111b31;margin:0 0 14px}
+.v25-hero p{font-size:16px;line-height:1.8;color:#66748a;margin:0;max-width:760px}
+.v25-hubs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
+.v25-hub{display:block;text-decoration:none;color:#17233b;background:#f8fafc;border:1px solid #e4e8ef;border-radius:14px;padding:16px}
+.v25-hub strong{display:block;font-size:15px;margin-bottom:6px}
+.v25-hub span{font-size:13px;color:#6b7587;line-height:1.5}
+.v25-toolbar{background:#fff;border:1px solid #e2e7ef;border-radius:18px;padding:20px;margin-bottom:18px}
+.v25-toolbar-top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:15px}
+.v25-toolbar h2{margin:0;color:#17233b;font-size:24px}
+.v25-count{font-size:13px;color:#71809a}
+.v25-filters{display:flex;flex-wrap:wrap;gap:9px}
+.v25-filter{border:1px solid #dfe5ed;background:#fff;color:#52627d;border-radius:999px;padding:9px 15px;font-size:13px;cursor:pointer}
+.v25-filter.active{background:#14213d;color:#fff;border-color:#14213d}
+.v25-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.v25-article-card{display:flex;flex-direction:column;min-height:190px;background:#fff;border:1px solid #e2e7ef;border-radius:16px;padding:22px;text-decoration:none;color:#17233b;transition:.18s}
+.v25-article-card:hover{transform:translateY(-2px);border-color:#cbd4e1}
+.v25-tag{font-size:11px;font-weight:800;letter-spacing:.07em;color:#71809a;margin-bottom:10px}
+.v25-article-card h3{font-size:18px;line-height:1.45;margin:0 0 9px}
+.v25-article-card p{font-size:13px;line-height:1.7;color:#6b7587;margin:0 0 16px}
+.v25-article-card b{font-size:13px;margin-top:auto;color:#17233b}
+.v25-bottom{margin-top:28px;background:#14213d;color:#fff;border-radius:18px;padding:30px}
+.v25-bottom h2{margin:0 0 8px;font-size:24px}
+.v25-bottom p{margin:0;color:#d8dfeb;line-height:1.7}
+.v25-bottom a{display:inline-block;margin-top:17px;color:#fff;text-decoration:none;border:1px solid #aeb9ca;border-radius:10px;padding:10px 15px}
+@media(max-width:900px){
+  .v25-hubs{grid-template-columns:repeat(2,1fr)}
+  .v25-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .v25-page{padding-top:30px}
+  .v25-hero{padding:28px 24px}
+  .v25-hero h1{font-size:32px}
+  .v25-hubs,.v25-grid{grid-template-columns:1fr}
+  .v25-toolbar-top{align-items:flex-start;flex-direction:column}
+}
+</style>
 </head>
 <body>
 <header class="site-header"><div class="container nav">
 <a class="brand" href="index.html"><span class="logo">C</span><span>CoinVoyu</span></a>
-<nav><a href="index.html">首页</a><a href="categories.html">分类</a><a class="active" href="articles.html">文章</a><a href="about.html">关于</a></nav>
+<nav>
+<a href="index.html">首页</a>
+<a href="beginner.html">新手入门</a>
+<a href="bitcoin-guide.html">Bitcoin</a>
+<a href="exchange.html">交易所</a>
+<a href="wallet-guide.html">钱包安全</a>
+<a href="ethereum-guide.html">Ethereum / Web3</a>
+<a class="active" href="articles.html">文章</a>
+<a href="about.html">关于</a>
+</nav>
 </div></header>
-<main class="article-page"><div class="container">
-<p class="crumb"><a href="index.html">首页</a> / 文章</p>
-<section class="section" style="padding-top:0">
-<div class="heading"><p class="eyebrow">ARTICLES</p><h1>全部文章</h1><p>持续更新数字资产与区块链基础知识。</p></div>
-<div class="articles"><a class="article" href="beginner.html"><div><span class="tag">新手入门</span><h3>第一次接触数字资产，先学什么？</h3><p>给完全新手的一条学习路线。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="beginner-mistakes.html"><div><span class="tag">新手入门</span><h3>新手最容易犯哪些错误？</h3><p>整理数字资产入门阶段常见误区。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="bitcoin.html"><div><span class="tag">比特币</span><h3>比特币是什么？2026 新手入门</h3><p>从基本概念、总量和交易逻辑认识 BTC。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="bitcoin-usdt.html"><div><span class="tag">比特币</span><h3>BTC 和 USDT 有什么区别？</h3><p>了解 BTC 与稳定币的用途和风险差异。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="bitcoin-address.html"><div><span class="tag">比特币</span><h3>什么是比特币地址？</h3><p>认识 BTC 地址以及转账时的基本注意事项。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="blockchain.html"><div><span class="tag">比特币</span><h3>区块链是什么？</h3><p>从账本、节点和区块理解区块链。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="ethereum.html"><div><span class="tag">以太坊</span><h3>以太坊是什么？它和比特币有什么不同？</h3><p>理解 ETH、智能合约以及两者的区别。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="eth.html"><div><span class="tag">以太坊</span><h3>ETH 是什么？</h3><p>认识以太坊网络中的原生资产 ETH。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="stablecoin.html"><div><span class="tag">比特币</span><h3>什么是稳定币？</h3><p>了解稳定币的用途、类型与风险。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="utxo.html"><div><span class="tag">比特币</span><h3>什么是 UTXO？</h3><p>用简单方式理解比特币的 UTXO 模型。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="wallet-guide.html"><div><span class="tag">钱包安全</span><h3>数字货币钱包入门指南</h3><p>认识钱包、地址、私钥和助记词。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="security.html"><div><span class="tag">钱包安全</span><h3>数字资产安全基础</h3><p>从账户到钱包建立基础安全意识。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="cold-wallet.html"><div><span class="tag">钱包安全</span><h3>什么是冷钱包？</h3><p>了解冷钱包的基本概念和适用场景。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="hot-cold-wallet.html"><div><span class="tag">钱包安全</span><h3>热钱包和冷钱包有什么区别？</h3><p>比较两种钱包的基本特点。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="private-key.html"><div><span class="tag">钱包安全</span><h3>什么是私钥？</h3><p>理解私钥为什么是钱包安全的核心。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="mnemonic.html"><div><span class="tag">钱包安全</span><h3>什么是助记词？</h3><p>了解助记词的作用与保管方法。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="public-key.html"><div><span class="tag">钱包安全</span><h3>什么是公钥？</h3><p>认识公钥、私钥与地址之间的关系。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="custody.html"><div><span class="tag">钱包安全</span><h3>什么是数字资产托管？</h3><p>理解交易所托管与自托管的区别。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="withdrawal-network.html"><div><span class="tag">钱包安全</span><h3>提现时为什么要确认网络？</h3><p>理解资产、地址和网络匹配的重要性。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="exchange.html"><div><span class="tag">交易基础</span><h3>中心化交易所和去中心化交易所有什么区别？</h3><p>理解 CEX 与 DEX 的基本机制。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="spot-trading.html"><div><span class="tag">交易基础</span><h3>什么是现货交易？</h3><p>认识数字资产现货买卖的基本流程。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="kline.html"><div><span class="tag">交易基础</span><h3>K线最基础的几个概念</h3><p>新手快速理解开盘价、收盘价、最高价和最低价。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="market-limit.html"><div><span class="tag">交易基础</span><h3>什么是市价单和限价单？</h3><p>理解两种常见下单方式。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="slippage.html"><div><span class="tag">交易基础</span><h3>什么是滑点？</h3><p>了解下单价格与实际成交价格的差异。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="gas-fee.html"><div><span class="tag">交易基础</span><h3>什么是 Gas Fee？</h3><p>理解区块链网络手续费。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="block-confirmation.html"><div><span class="tag">区块链基础</span><h3>什么是区块确认？</h3><p>理解交易为什么需要等待确认。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="block-explorer.html"><div><span class="tag">区块链基础</span><h3>什么是区块浏览器？</h3><p>学习如何查询链上交易和地址信息。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="block-height.html"><div><span class="tag">区块链基础</span><h3>什么是区块高度？</h3><p>理解区块高度和区块顺序。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="mempool.html"><div><span class="tag">区块链基础</span><h3>什么是 Mempool？</h3><p>了解交易进入区块前发生了什么。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="web3.html"><div><span class="tag">Web3</span><h3>什么是 Web3？小白也能看懂</h3><p>用简单语言理解 Web3。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="web3-deep.html"><div><span class="tag">Web3</span><h3>Web3 深入理解：钱包、身份与链上应用</h3><p>进一步理解 Web3 的核心组成。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="defi.html"><div><span class="tag">Web3</span><h3>什么是 DeFi？</h3><p>认识去中心化金融的基本概念。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="bitcoin-value.html"><div><span class="tag">比特币</span><h3>比特币为什么会有价值？新手终于看懂了</h3><p>从稀缺性、网络效应和市场共识理解 BTC。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="bitcoin-supply.html"><div><span class="tag">比特币</span><h3>比特币总量为什么只有2100万枚？</h3><p>理解供应上限、区块奖励和减半。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="btc-usdt-difference.html"><div><span class="tag">比特币</span><h3>BTC和USDT有什么区别？新手别再混淆了</h3><p>从用途、计价和风险区分两者。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="wallet-basics.html"><div><span class="tag">钱包安全</span><h3>数字货币钱包到底是什么？新手一篇看懂</h3><p>从地址、私钥、助记词和网络入门。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="exchange-vs-wallet.html"><div><span class="tag">钱包安全</span><h3>交易所里的币和钱包里的币有什么区别？</h3><p>理解托管与自托管的区别。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="bitcoin-fee.html"><div><span class="tag">比特币</span><h3>比特币转账为什么需要手续费？钱到底给了谁？</h3><p>理解区块空间、手续费率和确认。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="wrong-address.html"><div><span class="tag">钱包安全</span><h3>比特币转错地址还能找回来吗？新手一定要看</h3><p>了解错误转账后的处理思路。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="btc-buying-methods.html"><div><span class="tag">新手入门</span><h3>新手买比特币应该一次买完还是分批买？</h3><p>从资金管理和波动风险理解不同方式。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="crypto-volatility.html"><div><span class="tag">新手入门</span><h3>数字货币为什么会暴涨暴跌？新手看懂价格波动</h3><p>理解供需、情绪、流动性和杠杆。</p></div><span class="arrow">阅读 →</span></a>
-<a class="article" href="crypto-security-first.html"><div><span class="tag">钱包安全</span><h3>新手第一次买币，应该注意哪些安全问题？</h3><p>整理账户、钱包和反诈骗安全清单。</p></div><span class="arrow">阅读 →</span></a></div>
-</section></div></main>
-<footer><div class="container foot"><div><strong>CoinVoyu</strong><p>把数字资产知识，讲得简单一点。</p></div><div><a href="categories.html">分类</a><a href="articles.html">文章</a><a href="about.html">关于</a></div></div><div class="container copy">© 2026 CoinVoyu. Educational content only. Digital assets involve risk.</div></footer>
-</body></html>
+
+<main class="v25-page">
+<div class="v25-wrap">
+<div class="v25-breadcrumb"><a href="index.html">首页</a> / 文章</div>
+
+<section class="v25-hero">
+<p class="v25-eyebrow">COINVOYU · ARTICLES</p>
+<h1>文章中心</h1>
+<p>这里集中整理 CoinVoyu 的数字资产与区块链学习内容。可以按主题筛选，也可以从专题入口开始，找到更适合自己的学习路线。</p>
+
+<div class="v25-hubs">
+<a class="v25-hub" href="beginner.html"><strong>新手入门</strong><span>从基础概念开始学习</span></a>
+<a class="v25-hub" href="bitcoin-guide.html"><strong>Bitcoin</strong><span>从 BTC 基础一路学到购买</span></a>
+<a class="v25-hub" href="wallet-guide.html"><strong>钱包与安全</strong><span>地址、私钥、助记词与转账</span></a>
+<a class="v25-hub" href="ethereum-guide.html"><strong>Ethereum / Web3</strong><span>ETH、Gas、DeFi 与 Web3</span></a>
+</div>
+</section>
+
+<section class="v25-toolbar">
+<div class="v25-toolbar-top">
+<h2>全部文章</h2>
+<span class="v25-count" id="v25-count">42 篇内容</span>
+</div>
+<div class="v25-filters" role="tablist" aria-label="文章分类">
+<button class="v25-filter active" data-filter="all">全部</button>
+<button class="v25-filter" data-filter="beginner">新手入门</button>
+<button class="v25-filter" data-filter="bitcoin">Bitcoin</button>
+<button class="v25-filter" data-filter="exchange">交易所 / 交易</button>
+<button class="v25-filter" data-filter="wallet">钱包与安全</button>
+<button class="v25-filter" data-filter="ethereum">Ethereum</button>
+<button class="v25-filter" data-filter="web3">Web3</button>
+<button class="v25-filter" data-filter="blockchain">区块链基础</button>
+</div>
+</section>
+
+<section class="v25-grid" id="v25-grid">
+<a class="v25-article-card" href="beginner.html" data-category="beginner">
+          <span class="v25-tag">新手入门</span>
+          <h3>第一次接触数字资产，先学什么？</h3>
+          <p>给完全新手的一条学习路线。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="beginner-mistakes.html" data-category="beginner">
+          <span class="v25-tag">新手入门</span>
+          <h3>新手最容易犯哪些错误？</h3>
+          <p>整理数字资产入门阶段常见误区。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="bitcoin.html" data-category="bitcoin">
+          <span class="v25-tag">Bitcoin</span>
+          <h3>比特币是什么？2026 新手入门</h3>
+          <p>从基本概念、总量和交易逻辑认识 BTC。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="bitcoin-usdt.html" data-category="bitcoin">
+          <span class="v25-tag">Bitcoin</span>
+          <h3>BTC 和 USDT 有什么区别？</h3>
+          <p>了解 BTC 与稳定币的用途和风险差异。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="bitcoin-address.html" data-category="bitcoin">
+          <span class="v25-tag">Bitcoin</span>
+          <h3>什么是比特币地址？</h3>
+          <p>认识 BTC 地址以及转账时的基本注意事项。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="blockchain.html" data-category="bitcoin">
+          <span class="v25-tag">Bitcoin</span>
+          <h3>区块链是什么？</h3>
+          <p>从账本、节点和区块理解区块链。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="ethereum.html" data-category="ethereum">
+          <span class="v25-tag">Ethereum</span>
+          <h3>以太坊是什么？它和比特币有什么不同？</h3>
+          <p>理解 ETH、智能合约以及两者的区别。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="eth.html" data-category="ethereum">
+          <span class="v25-tag">Ethereum</span>
+          <h3>ETH 是什么？</h3>
+          <p>认识以太坊网络中的原生资产 ETH。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="stablecoin.html" data-category="bitcoin">
+          <span class="v25-tag">Bitcoin</span>
+          <h3>什么是稳定币？</h3>
+          <p>了解稳定币的用途、类型与风险。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="utxo.html" data-category="bitcoin">
+          <span class="v25-tag">Bitcoin</span>
+          <h3>什么是 UTXO？</h3>
+          <p>用简单方式理解比特币的 UTXO 模型。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="wallet-guide.html" data-category="wallet">
+          <span class="v25-tag">钱包与安全</span>
+          <h3>数字货币钱包入门指南</h3>
+          <p>认识钱包、地址、私钥和助记词。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="security.html" data-category="wallet">
+          <span class="v25-tag">钱包与安全</span>
+          <h3>数字资产安全基础</h3>
+          <p>从账户到钱包建立基础安全意识。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="cold-wallet.html" data-category="wallet">
+          <span class="v25-tag">钱包与安全</span>
+          <h3>什么是冷钱包？</h3>
+          <p>了解冷钱包的基本概念和适用场景。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="hot-cold-wallet.html" data-category="wallet">
+          <span class="v25-tag">钱包与安全</span>
+          <h3>热钱包和冷钱包有什么区别？</h3>
+          <p>比较两种钱包的基本特点。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="private-key.html" data-category="wallet">
+          <span class="v25-tag">钱包与安全</span>
+          <h3>什么是私钥？</h3>
+          <p>理解私钥为什么是钱包安全的核心。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="mnemonic.html" data-category="wallet">
+          <span class="v25-tag">钱包与安全</span>
+          <h3>什么是助记词？</h3>
+          <p>了解助记词的作用与保管方法。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="public-key.html" data-category="wallet">
+          <span class="v25-tag">钱包与安全</span>
+          <h3>什么是公钥？</h3>
+          <p>认识公钥、私钥与地址之间的关系。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="custody.html" data-category="wallet">
+          <span class="v25-tag">钱包与安全</span>
+          <h3>什么是数字资产托管？</h3>
+          <p>理解交易所托管与自托管的区别。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="withdrawal-network.html" data-category="wallet">
+          <span class="v25-tag">钱包与安全</span>
+          <h3>提现时为什么要确认网络？</h3>
+          <p>理解资产、地址和网络匹配的重要性。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="exchange.html" data-category="exchange">
+          <span class="v25-tag">交易所 / 交易</span>
+          <h3>中心化交易所和去中心化交易所有什么区别？</h3>
+          <p>理解 CEX 与 DEX 的基本机制。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="spot-trading.html" data-category="exchange">
+          <span class="v25-tag">交易所 / 交易</span>
+          <h3>什么是现货交易？</h3>
+          <p>认识数字资产现货买卖的基本流程。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="kline.html" data-category="exchange">
+          <span class="v25-tag">交易所 / 交易</span>
+          <h3>K线最基础的几个概念</h3>
+          <p>新手快速理解开盘价、收盘价、最高价和最低价。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="market-limit.html" data-category="exchange">
+          <span class="v25-tag">交易所 / 交易</span>
+          <h3>什么是市价单和限价单？</h3>
+          <p>理解两种常见下单方式。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="slippage.html" data-category="exchange">
+          <span class="v25-tag">交易所 / 交易</span>
+          <h3>什么是滑点？</h3>
+          <p>了解下单价格与实际成交价格的差异。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="gas-fee.html" data-category="exchange">
+          <span class="v25-tag">交易所 / 交易</span>
+          <h3>什么是 Gas Fee？</h3>
+          <p>理解区块链网络手续费。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="block-confirmation.html" data-category="blockchain">
+          <span class="v25-tag">区块链基础</span>
+          <h3>什么是区块确认？</h3>
+          <p>理解交易为什么需要等待确认。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="block-explorer.html" data-category="blockchain">
+          <span class="v25-tag">区块链基础</span>
+          <h3>什么是区块浏览器？</h3>
+          <p>学习如何查询链上交易和地址信息。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="block-height.html" data-category="blockchain">
+          <span class="v25-tag">区块链基础</span>
+          <h3>什么是区块高度？</h3>
+          <p>理解区块高度和区块顺序。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="mempool.html" data-category="blockchain">
+          <span class="v25-tag">区块链基础</span>
+          <h3>什么是 Mempool？</h3>
+          <p>了解交易进入区块前发生了什么。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="web3.html" data-category="web3">
+          <span class="v25-tag">Web3</span>
+          <h3>什么是 Web3？小白也能看懂</h3>
+          <p>用简单语言理解 Web3。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="web3-deep.html" data-category="web3">
+          <span class="v25-tag">Web3</span>
+          <h3>Web3 深入理解：钱包、身份与链上应用</h3>
+          <p>进一步理解 Web3 的核心组成。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="defi.html" data-category="web3">
+          <span class="v25-tag">Web3</span>
+          <h3>什么是 DeFi？</h3>
+          <p>认识去中心化金融的基本概念。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="bitcoin-value.html" data-category="bitcoin">
+          <span class="v25-tag">Bitcoin</span>
+          <h3>比特币为什么会有价值？新手终于看懂了</h3>
+          <p>从稀缺性、网络效应和市场共识理解 BTC。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="bitcoin-supply.html" data-category="bitcoin">
+          <span class="v25-tag">Bitcoin</span>
+          <h3>比特币总量为什么只有2100万枚？</h3>
+          <p>理解供应上限、区块奖励和减半。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="btc-usdt-difference.html" data-category="bitcoin">
+          <span class="v25-tag">Bitcoin</span>
+          <h3>BTC和USDT有什么区别？新手别再混淆了</h3>
+          <p>从用途、计价和风险区分两者。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="wallet-basics.html" data-category="wallet">
+          <span class="v25-tag">钱包与安全</span>
+          <h3>数字货币钱包到底是什么？新手一篇看懂</h3>
+          <p>从地址、私钥、助记词和网络入门。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="exchange-vs-wallet.html" data-category="wallet">
+          <span class="v25-tag">钱包与安全</span>
+          <h3>交易所里的币和钱包里的币有什么区别？</h3>
+          <p>理解托管与自托管的区别。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="bitcoin-fee.html" data-category="bitcoin">
+          <span class="v25-tag">Bitcoin</span>
+          <h3>比特币转账为什么需要手续费？钱到底给了谁？</h3>
+          <p>理解区块空间、手续费率和确认。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="wrong-address.html" data-category="wallet">
+          <span class="v25-tag">钱包与安全</span>
+          <h3>比特币转错地址还能找回来吗？新手一定要看</h3>
+          <p>了解错误转账后的处理思路。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="btc-buying-methods.html" data-category="beginner">
+          <span class="v25-tag">新手入门</span>
+          <h3>新手买比特币应该一次买完还是分批买？</h3>
+          <p>从资金管理和波动风险理解不同方式。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="crypto-volatility.html" data-category="beginner">
+          <span class="v25-tag">新手入门</span>
+          <h3>数字货币为什么会暴涨暴跌？新手看懂价格波动</h3>
+          <p>理解供需、情绪、流动性和杠杆。</p>
+          <b>阅读文章 →</b>
+        </a><a class="v25-article-card" href="crypto-security-first.html" data-category="wallet">
+          <span class="v25-tag">钱包与安全</span>
+          <h3>新手第一次买币，应该注意哪些安全问题？</h3>
+          <p>整理账户、钱包和反诈骗安全清单。</p>
+          <b>阅读文章 →</b>
+        </a>
+</section>
+
+<section class="v25-bottom">
+<h2>不知道从哪里开始？</h2>
+<p>先进入新手学习中心，再按照 Bitcoin、交易所、钱包安全和 Ethereum / Web3 的顺序学习，会比直接浏览几十篇文章更容易建立完整认识。</p>
+<a href="beginner.html">开始新手学习 →</a>
+</section>
+</div>
+</main>
+
+<footer><div class="container foot"><div><strong>CoinVoyu</strong><p>把数字资产知识，讲得简单一点。</p></div><div><a href="articles.html">文章</a><a href="about.html">关于</a></div></div><div class="container copy">© 2026 CoinVoyu. Educational content only. Digital assets involve risk.</div></footer>
+
+<script>
+(function(){
+  const buttons=[...document.querySelectorAll('.v25-filter')];
+  const cards=[...document.querySelectorAll('.v25-article-card')];
+  const count=document.getElementById('v25-count');
+  function apply(filter){
+    let shown=0;
+    cards.forEach(card=>{
+      const ok=filter==='all'||card.dataset.category===filter;
+      card.style.display=ok?'flex':'none';
+      if(ok) shown++;
+    });
+    count.textContent=shown+' 篇内容';
+    buttons.forEach(btn=>btn.classList.toggle('active',btn.dataset.filter===filter));
+  }
+  buttons.forEach(btn=>btn.addEventListener('click',()=>apply(btn.dataset.filter)));
+})();
+</script>
+</body>
+</html>
