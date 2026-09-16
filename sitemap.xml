@@ -9,12 +9,12 @@
   <url><loc>https://coinvoyu.com/bitcoin-fee.html</loc></url>
   <url><loc>https://coinvoyu.com/bitcoin-guide.html</loc></url>
   <url><loc>https://coinvoyu.com/bitcoin-supply.html</loc></url>
-  <url><loc>https://coinvoyu.com/bitcoin-usdt.html</loc></url>
+  <url><loc>https://coinvoyu.com/bitcoin-usdt.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/bitcoin-value.html</loc></url>
   <url><loc>https://coinvoyu.com/bitcoin.html</loc></url>
   <url><loc>https://coinvoyu.com/block-confirmation.html</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://coinvoyu.com/block-explorer.html</loc></url>
-  <url><loc>https://coinvoyu.com/block-height.html</loc></url>
+  <url><loc>https://coinvoyu.com/block-explorer.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://coinvoyu.com/block-height.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/blockchain.html</loc></url>
   <url><loc>https://coinvoyu.com/btc-buying-methods.html</loc></url>
   <url><loc>https://coinvoyu.com/btc-usdt-difference.html</loc></url>
@@ -22,20 +22,20 @@
   <url><loc>https://coinvoyu.com/contact.html</loc></url>
   <url><loc>https://coinvoyu.com/cex-vs-dex.html</loc></url>
   <url><loc>https://coinvoyu.com/coin-vs-token.html</loc></url>
-  <url><loc>https://coinvoyu.com/cold-wallet.html</loc></url>
+  <url><loc>https://coinvoyu.com/cold-wallet.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/cross-chain-bridge.html</loc></url>
   <url><loc>https://coinvoyu.com/crypto-security-first.html</loc></url>
   <url><loc>https://coinvoyu.com/crypto-volatility.html</loc></url>
-  <url><loc>https://coinvoyu.com/custody.html</loc></url>
+  <url><loc>https://coinvoyu.com/custody.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/defi.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/editorial-policy.html</loc></url>
   <url><loc>https://coinvoyu.com/eth.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/ethereum-guide.html</loc></url>
   <url><loc>https://coinvoyu.com/ethereum.html</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://coinvoyu.com/exchange-vs-wallet.html</loc></url>
+  <url><loc>https://coinvoyu.com/exchange-vs-wallet.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/exchange.html</loc></url>
   <url><loc>https://coinvoyu.com/gas-fee.html</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://coinvoyu.com/hot-cold-wallet.html</loc></url>
+  <url><loc>https://coinvoyu.com/hot-cold-wallet.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/</loc></url>
   <url><loc>https://coinvoyu.com/kline.html</loc></url>
   <url><loc>https://coinvoyu.com/layer1-layer2.html</loc></url>
@@ -49,7 +49,7 @@
   <url><loc>https://coinvoyu.com/phishing-wallet.html</loc></url>
   <url><loc>https://coinvoyu.com/practice.html</loc></url>
   <url><loc>https://coinvoyu.com/private-key.html</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://coinvoyu.com/public-key.html</loc></url>
+  <url><loc>https://coinvoyu.com/public-key.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/security.html</loc></url>
   <url><loc>https://coinvoyu.com/slippage.html</loc></url>
   <url><loc>https://coinvoyu.com/spot-trading.html</loc></url>
@@ -63,6 +63,6 @@
   <url><loc>https://coinvoyu.com/wallet.html</loc></url>
   <url><loc>https://coinvoyu.com/web3-deep.html</loc></url>
   <url><loc>https://coinvoyu.com/web3.html</loc></url>
-  <url><loc>https://coinvoyu.com/withdrawal-network.html</loc></url>
-  <url><loc>https://coinvoyu.com/wrong-address.html</loc></url>
+  <url><loc>https://coinvoyu.com/withdrawal-network.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://coinvoyu.com/wrong-address.html</loc><lastmod>2026-09-16</lastmod></url>
 </urlset>
