@@ -231,3 +231,14 @@ body{background:var(--cv-bg)}
 .eeat-panel{margin:28px 0;padding:22px 24px;border:1px solid #dfe6f1;border-radius:16px;background:linear-gradient(135deg,#f8fbff,#f7f4ff)}.eeat-panel h3{margin:0 0 8px;color:#14213d}.eeat-panel p{margin:0;color:#657287;font-size:14px;line-height:1.8}.eeat-panel a{color:#2458d3;font-weight:700}
 .eeat-page{padding:54px 0 80px;background:#f6f8fc}.eeat-page-wrap{max-width:920px}.eeat-page-hero,.eeat-page-section{background:#fff;border:1px solid #dfe6f1;border-radius:20px;padding:34px 38px;margin-bottom:22px}.eeat-page-hero h1{font-size:42px;line-height:1.2;color:#14213d;margin:10px 0 14px}.eeat-page-hero .lead{font-size:17px;color:#657287;line-height:1.8;margin:0}.eeat-page-section h2{font-size:25px;color:#14213d;margin:0 0 14px}.eeat-page-section p,.eeat-page-section li{color:#657287;line-height:1.85;font-size:15px}.eeat-page-section ul{padding-left:22px}.eeat-step{display:grid;grid-template-columns:44px 1fr;gap:14px;margin:18px 0}.eeat-step-num{width:36px;height:36px;border-radius:10px;background:#edf3ff;color:#2458d3;display:grid;place-items:center;font-weight:800}.eeat-step h3{margin:0 0 5px;color:#14213d;font-size:17px}.eeat-step p{margin:0}
 @media(max-width:760px){.eeat-grid{grid-template-columns:1fr}.eeat-page-hero,.eeat-page-section{padding:26px 22px}.eeat-page-hero h1{font-size:34px}.eeat-home{padding:48px 0}}
+
+/* V35: core article quality / source / internal-link block */
+.v35-quality{margin:34px 0 22px;padding:24px;border:1px solid #dbe4f3;border-radius:18px;background:#fff}
+.v35-quality h2{margin:0 0 10px}.v35-quality h3{margin:0 0 10px;font-size:17px}
+.v35-quality-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.v35-quality-grid>div{padding:18px;border:1px solid #e2e8f2;border-radius:14px;background:#f8faff}
+.v35-link-list{display:flex;flex-direction:column;gap:9px}
+.v35-quality a{color:#0b57d0;text-decoration:none}.v35-quality a:hover{text-decoration:underline}
+.v35-quality ul{margin:0;padding-left:20px}.v35-quality li{margin:7px 0}
+.v35-reviewed{margin:16px 0 0;padding-top:14px;border-top:1px solid #e5eaf2;color:#5f6f89;font-size:14px}
+@media(max-width:760px){.v35-quality-grid{grid-template-columns:1fr}}
