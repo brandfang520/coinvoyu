@@ -242,3 +242,7 @@ body{background:var(--cv-bg)}
 .v35-quality ul{margin:0;padding-left:20px}.v35-quality li{margin:7px 0}
 .v35-reviewed{margin:16px 0 0;padding-top:14px;border-top:1px solid #e5eaf2;color:#5f6f89;font-size:14px}
 @media(max-width:760px){.v35-quality-grid{grid-template-columns:1fr}}
+
+/* V35.5.1 — article footer alignment fix */
+.article-wrap{margin-left:auto;margin-right:auto}
+.v29-article-nav{max-width:900px!important}
