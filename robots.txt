@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.coinvoyu.com/sitemap.xml
+
+Sitemap: https://coinvoyu.com/sitemap.xml
