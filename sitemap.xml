@@ -3,8 +3,8 @@
   <url><loc>https://coinvoyu.com/about.html</loc></url>
   <url><loc>https://coinvoyu.com/articles.html</loc></url>
   <url><loc>https://coinvoyu.com/author.html</loc></url>
-  <url><loc>https://coinvoyu.com/beginner-mistakes.html</loc></url>
-  <url><loc>https://coinvoyu.com/beginner.html</loc></url>
+  <url><loc>https://coinvoyu.com/beginner-mistakes.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://coinvoyu.com/beginner.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/bitcoin-address.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/bitcoin-fee.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/bitcoin-guide.html</loc></url>
@@ -16,14 +16,14 @@
   <url><loc>https://coinvoyu.com/block-explorer.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/block-height.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/blockchain.html</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://coinvoyu.com/btc-buying-methods.html</loc></url>
-  <url><loc>https://coinvoyu.com/btc-usdt-difference.html</loc></url>
+  <url><loc>https://coinvoyu.com/btc-buying-methods.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://coinvoyu.com/btc-usdt-difference.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/categories.html</loc></url>
   <url><loc>https://coinvoyu.com/contact.html</loc></url>
   <url><loc>https://coinvoyu.com/cex-vs-dex.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/coin-vs-token.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/cold-wallet.html</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://coinvoyu.com/cross-chain-bridge.html</loc></url>
+  <url><loc>https://coinvoyu.com/cross-chain-bridge.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/crypto-security-first.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/crypto-volatility.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/custody.html</loc><lastmod>2026-09-16</lastmod></url>
@@ -37,8 +37,8 @@
   <url><loc>https://coinvoyu.com/gas-fee.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/hot-cold-wallet.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/</loc></url>
-  <url><loc>https://coinvoyu.com/kline.html</loc></url>
-  <url><loc>https://coinvoyu.com/layer1-layer2.html</loc></url>
+  <url><loc>https://coinvoyu.com/kline.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://coinvoyu.com/layer1-layer2.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/liquidity.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/market-cap.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/market-limit.html</loc><lastmod>2026-09-16</lastmod></url>
@@ -46,7 +46,7 @@
   <url><loc>https://coinvoyu.com/mnemonic.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/network-fee.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/order-book.html</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://coinvoyu.com/phishing-wallet.html</loc></url>
+  <url><loc>https://coinvoyu.com/phishing-wallet.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/practice.html</loc></url>
   <url><loc>https://coinvoyu.com/private-key.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/public-key.html</loc><lastmod>2026-09-16</lastmod></url>
@@ -61,8 +61,8 @@
   <url><loc>https://coinvoyu.com/wallet-basics.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/wallet-guide.html</loc></url>
   <url><loc>https://coinvoyu.com/wallet.html</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://coinvoyu.com/web3-deep.html</loc></url>
-  <url><loc>https://coinvoyu.com/web3.html</loc></url>
+  <url><loc>https://coinvoyu.com/web3-deep.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://coinvoyu.com/web3.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/withdrawal-network.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://coinvoyu.com/wrong-address.html</loc><lastmod>2026-09-16</lastmod></url>
 </urlset>
