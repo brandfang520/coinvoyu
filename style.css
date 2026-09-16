@@ -259,3 +259,16 @@ body{background:var(--cv-bg)}
 .v40-contact-status strong{color:#14213d}.v40-contact-status p{margin:5px 0 0}
 @media(max-width:760px){.v40-trust-grid{grid-template-columns:1fr}.v40-trust-panel{padding:20px}.v40-guide-trust{padding:22px}.v40-policy-date{text-align:left}}
 @media(max-width:760px){.v35-quality-grid{grid-template-columns:1fr}}
+
+/* V41 authoritative source panels */
+.v41-source-panel{margin:30px 0;padding:26px;border:1px solid #d8e3f2;border-radius:18px;background:#fff}
+.article-wrap article .v41-source-panel h2{margin:4px 0 10px;color:#14213d;font-size:23px}
+.article-wrap article .v41-source-panel>p{margin:0 0 16px;color:#5f6e84;font-size:14px;line-height:1.8}
+.article-wrap article .v41-source-kicker{margin:0;color:#2458d3;font-size:11px;font-weight:800;letter-spacing:.14em}
+.v41-source-panel ul{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.v41-source-panel li{padding:14px 16px;border:1px solid #e3e9f2;border-radius:12px;background:#f8faff}
+.v41-source-panel li a{display:block;color:#174ea6;font-weight:800;text-decoration:none}
+.v41-source-panel li a:hover{text-decoration:underline}
+.v41-source-panel li span{display:block;margin-top:4px;color:#71809a;font-size:12px;line-height:1.65}
+.article-wrap article .v41-source-panel .v41-source-note{margin:16px 0 0;padding-top:14px;border-top:1px solid #e6ebf2;color:#778398;font-size:12px}
+@media(max-width:760px){.v41-source-panel{padding:20px}}
