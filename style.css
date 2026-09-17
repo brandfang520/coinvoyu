@@ -291,7 +291,7 @@ body{background:var(--cv-bg)}
 .hero-v2:after{z-index:1}
 .hero-v2 .hero-grid{z-index:2}
 .learn-visual-stack{position:relative;display:grid;gap:0;align-self:stretch}
-.beginner-hero-art{display:block;width:100%;aspect-ratio:16/7;object-fit:cover;border:1px solid #dbe5f5;border-radius:20px;box-shadow:0 18px 48px rgba(37,99,235,.13)}
+.beginner-hero-art{display:block;width:100%;height:auto;aspect-ratio:16/7;object-fit:cover;border:1px solid #dbe5f5;border-radius:20px;box-shadow:0 18px 48px rgba(37,99,235,.13)}
 .learn-visual-stack .learn-note{position:relative;margin:-28px 18px 0;background:rgba(255,255,255,.96);backdrop-filter:blur(10px)}
 .guide-mark.brand-official,.platform-mark.brand-official{padding:0;overflow:hidden;background:#0B0E11;box-shadow:0 8px 18px rgba(15,23,42,.20)}
 .guide-mark.brand-official.okx,.platform-mark.brand-official.okx{background:#000}
