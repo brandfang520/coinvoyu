@@ -151,6 +151,11 @@ body{background:var(--cv-bg)}
   gap:11px;
   min-width:0;
 }
+.hero-v2 .exchange-brand>div{
+  display:flex;
+  align-items:center;
+  min-height:42px;
+}
 .hero-v2 .exchange-item h3{
   margin:0;
   color:#17233b;
