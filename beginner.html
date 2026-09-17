@@ -4,74 +4,47 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="CoinVoyu 新手学习中心：按照基础概念、Bitcoin、交易所、第一次买币、钱包转账和资产安全的顺序，帮助完全新手一步一步学习加密货币。">
+<meta name="author" content="CoinVoyu 编辑团队">
 <link rel="canonical" href="https://www.coinvoyu.com/beginner.html">
 <title>加密货币新手学习中心：从0开始学什么？｜CoinVoyu</title>
 <link rel="stylesheet" href="style.css">
 <style>
-.learn-hero{padding:78px 0 70px;background:linear-gradient(#f7f9fc,#fff)}
-.learn-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
-.learn-hero h1{font-size:clamp(40px,5.5vw,62px);line-height:1.14;letter-spacing:-.04em;margin:0 0 22px;color:#111b31}
-.learn-lead{font-size:18px;color:#667085;max-width:690px}
-.learn-note{border:1px solid #e1e7ef;border-radius:18px;background:#fff;padding:28px;box-shadow:0 18px 50px rgba(20,33,61,.07)}
-.learn-note h2{font-size:23px;margin:0 0 14px}
-.learn-note ol{margin:0;padding-left:22px;color:#596579}
-.learn-note li{margin:8px 0}
-.learn-section{padding:76px 0}
-.learn-section.soft{background:#f7f9fc}
-.learn-heading{margin-bottom:30px}
-.learn-heading h2{font-size:34px;line-height:1.25;margin:0 0 8px}
-.learn-heading p{color:#7a8495;margin:0}
-.learn-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.learn-card{display:block;border:1px solid #e2e7ef;border-radius:16px;background:#fff;padding:25px;transition:.2s}
-.learn-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(20,33,61,.07)}
-.learn-num{font-size:12px;font-weight:800;letter-spacing:.12em;color:#8a95a6}
-.learn-card h3{font-size:21px;margin:11px 0 8px}
-.learn-card p{font-size:14px;color:#707b8e;margin:0 0 15px}
-.learn-card b{font-size:13px}
-.learn-check{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.learn-check>div{border:1px solid #e2e7ef;border-radius:15px;background:#fff;padding:24px}
-.learn-check h3{margin:0 0 12px;font-size:19px}
-.learn-check ul{margin:0;padding-left:20px;color:#596579}
-.learn-check li{margin:7px 0}
-.learn-final{padding:60px 0;background:#14213d;color:#fff}
-.learn-final-in{display:flex;justify-content:space-between;align-items:center;gap:35px}
-.learn-final h2{margin:0 0 10px;font-size:31px}
-.learn-final p{margin:0;color:#c5cedc;max-width:720px}
-@media(max-width:850px){.learn-grid{grid-template-columns:1fr}.learn-steps{grid-template-columns:1fr 1fr}.learn-check{grid-template-columns:1fr}.learn-final-in{display:block}}
-@media(max-width:520px){.learn-hero{padding:58px 0}.learn-section{padding:60px 0}.learn-steps{grid-template-columns:1fr}.learn-hero h1{font-size:42px}.learn-heading h2{font-size:29px}}
+.b56-page{background:#f5f7fb;color:#17233b}
+.b56-hero{position:relative;min-height:620px;display:flex;align-items:center;overflow:hidden;isolation:isolate;background:#eef4ff}
+.b56-hero-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}
+.b56-hero:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(247,250,255,.98) 0%,rgba(247,250,255,.93) 40%,rgba(247,250,255,.54) 67%,rgba(247,250,255,.18) 100%)}
+.b56-hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center;padding:78px 0 70px}
+.b56-kicker{margin:0 0 14px;color:#65748b;font-size:11px;font-weight:900;letter-spacing:.16em}
+.b56-hero h1{margin:0 0 22px;color:#111b31;font-size:clamp(40px,5.2vw,62px);line-height:1.14;letter-spacing:-.04em}
+.b56-lead{max-width:690px;margin:0;color:#647289;font-size:18px;line-height:1.85}
+.b56-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.b56-route{padding:28px;border:1px solid rgba(219,229,245,.94);border-radius:20px;background:rgba(255,255,255,.91);box-shadow:0 22px 58px rgba(37,99,235,.15);backdrop-filter:blur(12px)}
+.b56-route small{color:#68758a;font-weight:700}.b56-route h2{margin:7px 0 13px;font-size:24px}.b56-route ol{margin:0;padding-left:22px;color:#59677c}.b56-route li{margin:8px 0}
+.b56-section{padding:74px 0}.b56-alt{background:#eef3fa}
+.b56-heading{max-width:760px;margin-bottom:30px}.b56-heading h2{margin:0 0 9px;font-size:34px;line-height:1.25}.b56-heading p{margin:0;color:#6e7b90}
+.b56-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.b56-card{display:flex;min-height:230px;flex-direction:column;padding:25px;border:1px solid #dfe6f0;border-radius:17px;background:#fff;box-shadow:0 7px 22px rgba(20,33,61,.035);transition:.2s}
+.b56-card:hover{transform:translateY(-3px);border-color:#bfd0ee;box-shadow:0 15px 34px rgba(37,99,235,.10)}
+.b56-num{color:#2563eb;font-size:12px;font-weight:900;letter-spacing:.12em}.b56-card:nth-child(2) .b56-num{color:#d58b00}.b56-card:nth-child(3) .b56-num{color:#7c3aed}.b56-card:nth-child(4) .b56-num{color:#16a34a}.b56-card:nth-child(5) .b56-num{color:#0891b2}.b56-card:nth-child(6) .b56-num{color:#475569}
+.b56-card h3{margin:11px 0 8px;font-size:20px}.b56-card p{margin:0 0 16px;color:#6d798c;font-size:14px}.b56-card b{margin-top:auto;color:#2458d3;font-size:13px}
+.b56-practice{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.b56-practice>div{padding:27px;border:1px solid #dfe6f0;border-radius:18px;background:#fff}.b56-practice h3{margin:0 0 10px;font-size:21px}.b56-practice p{margin:0 0 18px;color:#68758a}.b56-checks{margin:0;padding-left:20px;color:#59677c}.b56-checks li{margin:8px 0}
+.b56-table-wrap{overflow-x:auto;border:1px solid #dfe6f0;border-radius:18px;background:#fff;box-shadow:0 8px 24px rgba(20,33,61,.035)}
+.b56-table{width:100%;min-width:760px;border-collapse:collapse}.b56-table th,.b56-table td{padding:17px 18px;text-align:left;vertical-align:top;border-bottom:1px solid #e5eaf2}.b56-table th{background:#f3f7ff;color:#17315f;font-size:13px}.b56-table td{color:#5e6c82;font-size:14px}.b56-table tr:last-child td{border-bottom:0}.b56-table strong{color:#17233b}
+.b56-reading{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.b56-reading a{display:block;padding:23px;border:1px solid #dfe6f0;border-radius:16px;background:#fff}.b56-reading span{color:#71809a;font-size:11px;font-weight:900;letter-spacing:.09em}.b56-reading h3{margin:10px 0 8px;font-size:19px}.b56-reading p{margin:0 0 14px;color:#6d798c;font-size:14px}.b56-reading b{color:#2458d3;font-size:13px}
+.b56-meta{padding:18px 0 12px}.b56-meta-panel{display:grid;grid-template-columns:1.08fr .92fr;gap:34px;padding:32px 34px;border:1px solid #dfe6f1;border-radius:20px;background:#fff;box-shadow:0 12px 34px rgba(20,33,61,.045)}
+.b56-meta h2{margin:0 0 8px;font-size:24px}.b56-meta p{margin:0;color:#66748a;font-size:14px}.b56-source-links{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.b56-source-links a{padding:13px 14px;border:1px solid #dfe6f1;border-radius:12px;background:#f8faff}.b56-source-links strong,.b56-source-links span{display:block}.b56-source-links strong{color:#2458d3;font-size:14px}.b56-source-links span{margin-top:3px;color:#748197;font-size:12px}
+.b56-trust{padding-left:32px;border-left:1px solid #e5eaf2}.b56-risk{margin-top:14px!important;padding:10px 12px;border-radius:10px;background:#f4f7fb;color:#59677c!important;font-size:13px!important}.b56-trust-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:15px}.b56-trust-links a{color:#2458d3;font-size:13px;font-weight:800}
+.b56-final{padding:30px 0 70px}.b56-final-in{display:flex;align-items:center;justify-content:space-between;gap:35px;padding:34px 38px;border-radius:22px;background:radial-gradient(circle at 86% 15%,rgba(124,58,237,.42),transparent 28%),linear-gradient(135deg,#101b36,#14213d 58%,#213a73);box-shadow:0 18px 48px rgba(20,33,61,.18);color:#fff}.b56-final h2{margin:0 0 9px;font-size:30px}.b56-final p{max-width:700px;margin:0;color:#c8d2e2}.b56-final .btn{flex:0 0 auto}
+@media(max-width:850px){.b56-hero{min-height:auto}.b56-hero:before{background:linear-gradient(180deg,rgba(247,250,255,.97) 0%,rgba(247,250,255,.90) 65%,rgba(247,250,255,.74) 100%)}.b56-hero-grid{grid-template-columns:1fr;padding:60px 0}.b56-steps{grid-template-columns:1fr 1fr}.b56-practice,.b56-meta-panel{grid-template-columns:1fr}.b56-trust{padding-left:0;padding-top:24px;border-left:0;border-top:1px solid #e5eaf2}.b56-reading{grid-template-columns:1fr}.b56-source-links{grid-template-columns:1fr}}
+@media(max-width:620px){.b56-hero-art{object-position:66% center}.b56-hero h1{font-size:42px}.b56-lead{font-size:16px}.b56-section{padding:58px 0}.b56-heading h2{font-size:29px}.b56-steps{grid-template-columns:1fr}.b56-card{min-height:0}.b56-meta-panel{padding:24px 20px}.b56-final-in{display:block;padding:28px 22px}.b56-final .btn{margin-top:18px}}
 </style>
 <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"BreadcrumbList",
-  "itemListElement":[
-    {"@type":"ListItem","position":1,"name":"首页","item":"https://www.coinvoyu.com/"},
-    {"@type":"ListItem","position":2,"name":"新手入门","item":"https://www.coinvoyu.com/beginner.html"}
-  ]
-}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://www.coinvoyu.com/"},{"@type":"ListItem","position":2,"name":"新手入门","item":"https://www.coinvoyu.com/beginner.html"}]}
 </script>
-
-<style>
-.v24-nav{max-width:1120px;margin:28px auto 0;background:#fff;border:1px solid #e2e7ef;border-radius:18px;padding:24px}
-.v24-nav h2{margin:0 0 7px;color:#17233b;font-size:25px}
-.v24-nav p{margin:0 0 17px;color:#68758a;font-size:14px;line-height:1.7}
-.v24-nav-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.v24-nav-card{display:block;text-decoration:none;border:1px solid #e4e8ef;border-radius:13px;padding:17px;color:#17233b;transition:.18s}
-.v24-nav-card:hover{transform:translateY(-2px);border-color:#cbd4e1}
-.v24-nav-card span{display:block;font-size:11px;font-weight:800;letter-spacing:.08em;color:#71809a;margin-bottom:7px}
-.v24-nav-card strong{font-size:15px}
-.v24-nav-card small{display:block;color:#6b7587;margin-top:7px;line-height:1.5}
-@media(max-width:800px){.v24-nav-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.v24-nav-grid{grid-template-columns:1fr}}
-</style>
-
-
-<style id="v32-visual">
-:root{--v32-blue:#2563eb;--v32-purple:#7c3aed;--v32-gold:#f59e0b;--v32-green:#16a34a;--v32-cyan:#0891b2}
-body{background:#f5f7fb}
-</style>
-<meta name="author" content="CoinVoyu 编辑团队">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"加密货币新手学习中心：从0开始学什么？","description":"CoinVoyu 新手学习中心：按照基础概念、Bitcoin、交易所、第一次买币、钱包转账和资产安全的顺序，帮助完全新手一步一步学习加密货币。","url":"https://www.coinvoyu.com/beginner.html","dateModified":"2026-09-16","author":{"@type":"Organization","name":"CoinVoyu 编辑团队","url":"https://www.coinvoyu.com/author.html"},"publisher":{"@type":"Organization","name":"CoinVoyu","url":"https://www.coinvoyu.com/"}}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"加密货币新手学习中心：从0开始学什么？","description":"按照基础概念、Bitcoin、交易所、第一次买币、钱包转账和资产安全的顺序，帮助完全新手一步一步学习加密货币。","url":"https://www.coinvoyu.com/beginner.html","dateModified":"2026-09-17","author":{"@type":"Organization","name":"CoinVoyu 编辑团队","url":"https://www.coinvoyu.com/author.html"},"publisher":{"@type":"Organization","name":"CoinVoyu","url":"https://www.coinvoyu.com/"}}
+</script>
 </head>
 <body>
 <header class="site-header">
@@ -91,142 +64,104 @@ body{background:#f5f7fb}
   </div>
 </header>
 
-<main>
-<section class="learn-hero">
-  <img class="beginner-hero-art" src="assets/images/heroes/beginner-hero.webp" alt="从区块链基础、Bitcoin、交易所、买币到钱包安全的六步学习路线" width="1600" height="690" fetchpriority="high">
-  <div class="container learn-grid">
-    <div>
-      <p class="eyebrow">BEGINNER LEARNING CENTER</p>
-      <h1>加密货币新手，<br>从这里开始学习</h1>
-      <p class="learn-lead">如果你刚接触 Bitcoin、交易所和钱包，不需要一次把所有术语都学会。按照一条清晰的顺序，从基础概念到资产安全，先把最重要的知识建立起来。</p>
-      <div class="actions">
-        <a class="btn primary" href="bitcoin.html">先认识 Bitcoin</a>
-        <a class="btn" href="exchange.html">了解交易所</a>
-      </div>
-    </div>
-    <aside class="learn-note">
-      <small>推荐学习顺序</small>
-      <h2>6 步建立基础</h2>
-      <ol>
-        <li>什么是加密货币</li>
-        <li>认识 Bitcoin</li>
-        <li>选择交易所</li>
-        <li>第一次买币</li>
-        <li>钱包与转账</li>
-        <li>资产安全与风险</li>
-      </ol>
-    </aside>
-  </div>
-</section>
-
-<section class="learn-section">
-  <div class="container">
-    <div class="learn-heading">
-      <p class="eyebrow">START HERE</p>
-      <h2>新手按这 6 步学，最不容易乱</h2>
-      <p>每一步只解决一个问题。看完当前内容，再进入下一步。</p>
-    </div>
-    <div class="learn-steps">
-      <a class="learn-card" href="bitcoin.html">
-        <span class="learn-num">01</span><h3>先搞懂什么是加密货币</h3>
-        <p>了解数字资产、区块链、Bitcoin 等最基础的概念。</p><b>开始学习 →</b>
-      </a>
-      <a class="learn-card" href="bitcoin.html">
-        <span class="learn-num">02</span><h3>认识 Bitcoin</h3>
-        <p>从 BTC 的用途、总量、价值和价格波动开始认识比特币。</p><b>学习 Bitcoin →</b>
-      </a>
-      <a class="learn-card" href="exchange.html">
-        <span class="learn-num">03</span><h3>了解交易所</h3>
-        <p>先弄清交易所是什么，再了解注册、充值、买币等基础操作。</p><b>进入交易所教程 →</b>
-      </a>
-      <a class="learn-card" href="btc-buying-methods.html">
-        <span class="learn-num">04</span><h3>第一次购买 BTC</h3>
-        <p>了解常见购买方式，以及新手第一次操作应该注意什么。</p><b>学习购买方法 →</b>
-      </a>
-      <a class="learn-card" href="wallet-basics.html">
-        <span class="learn-num">05</span><h3>钱包与转账</h3>
-        <p>理解地址、钱包、网络、手续费和转账确认这些基础概念。</p><b>学习钱包基础 →</b>
-      </a>
-      <a class="learn-card" href="crypto-security-first.html">
-        <span class="learn-num">06</span><h3>最后学资产安全</h3>
-        <p>掌握助记词、私钥、验证码和常见骗局等安全常识。</p><b>学习安全知识 →</b>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="learn-section soft"><div class="container"><div class="learn-heading"><p class="eyebrow">PRACTICE NEXT</p><h2>学完基础，下一步做什么？</h2><p>如果你已经看懂 Bitcoin、交易所和钱包基础，可以进入实操中心，按顺序学习第一次注册、买 BTC、使用钱包和转账。</p></div><div class="learn-check"><div><h3>新手实操中心</h3><p>把知识串成一条实际操作路线，减少第一次操作时的混乱。</p><a class="btn primary" href="practice.html">进入新手实操中心 →</a></div><div><h3>先别急着操作</h3><p>第一次涉及真实资产时，先确认入口、网络、地址和金额，并优先小额测试。</p></div></div></div></section>
-
-<section class="learn-section soft">
-  <div class="container">
-    <div class="learn-heading">
-      <p class="eyebrow">BEFORE YOU TRADE</p>
-      <h2>新手暂时不用急着学这些</h2>
-      <p>刚开始最重要的是建立基础，不是把交易功能全部打开。</p>
-    </div>
-    <div class="learn-check">
+<main class="b56-page">
+  <section class="b56-hero">
+    <img class="b56-hero-art" src="assets/images/heroes/beginner-hero.webp" alt="从区块链基础、Bitcoin、交易所、买币到钱包安全的六步学习路线" width="1600" height="690" fetchpriority="high">
+    <div class="container b56-hero-grid">
       <div>
-        <h3>可以先放一放</h3>
-        <ul>
-          <li>杠杆和合约交易</li>
-          <li>复杂技术指标</li>
-          <li>高频短线策略</li>
-          <li>所谓“稳赚”或“带单”方法</li>
-        </ul>
+        <p class="b56-kicker">BEGINNER LEARNING CENTER</p>
+        <h1>加密货币新手，<br>从这里开始学习</h1>
+        <p class="b56-lead">如果你刚接触 Bitcoin、交易所和钱包，不需要一次弄懂所有术语。沿着一条清晰路线，先建立基础概念，再学习操作与资产安全。</p>
+        <div class="b56-actions"><a class="btn primary" href="bitcoin.html">先认识 Bitcoin</a><a class="btn" href="exchange.html">了解交易所</a></div>
       </div>
-      <div>
-        <h3>应该优先掌握</h3>
-        <ul>
-          <li>Bitcoin 和稳定币的基本区别</li>
-          <li>交易所与钱包的区别</li>
-          <li>地址和网络是否匹配</li>
-          <li>助记词、私钥和验证码安全</li>
-        </ul>
+      <aside class="b56-route">
+        <small>推荐学习顺序</small>
+        <h2>6 步建立基础</h2>
+        <ol><li>什么是加密货币</li><li>认识 Bitcoin</li><li>了解交易所</li><li>第一次买币</li><li>钱包与转账</li><li>资产安全与风险</li></ol>
+      </aside>
+    </div>
+  </section>
+
+  <section class="b56-section">
+    <div class="container">
+      <div class="b56-heading"><p class="b56-kicker">START HERE</p><h2>新手按这 6 步学，最不容易乱</h2><p>每一步先解决一个关键问题，看懂当前内容以后再进入下一步。</p></div>
+      <div class="b56-steps">
+        <a class="b56-card" href="bitcoin.html"><span class="b56-num">01 · 基础概念</span><h3>先搞懂什么是加密货币</h3><p>了解数字资产、区块链和 Bitcoin 的基本关系。</p><b>开始学习 →</b></a>
+        <a class="b56-card" href="bitcoin-guide.html"><span class="b56-num">02 · BITCOIN</span><h3>认识 Bitcoin</h3><p>理解 BTC 的用途、总量、价值来源和价格波动。</p><b>学习 Bitcoin →</b></a>
+        <a class="b56-card" href="exchange.html"><span class="b56-num">03 · 交易所</span><h3>了解交易所</h3><p>先弄清交易所是什么，再了解注册和基础操作。</p><b>进入交易所教程 →</b></a>
+        <a class="b56-card" href="btc-buying-methods.html"><span class="b56-num">04 · 第一次买币</span><h3>第一次购买 BTC</h3><p>了解常见购买方式、交易对以及第一次操作的注意事项。</p><b>学习购买方法 →</b></a>
+        <a class="b56-card" href="wallet-basics.html"><span class="b56-num">05 · 钱包与转账</span><h3>理解钱包、地址和网络</h3><p>学习地址、网络、手续费和转账确认这些基础概念。</p><b>学习钱包基础 →</b></a>
+        <a class="b56-card" href="crypto-security-first.html"><span class="b56-num">06 · 资产安全</span><h3>最后建立安全习惯</h3><p>掌握助记词、私钥、验证码和常见骗局等安全知识。</p><b>学习安全知识 →</b></a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="learn-section">
-  <div class="container">
-    <div class="learn-heading">
-      <p class="eyebrow">CONTINUE LEARNING</p>
-      <h2>学完基础，再继续深入</h2>
-      <p>下面这些内容可以作为第二阶段学习。</p>
+  <section class="b56-section b56-alt">
+    <div class="container">
+      <div class="b56-heading"><p class="b56-kicker">PRACTICE NEXT</p><h2>学完基础，再开始第一次操作</h2><p>真正涉及资产以前，先把操作路线和安全检查准备好。</p></div>
+      <div class="b56-practice">
+        <div><h3>进入新手实操中心</h3><p>按照注册、购买 BTC、使用钱包和转账的顺序继续学习。</p><a class="btn primary" href="practice.html">进入实操中心 →</a></div>
+        <div><h3>操作前先检查</h3><ul class="b56-checks"><li>确认访问的是正确入口</li><li>核对网络与地址是否匹配</li><li>第一次转账优先小额测试</li><li>不向任何人透露验证码和助记词</li></ul></div>
+      </div>
     </div>
-    <div class="learn-steps">
-      <a class="learn-card" href="bitcoin-value.html"><h3>比特币为什么会有价值？</h3><p>从稀缺性、网络效应和市场共识理解 BTC 的价值来源。</p><b>阅读文章 →</b></a>
-      <a class="learn-card" href="bitcoin-supply.html"><h3>为什么比特币只有 2100 万枚？</h3><p>理解比特币供应量和稀缺性。</p><b>阅读文章 →</b></a>
-      <a class="learn-card" href="btc-usdt-difference.html"><h3>BTC 和 USDT 有什么区别？</h3><p>理解波动型资产与稳定币的基础差异。</p><b>阅读文章 →</b></a>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="learn-final">
-  <div class="container learn-final-in">
-    <div>
-      <h2>第一次接触加密货币，不用急。</h2>
-      <p>先把基础、安全和风险意识建立起来，再逐步学习交易与钱包操作。</p>
+  <section class="b56-section">
+    <div class="container">
+      <div class="b56-heading"><p class="b56-kicker">LEARNING PRIORITIES</p><h2>新手阶段，什么应该先学？</h2><p>学习顺序比一次知道多少术语更重要。</p></div>
+      <div class="b56-table-wrap">
+        <table class="b56-table">
+          <thead><tr><th>阶段</th><th>优先掌握</th><th>暂时不要急</th><th>完成标志</th></tr></thead>
+          <tbody>
+            <tr><td><strong>建立概念</strong></td><td>Bitcoin、区块链、USDT 的基本区别</td><td>预测短期价格</td><td>能用自己的话解释三者用途</td></tr>
+            <tr><td><strong>准备操作</strong></td><td>交易所、钱包、地址和网络</td><td>同时注册很多平台</td><td>知道资产放在哪里、如何转移</td></tr>
+            <tr><td><strong>第一次实践</strong></td><td>核对入口、金额、网络并小额测试</td><td>杠杆、合约和高频交易</td><td>能独立完成检查而不依赖陌生人</td></tr>
+            <tr><td><strong>长期学习</strong></td><td>风险管理、资料核对和账户安全</td><td>所谓“稳赚”或“带单”方案</td><td>遇到宣传时会先验证来源与风险</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    <a class="btn light" href="index.html">返回首页</a>
-  </div>
-</section>
+  </section>
 
-<div class="container article-wrap">
-<section class="v41-source-panel v45-source-panel" aria-label="权威资料与核对范围"><p class="v41-source-kicker">AUTHORITATIVE SOURCES</p><h2>权威资料与核对范围</h2><p>资料核对日期：2026-09-16。本次重点核对：新手学习顺序应先理解基本概念和风险，再选择钱包、学习交易与实际操作，不把入门内容视为投资建议。</p><ul><li><a href="https://bitcoin.org/en/getting-started" target="_blank" rel="noopener noreferrer">Bitcoin.org：Getting started</a><span>了解风险、选择钱包、接收和使用 Bitcoin 的入门路线</span></li><li><a href="https://ethereum.org/security/" target="_blank" rel="noopener noreferrer">Ethereum.org：Security and scam prevention</a><span>开始使用钱包和链上应用前的安全基础</span></li></ul><p class="v41-source-note">说明：外部资料可能继续更新；涉及实时费用、平台功能或操作规则时，请以来源页面的最新版本为准。</p></section>
-</div>
-<section class="v40-guide-trust" aria-label="内容信任说明">
-  <div><p class="eyebrow">CONTENT TRUST</p><h2>内容责任与更新说明</h2><p>本页由 CoinVoyu 编辑团队维护，面向中文新手读者。信任信息模板更新于 2026-09-16；涉及平台规则、技术参数或安全操作时，请同时核对相关官方资料。</p></div>
-  <div class="v40-guide-links"><a href="author.html">作者与编辑 →</a><a href="editorial-policy.html">编辑规范 →</a><a href="contact.html">联系与纠错 →</a></div>
-</section>
+  <section class="b56-section b56-alt">
+    <div class="container">
+      <div class="b56-heading"><p class="b56-kicker">CONTINUE LEARNING</p><h2>完成入门后，继续阅读这些内容</h2><p>按照自己的进度选择下一篇，不需要一次全部读完。</p></div>
+      <div class="b56-reading">
+        <a href="bitcoin-value.html"><span>BITCOIN</span><h3>比特币为什么会有价值？</h3><p>从稀缺性、网络效应和市场共识理解 BTC。</p><b>阅读文章 →</b></a>
+        <a href="btc-usdt-difference.html"><span>NEW USER</span><h3>BTC 和 USDT 有什么区别？</h3><p>理解波动型资产与稳定币的用途差异。</p><b>阅读文章 →</b></a>
+        <a href="exchange-vs-wallet.html"><span>WALLET</span><h3>交易所和钱包有什么区别？</h3><p>理解平台账户与个人钱包的基本差异。</p><b>阅读文章 →</b></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="b56-meta">
+    <div class="container">
+      <div class="b56-meta-panel">
+        <div>
+          <p class="b56-kicker">SOURCES</p><h2>资料来源</h2>
+          <p>学习路线和安全提示优先参考公开、可核对的官方资料。</p>
+          <div class="b56-source-links">
+            <a href="https://bitcoin.org/en/getting-started" target="_blank" rel="noopener noreferrer"><strong>Bitcoin.org</strong><span>Bitcoin 新手入门与钱包基础</span></a>
+            <a href="https://ethereum.org/security/" target="_blank" rel="noopener noreferrer"><strong>Ethereum.org</strong><span>钱包安全与常见骗局预防</span></a>
+          </div>
+        </div>
+        <div class="b56-trust">
+          <p class="b56-kicker">CONTENT TRUST</p><h2>内容说明</h2>
+          <p>本页由 CoinVoyu 编辑团队整理并持续维护，最近核对日期为 2026-09-17。平台规则可能变化，实际使用前请再次核对官方页面。</p>
+          <p class="b56-risk">内容仅用于知识学习，不构成投资建议。</p>
+          <div class="b56-trust-links"><a href="author.html">作者与编辑</a><a href="editorial-policy.html">编辑规范</a><a href="contact.html">联系与纠错</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="b56-final">
+    <div class="container b56-final-in">
+      <div><h2>第一次接触加密货币，不用急。</h2><p>先把基础、安全和风险意识建立起来，再逐步学习交易与钱包操作。</p></div>
+      <a class="btn light" href="index.html">返回首页</a>
+    </div>
+  </section>
 </main>
-
-
-<section class="v24-nav">
-  <h2>继续学习</h2>
-  <p>从新手基础出发，你可以继续进入不同专题，按自己的节奏学习。</p>
-  <div class="v24-nav-grid"><a class="v24-nav-card" href="bitcoin-guide.html"><span>01 · BITCOIN</span><strong>Bitcoin</strong><small>认识 BTC 的基础知识</small></a><a class="v24-nav-card" href="exchange.html"><span>02 · 交易所</span><strong>交易所</strong><small>了解注册、买币与基础操作</small></a><a class="v24-nav-card" href="wallet-guide.html"><span>03 · 钱包安全</span><strong>钱包安全</strong><small>学习钱包、地址、私钥与助记词</small></a><a class="v24-nav-card" href="ethereum-guide.html"><span>04 · ETHEREUM / WEB3</span><strong>Ethereum / Web3</strong><small>认识 ETH、Gas、DeFi 与 Web3</small></a></div>
-</section>
 
 <footer>
   <div class="container foot">
