@@ -68,16 +68,7 @@
 <body>
 <header class="site-header"><div class="container nav">
 <a class="brand" href="index.html"><span class="logo">C</span><span>CoinVoyu</span></a>
-<nav>
-<a href="index.html">首页</a>
-<a href="beginner.html">新手入门</a>
-<a href="bitcoin-guide.html">Bitcoin</a>
-<a href="exchange.html">交易所</a>
-<a href="wallet-guide.html">钱包安全</a>
-<a href="ethereum-guide.html">Ethereum / Web3</a>
-<a class="active" href="articles.html">文章</a>
-<a href="about.html">关于</a>
-</nav>
+<nav aria-label="主导航"><a href="index.html">首页</a><a href="beginner.html">新手入门</a><a href="bitcoin.html">Bitcoin</a><a href="exchange.html">交易所</a><a href="security.html">钱包安全</a><a href="web3.html">Ethereum / Web3</a><a class="active" href="articles.html">文章</a><a href="tools.html">工具</a><a href="about.html">关于</a></nav>
 </div></header>
 <main class="v25-page">
 <div class="v25-wrap">
@@ -111,6 +102,7 @@
 </div>
 </section>
 <section class="v25-grid" id="v25-grid">
+<a class="v25-article-card" data-category="exchange" href="binance-vs-okx.html"><span class="v25-tag">交易所</span><h3>币安 Binance 与欧易 OKX 怎么选？</h3><p>从新手任务、功能入口、验证方式和风险检查角度对比。</p><b>阅读文章 →</b></a>
 <a class="v25-article-card" data-category="beginner" href="fed-rate-hike-september-2026.html"><span class="v25-tag">热点解读</span><h3>美联储加息25个基点，比特币为何没有立即大跌？</h3><p>区分政策决定、市场预期与短期价格反应。</p><b>阅读文章 →</b></a>
 <a class="v25-article-card" data-category="web3" href="nasdaq-kraken-tokenized-stocks.html"><span class="v25-tag">热点解读</span><h3>纳斯达克投资 Kraken 母公司，代币化股票意味着什么？</h3><p>理解代币化证券、平台基础设施与投资者权利。</p><b>阅读文章 →</b></a>
 <a class="v25-article-card" data-category="beginner" href="us-crypto-tax-bill-2026.html"><span class="v25-tag">热点解读</span><h3>美国加密税收法案推进，普通用户先看懂什么？</h3><p>委员会推进不等于法案已经生效。</p><b>阅读文章 →</b></a>
@@ -336,7 +328,7 @@
 </section>
 </div>
 </main>
-<section aria-label="新手实操与工具入口" style="max-width:1120px;margin:28px auto;padding:0 24px 36px"><div style="background:#f7f9fc;border:1px solid #e2e7ef;border-radius:18px;padding:26px"><h2 style="margin:0 0 8px;font-size:24px;color:#14213d">从学习到实际操作</h2><p style="margin:0 0 18px;color:#66758d">已经了解基础概念？可以继续按实操路线学习注册、买 BTC、钱包与转账；需要做简单估算时，再使用工具中心。</p><div style="display:flex;gap:12px;flex-wrap:wrap"><a href="practice.html" style="display:inline-block;padding:11px 16px;border-radius:10px;background:#14213d;color:#fff;text-decoration:none;font-weight:700">进入新手实操中心 →</a><a href="tools.html" style="display:inline-block;padding:11px 16px;border-radius:10px;background:#fff;border:1px solid #dbe2ec;color:#2458d3;text-decoration:none;font-weight:700">进入加密货币工具中心 →</a></div></div></section><footer><div class="container foot"><div><strong>CoinVoyu</strong><p>把数字资产知识，讲得简单一点。</p></div><div><a href="articles.html">文章</a><a href="tools.html">工具</a><a href="about.html">关于</a></div></div><div class="container copy">© 2026 CoinVoyu. Educational content only. Digital assets involve risk.</div></footer>
+<section aria-label="新手实操与工具入口" style="max-width:1120px;margin:28px auto;padding:0 24px 36px"><div style="background:#f7f9fc;border:1px solid #e2e7ef;border-radius:18px;padding:26px"><h2 style="margin:0 0 8px;font-size:24px;color:#14213d">从学习到实际操作</h2><p style="margin:0 0 18px;color:#66758d">已经了解基础概念？可以继续按实操路线学习注册、买 BTC、钱包与转账；需要做简单估算时，再使用工具中心。</p><div style="display:flex;gap:12px;flex-wrap:wrap"><a href="practice.html" style="display:inline-block;padding:11px 16px;border-radius:10px;background:#14213d;color:#fff;text-decoration:none;font-weight:700">进入新手实操中心 →</a><a href="tools.html" style="display:inline-block;padding:11px 16px;border-radius:10px;background:#fff;border:1px solid #dbe2ec;color:#2458d3;text-decoration:none;font-weight:700">进入加密货币工具中心 →</a></div></div></section><footer><div class="container foot"><div><strong>CoinVoyu</strong><p>把数字资产知识，讲得简单一点。</p></div><div class="foot-links"><a href="beginner.html">新手入门</a><a href="bitcoin.html">Bitcoin</a><a href="exchange.html">交易所</a><a href="security.html">钱包安全</a><a href="web3.html">Ethereum / Web3</a><a href="articles.html">文章</a><a href="tools.html">工具</a><a href="about.html">关于</a></div></div><div class="container copy">© 2026 CoinVoyu. Educational content only. Digital assets involve risk.</div></footer>
 <script>
 const buttons=[...document.querySelectorAll('.v25-filter')],cards=[...document.querySelectorAll('.v25-article-card')],input=document.getElementById('v28ArticleSearch'),result=document.getElementById('v28Result'),empty=document.getElementById('v28Empty');let activeFilter='all';
 function norm(s){return(s||'').toLowerCase().replace(/\s+/g,'')}
