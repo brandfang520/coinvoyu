@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.coinvoyu.com/about.html</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://www.coinvoyu.com/articles.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/articles.html</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.coinvoyu.com/author.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/beginner-mistakes.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/beginner.html</loc><lastmod>2026-09-16</lastmod></url>
@@ -25,6 +25,7 @@
   <url><loc>https://www.coinvoyu.com/cold-wallet.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/cross-chain-bridge.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/crypto-security-first.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/crypto-etp-explained.html</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.coinvoyu.com/crypto-volatility.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/custody.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/defi.html</loc><lastmod>2026-09-16</lastmod></url>
@@ -34,9 +35,11 @@
   <url><loc>https://www.coinvoyu.com/ethereum.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/exchange-vs-wallet.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/exchange.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/fed-rates-bitcoin.html</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.coinvoyu.com/gas-fee.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/hot-cold-wallet.html</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://www.coinvoyu.com/</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/</loc><lastmod>2026-09-17</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/hotspots.html</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.coinvoyu.com/kline.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/layer1-layer2.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/liquidity.html</loc><lastmod>2026-09-16</lastmod></url>
@@ -54,6 +57,7 @@
   <url><loc>https://www.coinvoyu.com/slippage.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/spot-trading.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/stablecoin.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/stablecoin-hotspot-risks.html</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.coinvoyu.com/token-approval.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/tools.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/utxo.html</loc><lastmod>2026-09-16</lastmod></url>
