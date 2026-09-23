@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/btc-usdt-difference.html",
+      "destination": "/bitcoin-usdt.html",
+      "permanent": true
+    }
+  ]
+}

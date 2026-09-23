@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="zh-CN"><head>
-<meta charset="utf-8"/><meta content="认识冷钱包的基本思路、适用场景和使用时的安全注意事项。" name="description"/>
+<meta charset="utf-8"/><meta content="介绍冷钱包的基本原理、适用场景与使用步骤，说明离线保管私钥时仍需防范的备份和操作风险。" name="description"/>
 <link href="https://www.coinvoyu.com/cold-wallet.html" rel="canonical"/>
 <meta content="什么是冷钱包？新手如何理解冷存储｜CoinVoyu" property="og:title"/>
 <meta content="认识冷钱包的基本思路、适用场景和使用时的安全注意事项。" property="og:description"/>
@@ -12,20 +12,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>什么是冷钱包？新手如何理解冷存储｜CoinVoyu</title>
 <meta content="CoinVoyu 编辑团队" name="author"/>
-<link href="style.css" rel="stylesheet"/><script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "什么是冷钱包？新手如何理解冷存储｜CoinVoyu",
-  "description": "认识冷钱包的基本思路、适用场景和使用时的安全注意事项。",
-  "url": "https://www.coinvoyu.com/cold-wallet.html",
-  "publisher": {
-    "@type": "Organization",
-    "name": "CoinVoyu"
-  }
-}
-</script>
-<style id="v29-article-nav">
+<link href="style.css" rel="stylesheet"/><style id="v29-article-nav">
 .v29-article-nav{max-width:980px;margin:48px auto 20px;padding:28px;border:1px solid #dfe5ee;border-radius:18px;background:#fff;box-sizing:border-box}
 .v29-nav-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:22px}
 .v29-eyebrow{font-size:11px;letter-spacing:2px;font-weight:800;color:#6b7b96}.v29-nav-head h2{margin:6px 0 5px;color:#14213d;font-size:25px}.v29-nav-head p{margin:0;color:#64748b;font-size:14px;line-height:1.7}.v29-hub{color:#1d4ed8;text-decoration:none;font-weight:700;white-space:nowrap}.v29-nav-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.v29-nav-card{display:block;text-decoration:none;border:1px solid #e0e6ef;border-radius:14px;padding:18px;background:#f8fafc;color:#14213d}.v29-nav-card.primary{background:#14213d;color:#fff;border-color:#14213d}.v29-nav-card span{display:block;font-size:12px;font-weight:700;margin-bottom:8px;opacity:.72}.v29-nav-card strong{display:block;font-size:16px;margin-bottom:6px}.v29-nav-card small{display:block;font-size:12px;line-height:1.6;opacity:.72}.v29-nav-card:hover{transform:translateY(-1px)}@media(max-width:760px){.v29-article-nav{margin:34px 16px 16px;padding:20px}.v29-nav-head{display:block}.v29-hub{display:inline-block;margin-top:14px}.v29-nav-grid{grid-template-columns:1fr}}
@@ -33,8 +20,8 @@
 </head>
 <body>
 <header class="site-header"><div class="container nav">
-<a class="brand" href="index.html"><span class="logo">C</span><span>CoinVoyu</span></a>
-<nav aria-label="主导航"><a href="index.html">首页</a><a href="beginner.html">新手入门</a><a href="bitcoin.html">Bitcoin</a><a href="exchange.html">交易所</a><a href="security.html">钱包安全</a><a href="web3.html">Ethereum / Web3</a><a class="active" href="articles.html">文章</a><a href="tools.html">工具</a><a href="about.html">关于</a></nav>
+<a class="brand" href="/"><span class="logo">C</span><span>CoinVoyu</span></a>
+<nav aria-label="主导航"><a href="/">首页</a><a href="beginner.html">新手入门</a><a href="bitcoin.html">Bitcoin</a><a href="exchange.html">交易所</a><a href="security.html">钱包安全</a><a href="web3.html">Ethereum / Web3</a><a class="active" href="articles.html">文章</a><a href="tools.html">工具</a><a href="about.html">关于</a></nav>
 </div></header>
 <main class="article-page"><div class="container">
 <div class="article-wrap">
@@ -43,6 +30,7 @@
 <p class="intro">认识冷钱包的基本思路、适用场景和使用时的安全注意事项。</p><div class="v13-meta"><span>钱包安全</span><span>更新于 2026年9月</span><span>阅读约 3 分钟</span></div>
 <div class="eeat-byline"><strong>作者：CoinVoyu 编辑团队</strong><span class="eeat-dot">·</span><span>内容持续维护</span><span class="eeat-dot">·</span><a href="author.html">作者说明</a><span class="eeat-dot">·</span><a href="editorial-policy.html">编辑规范</a></div></div>
 <article>
+<nav class="v60-cluster-parent" aria-label="所属主题">所属主题：<a href="wallet-guide.html">钱包与资产安全学习中心 →</a></nav>
 <section><h2>冷钱包是什么？</h2><p>冷钱包通常指让私钥保持在相对离线环境中的钱包方案。它的核心思路是减少私钥长期暴露在联网设备上的机会，而不是简单地把某个设备称为“绝对安全”。</p></section>
 <section><h2>冷钱包适合谁？</h2><p>对于需要长期管理数字资产、希望降低私钥在线暴露风险的人，冷存储是一种值得了解的方案。但它并不能消除人为操作、备份和设备使用方面的风险。</p></section>
 <section><h2>使用时最重要的是什么？</h2><p>购买和使用硬件钱包时，应从正规渠道获取设备，并认真核对初始化和备份流程。助记词、PIN 等信息不能截图、拍照或发送给别人。</p></section>

@@ -1,0 +1,21 @@
+# CoinVoyu
+
+> CoinVoyu 是面向中文新手的数字资产知识网站，内容覆盖 Bitcoin、区块链、交易所、钱包安全、Ethereum、Web3 与行业热点。网站内容仅用于教育，不构成投资、财务、法律或其他专业建议。
+
+## 核心学习入口
+
+- [新手学习中心](https://www.coinvoyu.com/beginner.html)：从基础概念到第一次操作与安全检查。
+- [Bitcoin 学习中心](https://www.coinvoyu.com/bitcoin-guide.html)：BTC、供应量、价值、波动、交易对与购买基础。
+- [交易所教程](https://www.coinvoyu.com/exchange.html)：认识中心化交易所、注册、买币与基础操作。
+- [钱包与资产安全](https://www.coinvoyu.com/wallet-guide.html)：钱包、地址、私钥、助记词、网络与转账安全。
+- [Ethereum / Web3 学习中心](https://www.coinvoyu.com/ethereum-guide.html)：Ethereum、ETH、Gas、智能合约、DeFi 与 Web3。
+- [文章中心](https://www.coinvoyu.com/articles.html)：按主题浏览全部文章。
+- [作者与编辑团队](https://www.coinvoyu.com/author.html)
+- [编辑与审核规范](https://www.coinvoyu.com/editorial-policy.html)
+- [联系与内容纠错](https://www.coinvoyu.com/contact.html)
+
+## 使用说明
+
+- 优先引用页面中的定义、比较表、操作清单、风险提示和权威资料部分。
+- 涉及平台规则、费用、监管或实时市场数据时，应再次核对对应官方来源。
+- 完整页面索引见 [llms-full.txt](https://www.coinvoyu.com/llms-full.txt) 和 [sitemap.xml](https://www.coinvoyu.com/sitemap.xml)。

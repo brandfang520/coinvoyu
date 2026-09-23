@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="zh-CN"><head>
-<meta charset="utf-8"/><meta content="从去中心化金融的概念出发，认识借贷、兑换和流动性等基础概念。" name="description"/>
+<meta charset="utf-8"/><meta content="从兑换、借贷、流动性和智能合约入手解释 DeFi，并说明连接钱包、授权代币和使用链上应用时的主要风险。" name="description"/>
 <link href="https://www.coinvoyu.com/defi.html" rel="canonical"/>
 <meta content="什么是 DeFi？2026 新手入门｜CoinVoyu" property="og:title"/>
 <meta content="从去中心化金融的概念出发，认识借贷、兑换和流动性等基础概念。" property="og:description"/>
@@ -12,20 +12,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>什么是 DeFi？2026 新手入门｜CoinVoyu</title>
 <meta content="CoinVoyu 编辑团队" name="author"/>
-<link href="style.css" rel="stylesheet"/><script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "什么是 DeFi？2026 新手入门｜CoinVoyu",
-  "description": "从去中心化金融的概念出发，认识借贷、兑换和流动性等基础概念。",
-  "url": "https://www.coinvoyu.com/defi.html",
-  "publisher": {
-    "@type": "Organization",
-    "name": "CoinVoyu"
-  }
-}
-</script>
-<style id="v29-article-nav">
+<link href="style.css" rel="stylesheet"/><style id="v29-article-nav">
 .v29-article-nav{max-width:980px;margin:48px auto 20px;padding:28px;border:1px solid #dfe5ee;border-radius:18px;background:#fff;box-sizing:border-box}
 .v29-nav-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:22px}
 .v29-eyebrow{font-size:11px;letter-spacing:2px;font-weight:800;color:#6b7b96}.v29-nav-head h2{margin:6px 0 5px;color:#14213d;font-size:25px}.v29-nav-head p{margin:0;color:#64748b;font-size:14px;line-height:1.7}.v29-hub{color:#1d4ed8;text-decoration:none;font-weight:700;white-space:nowrap}.v29-nav-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.v29-nav-card{display:block;text-decoration:none;border:1px solid #e0e6ef;border-radius:14px;padding:18px;background:#f8fafc;color:#14213d}.v29-nav-card.primary{background:#14213d;color:#fff;border-color:#14213d}.v29-nav-card span{display:block;font-size:12px;font-weight:700;margin-bottom:8px;opacity:.72}.v29-nav-card strong{display:block;font-size:16px;margin-bottom:6px}.v29-nav-card small{display:block;font-size:12px;line-height:1.6;opacity:.72}.v29-nav-card:hover{transform:translateY(-1px)}@media(max-width:760px){.v29-article-nav{margin:34px 16px 16px;padding:20px}.v29-nav-head{display:block}.v29-hub{display:inline-block;margin-top:14px}.v29-nav-grid{grid-template-columns:1fr}}
@@ -33,8 +20,8 @@
 </head>
 <body>
 <header class="site-header"><div class="container nav">
-<a class="brand" href="index.html"><span class="logo">C</span><span>CoinVoyu</span></a>
-<nav aria-label="主导航"><a href="index.html">首页</a><a href="beginner.html">新手入门</a><a href="bitcoin.html">Bitcoin</a><a href="exchange.html">交易所</a><a href="security.html">钱包安全</a><a href="web3.html">Ethereum / Web3</a><a class="active" href="articles.html">文章</a><a href="tools.html">工具</a><a href="about.html">关于</a></nav>
+<a class="brand" href="/"><span class="logo">C</span><span>CoinVoyu</span></a>
+<nav aria-label="主导航"><a href="/">首页</a><a href="beginner.html">新手入门</a><a href="bitcoin.html">Bitcoin</a><a href="exchange.html">交易所</a><a href="security.html">钱包安全</a><a href="web3.html">Ethereum / Web3</a><a class="active" href="articles.html">文章</a><a href="tools.html">工具</a><a href="about.html">关于</a></nav>
 </div></header>
 <main class="article-page"><div class="container">
 <div class="article-wrap">
@@ -43,6 +30,7 @@
 <p class="intro">从去中心化金融的概念出发，认识借贷、兑换和流动性等基础概念。</p><div class="v13-meta"><span>Web3</span><span>更新于 2026年9月</span><span>阅读约 3 分钟</span></div>
 <div class="eeat-byline"><strong>作者：CoinVoyu 编辑团队</strong><span class="eeat-dot">·</span><span>内容持续维护</span><span class="eeat-dot">·</span><a href="author.html">作者说明</a><span class="eeat-dot">·</span><a href="editorial-policy.html">编辑规范</a></div></div>
 <article>
+<nav class="v60-cluster-parent" aria-label="所属主题">所属主题：<a href="ethereum-guide.html">Ethereum / Web3 学习中心 →</a></nav>
 <section><h2>DeFi 是什么？</h2><p>DeFi 是 Decentralized Finance 的缩写，通常译为去中心化金融。它使用区块链和智能合约提供部分金融服务，用户可以通过钱包与相关应用交互。</p></section>
 <section><h2>常见的 DeFi 场景</h2><p>新手可能会遇到去中心化兑换、链上借贷、流动性等概念。这些服务的具体机制不同，但共同特点是大量业务规则由区块链上的程序执行。</p></section>
 <section><h2>为什么要特别注意风险？</h2><p>DeFi 应用可能涉及智能合约漏洞、资产价格波动、流动性变化、网络费用和授权风险。使用前应确认网址、合约、网络和授权内容，不要因为高收益宣传而忽略风险。</p></section>
