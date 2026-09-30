@@ -7,9 +7,12 @@
 - [新手学习中心](https://www.coinvoyu.com/beginner.html)：从基础概念到第一次操作与安全检查。
 - [Bitcoin 学习中心](https://www.coinvoyu.com/bitcoin-guide.html)：BTC、供应量、价值、波动、交易对与购买基础。
 - [交易所教程](https://www.coinvoyu.com/exchange.html)：认识中心化交易所、注册、买币与基础操作。
+- [Binance 使用指南](https://www.coinvoyu.com/binance-guide.html)：币安注册、KYC、安全设置、买币、充值与提现学习路线。
+- [OKX 欧易使用指南](https://www.coinvoyu.com/okx-guide.html)：OKX 注册、认证、C2C 买币、账户划转与链上充提币学习路线。
 - [钱包与资产安全](https://www.coinvoyu.com/wallet-guide.html)：钱包、地址、私钥、助记词、网络与转账安全。
 - [Ethereum / Web3 学习中心](https://www.coinvoyu.com/ethereum-guide.html)：Ethereum、ETH、Gas、智能合约、DeFi 与 Web3。
 - [文章中心](https://www.coinvoyu.com/articles.html)：按主题浏览全部文章。
+- [视频教程](https://www.coinvoyu.com/videos.html)：账户、买币、资金划转、现货交易与充提币实操视频。
 - [作者与编辑团队](https://www.coinvoyu.com/author.html)
 - [编辑与审核规范](https://www.coinvoyu.com/editorial-policy.html)
 - [联系与内容纠错](https://www.coinvoyu.com/contact.html)

@@ -44,6 +44,10 @@
 ## 交易所与交易基础
 
 - https://www.coinvoyu.com/exchange.html
+- https://www.coinvoyu.com/binance-guide.html
+- https://www.coinvoyu.com/binance-registration-guide-2026.html
+- https://www.coinvoyu.com/binance-missed-referral-code.html
+- https://www.coinvoyu.com/okx-guide.html
 - https://www.coinvoyu.com/binance-vs-okx.html
 - https://www.coinvoyu.com/cex-vs-dex.html
 - https://www.coinvoyu.com/exchange-vs-wallet.html
@@ -54,6 +58,7 @@
 - https://www.coinvoyu.com/liquidity.html
 - https://www.coinvoyu.com/withdrawal-network.html
 - https://www.coinvoyu.com/kline.html
+- https://www.coinvoyu.com/dca-crypto.html
 
 ## 钱包与安全主题簇
 
@@ -69,6 +74,8 @@
 - https://www.coinvoyu.com/crypto-security-first.html
 - https://www.coinvoyu.com/phishing-wallet.html
 - https://www.coinvoyu.com/token-approval.html
+- https://www.coinvoyu.com/address-poisoning.html
+- https://www.coinvoyu.com/wallet-signature-approval-transaction.html
 - https://www.coinvoyu.com/security.html
 
 ## Ethereum 与 Web3 主题簇
@@ -82,6 +89,9 @@
 - https://www.coinvoyu.com/defi.html
 - https://www.coinvoyu.com/layer1-layer2.html
 - https://www.coinvoyu.com/cross-chain-bridge.html
+- https://www.coinvoyu.com/tokenomics-guide.html
+- https://www.coinvoyu.com/token-unlock-guide.html
+- https://www.coinvoyu.com/usdt-vs-usdc.html
 
 ## 热点、政策与延伸阅读
 
@@ -92,6 +102,11 @@
 - https://www.coinvoyu.com/fed-rate-hike-september-2026.html
 - https://www.coinvoyu.com/nasdaq-kraken-tokenized-stocks.html
 - https://www.coinvoyu.com/us-crypto-tax-bill-2026.html
+- https://www.coinvoyu.com/sec-crypto-faq-september-2026.html
+- https://www.coinvoyu.com/fed-stablecoin-framework-september-2026.html
+- https://www.coinvoyu.com/ecb-mica-stablecoin-reserves-september-2026.html
+- https://www.coinvoyu.com/citi-coinbase-stablecoin-payments-september-2026.html
+- https://www.coinvoyu.com/euro-hedged-bitcoin-etp-september-2026.html
 
 ## 工具与视频
 
