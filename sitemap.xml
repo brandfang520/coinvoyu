@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.coinvoyu.com/about.html</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://www.coinvoyu.com/articles.html</loc><lastmod>2026-09-30</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/articles.html</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://www.coinvoyu.com/author.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/beginner-mistakes.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/beginner.html</loc><lastmod>2026-09-16</lastmod></url>
@@ -33,7 +33,7 @@
   <url><loc>https://www.coinvoyu.com/ethereum-guide.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/ethereum.html</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.coinvoyu.com/exchange-vs-wallet.html</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://www.coinvoyu.com/exchange.html</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/exchange.html</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://www.coinvoyu.com/fed-rates-bitcoin.html</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.coinvoyu.com/fed-rate-hike-september-2026.html</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.coinvoyu.com/gas-fee.html</loc><lastmod>2026-09-17</lastmod></url>
@@ -71,7 +71,7 @@
   <url><loc>https://www.coinvoyu.com/web3.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.coinvoyu.com/withdrawal-network.html</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.coinvoyu.com/wrong-address.html</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://www.coinvoyu.com/binance-vs-okx.html</loc><lastmod>2026-09-17</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/binance-vs-okx.html</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://www.coinvoyu.com/sec-crypto-faq-september-2026.html</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.coinvoyu.com/fed-stablecoin-framework-september-2026.html</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.coinvoyu.com/ecb-mica-stablecoin-reserves-september-2026.html</loc><lastmod>2026-09-28</lastmod></url>
@@ -86,9 +86,16 @@
 
   <url><loc>https://www.coinvoyu.com/binance-registration-guide-2026.html</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.coinvoyu.com/binance-missed-referral-code.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://www.coinvoyu.com/binance-guide.html</loc><lastmod>2026-09-30</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/binance-guide.html</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://www.coinvoyu.com/okx-guide.html</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://www.coinvoyu.com/visa-stablecoin-business-payments-october-2026.html</loc><lastmod>2026-10-02</lastmod></url>
   <url><loc>https://www.coinvoyu.com/mica-defi-staking-lending-october-2026.html</loc><lastmod>2026-10-02</lastmod></url>
   <url><loc>https://www.coinvoyu.com/binance-eu-mica-reverse-solicitation-october-2026.html</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/binance-referral-code.html</loc><lastmod>2026-10-03</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/binance-referral-commission.html</loc><lastmod>2026-10-03</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/binance-deposit-guide.html</loc><lastmod>2026-10-03</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/binance-buy-usdt-c2c.html</loc><lastmod>2026-10-03</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/binance-buy-bitcoin.html</loc><lastmod>2026-10-03</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/binance-fees.html</loc><lastmod>2026-10-03</lastmod></url>
+  <url><loc>https://www.coinvoyu.com/binance-withdraw-usdt.html</loc><lastmod>2026-10-03</lastmod></url>
 </urlset>
