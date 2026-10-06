@@ -124,11 +124,16 @@ body{background:#f5f7fb}
 .v27-card:hover{box-shadow:0 16px 34px rgba(37,99,235,.13);border-color:#c9d5ee}
 .v27-cta{background:radial-gradient(circle at 84% 20%,rgba(124,58,237,.4),transparent 28%),linear-gradient(135deg,#101b36,#14213d 55%,#213a73)}
 </style>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#10244a">
 </head>
 <body>
 <header class="site-header"><div class="container nav">
-<a class="brand" href="/"><span class="logo">C</span><span>CoinVoyu</span></a>
-<nav aria-label="主导航"><a href="/">首页</a><a href="beginner.html">新手入门</a><a href="bitcoin.html">Bitcoin</a><a href="exchange.html">交易所</a><a href="security.html">钱包安全</a><a href="web3.html">Ethereum / Web3</a><a href="articles.html">文章</a><a class="active" href="videos.html">视频教程</a><a href="tools.html">工具</a><a href="about.html">关于</a></nav>
+<a class="brand" href="/" aria-label="CoinVoyu 首页"><img class="brand-logo" src="assets/brand/coinvoyu-logo.svg" width="188" height="44" alt="CoinVoyu"></a>
+<nav aria-label="主导航"><a href="/">首页</a><a href="beginner.html">新手入门</a><a href="exchange.html">交易所</a><a href="security.html">钱包安全</a><a href="web3.html">Ethereum / Web3</a><a href="articles.html">文章</a><a class="active" href="videos.html">视频教程</a><a href="tools.html">工具</a><a href="about.html">关于</a></nav>
 </div></header>
 
 <main>
@@ -222,7 +227,7 @@ body{background:#f5f7fb}
 </div>
 </main>
 
-<footer><div class="container foot"><div><strong>CoinVoyu</strong><p>把数字资产知识，讲得简单一点。</p></div><div class="foot-links"><a href="beginner.html">新手入门</a><a href="bitcoin.html">Bitcoin</a><a href="exchange.html">交易所</a><a href="security.html">钱包安全</a><a href="web3.html">Ethereum / Web3</a><a href="articles.html">文章</a><a href="videos.html">视频教程</a><a href="tools.html">工具</a><a href="about.html">关于</a></div></div><div class="container copy">© 2026 CoinVoyu. Educational content only. Digital assets involve risk.</div></footer>
+<footer><div class="container foot"><div><img class="footer-logo" src="assets/brand/coinvoyu-logo-footer.svg" width="171" height="40" alt="CoinVoyu"><p>把数字资产知识，讲得简单一点。</p></div><div class="foot-links"><a href="beginner.html">新手入门</a><a href="bitcoin.html">Bitcoin</a><a href="exchange.html">交易所</a><a href="security.html">钱包安全</a><a href="web3.html">Ethereum / Web3</a><a href="articles.html">文章</a><a href="videos.html">视频教程</a><a href="tools.html">工具</a><a href="about.html">关于</a></div></div><div class="container copy">© 2026 CoinVoyu. Educational content only. Digital assets involve risk.</div></footer>
 <script>document.querySelectorAll('[data-filter]').forEach(function(button){button.addEventListener('click',function(){var filter=button.dataset.filter;document.querySelectorAll('[data-filter]').forEach(function(item){item.classList.toggle('active',item===button)});document.querySelectorAll('[data-video-category]').forEach(function(card){card.hidden=filter!=='all'&&card.dataset.videoCategory!==filter});});});</script>
 </body>
 </html>
