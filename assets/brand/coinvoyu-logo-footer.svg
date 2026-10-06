@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 44" role="img" aria-labelledby="title desc">
+  <title id="title">CoinVoyu</title>
+  <desc id="desc">CoinVoyu 页脚品牌标志</desc>
+  <defs>
+    <linearGradient id="footerIcon" x1="4" y1="3" x2="41" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#19B8FF"/>
+      <stop offset="0.5" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#6D28D9"/>
+    </linearGradient>
+    <linearGradient id="footerWord" x1="104" y1="10" x2="181" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#168BFF"/>
+      <stop offset="0.5" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="42" height="42" rx="13" fill="url(#footerIcon)"/>
+  <path d="M29.4 12.5A13.6 13.6 0 1 0 29.8 31.9" fill="none" stroke="#FFFFFF" stroke-width="4.8" stroke-linecap="round"/>
+  <rect x="12.6" y="25.7" width="2.9" height="7.1" rx="1.45" fill="#C7E9FF"/>
+  <rect x="17.7" y="22.1" width="2.9" height="10.7" rx="1.45" fill="#E2F4FF"/>
+  <rect x="22.8" y="17.8" width="2.9" height="15" rx="1.45" fill="#FFFFFF"/>
+  <path d="m12.2 30.9 7.3-6.5 5.6-4.3 6.2-6.7" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m27.8 13.2 5.8-1.7-1.3 5.9" fill="#FFFFFF"/>
+  <text x="51" y="30.5" fill="#10244A" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800" letter-spacing="-0.9">Coin</text>
+  <text x="103" y="30.5" fill="url(#footerWord)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800" letter-spacing="-1">Voyu</text>
+</svg>

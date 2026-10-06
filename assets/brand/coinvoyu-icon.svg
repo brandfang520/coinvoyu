@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">CoinVoyu</title>
+  <desc id="desc">蓝紫渐变 C 图形与上升数据箭头</desc>
+  <defs>
+    <linearGradient id="bg" x1="9" y1="7" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#19B8FF"/>
+      <stop offset="0.48" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#6D28D9"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="18" y1="15" x2="42" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DDEBFF"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#bg)"/>
+  <path d="M43.6 18.2A20 20 0 1 0 44.3 45" fill="none" stroke="url(#shine)" stroke-width="7" stroke-linecap="round"/>
+  <rect x="19" y="36" width="4" height="9" rx="2" fill="#C7E9FF"/>
+  <rect x="26" y="31" width="4" height="14" rx="2" fill="#E2F4FF"/>
+  <rect x="33" y="25" width="4" height="20" rx="2" fill="#FFFFFF"/>
+  <path d="M18.5 42.5 29 33l8-6.2 8.5-9.3" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m40.5 17 7.8-2.2-1.7 8" fill="#FFFFFF"/>
+</svg>
