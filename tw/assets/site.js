@@ -2,9 +2,9 @@
   'use strict';
   const menu=document.querySelector('.menu'),nav=document.querySelector('.navlinks');
   if(menu&&nav){
-    function close(){nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}
-    menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open))});
-    document.addEventListener('keydown',event=>{if(event.key==='Escape'){close();menu.focus()}});
+    function close(){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','展開導覽選單')}
+    menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'關閉導覽選單':'展開導覽選單')});
+    document.addEventListener('keydown',event=>{if(event.key==='Escape'&&nav.classList.contains('open')){close();menu.focus()}});
     document.addEventListener('click',event=>{if(!nav.contains(event.target)&&!menu.contains(event.target))close()});
     nav.addEventListener('click',event=>{if(event.target.closest('a'))close()});
     matchMedia('(min-width:851px)').addEventListener('change',event=>{if(event.matches)close()});
