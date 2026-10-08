@@ -1,0 +1,20 @@
+{
+  "verified": "2026-10-08",
+  "scope": "CoinVoyu Taiwan only",
+  "binance": {
+    "file": "platform-binance.png",
+    "source": "https://bin.bnbstatic.com/static/images/common/favicon.ico",
+    "note": "Official Binance-hosted favicon, normalized to the shared logo canvas without redrawing."
+  },
+  "okx": {
+    "file": "platform-okx.png",
+    "source": "https://www.okx.com/favicon.ico",
+    "note": "Official OKX-hosted favicon, scaled with nearest-neighbor sampling and centered on the shared 256px logo canvas without redrawing."
+  },
+  "gate": {
+    "file": "platform-gate.webp",
+    "source": "https://www.gate.com/en-us/media-kit",
+    "asset": "https://gimg2.staticimgs.com/image/logo-1202506051710144836326467.webp",
+    "note": "Official Gate media-kit icon, trimmed and normalized without redrawing."
+  }
+}

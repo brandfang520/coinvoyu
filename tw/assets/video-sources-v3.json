@@ -1,0 +1,94 @@
+{
+  "verified": "2026-10-08",
+  "scope": "CoinVoyu Taiwan only",
+  "independentVideoFiles": 12,
+  "items": [
+    {
+      "file": "如何拥有自己的OKX账户.mp4",
+      "source": "OKX官方教學素材",
+      "pages": [
+        "/tw/videos/account/",
+        "/tw/videos/okx-register/"
+      ]
+    },
+    {
+      "file": "如何绑定⾝份验证应⽤.mp4",
+      "source": "OKX官方教學素材",
+      "pages": [
+        "/tw/videos/auth/",
+        "/tw/videos/account-security/"
+      ]
+    },
+    {
+      "file": "如何设置通⾏密钥.mp4",
+      "source": "OKX官方教學素材",
+      "pages": [
+        "/tw/videos/passkey/"
+      ]
+    },
+    {
+      "file": "如何进⾏OKX官⽅渠道验证.mp4",
+      "source": "OKX官方教學素材",
+      "pages": [
+        "/tw/videos/official/"
+      ]
+    },
+    {
+      "file": "如何进行现货交易.mp4",
+      "source": "OKX官方教學素材",
+      "pages": [
+        "/tw/videos/spot/",
+        "/tw/videos/okx-buy/"
+      ]
+    },
+    {
+      "file": "如何进行账户资金划转.mp4",
+      "source": "OKX官方教學素材",
+      "pages": [
+        "/tw/videos/fund/"
+      ]
+    },
+    {
+      "file": "如何进行身份认证.mp4",
+      "source": "OKX官方教學素材",
+      "pages": [
+        "/tw/videos/kyc/"
+      ]
+    },
+    {
+      "file": "如何进行链上充值提币.mp4",
+      "source": "OKX官方教學素材",
+      "pages": [
+        "/tw/videos/onchain/"
+      ]
+    },
+    {
+      "file": "okx-c2c-buy.mp4",
+      "source": "OKX官方教學素材；由主站媒體庫只讀複製",
+      "pages": [
+        "/tw/videos/okx-c2c-buy/"
+      ]
+    },
+    {
+      "file": "okx-anti-phishing-code.mp4",
+      "source": "OKX官方教學素材；由主站媒體庫只讀複製",
+      "pages": [
+        "/tw/videos/okx-anti-phishing/"
+      ]
+    },
+    {
+      "file": "okx-internal-transfer.mp4",
+      "source": "OKX官方教學素材；由主站媒體庫唯讀複製",
+      "pages": [
+        "/tw/videos/okx-internal-transfer/"
+      ]
+    },
+    {
+      "file": "okx-official-support.mp4",
+      "source": "OKX官方教學素材；由主站媒體庫唯讀複製",
+      "pages": [
+        "/tw/videos/okx-official-support/"
+      ]
+    }
+  ]
+}

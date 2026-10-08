@@ -8,3 +8,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.coinvoyu.com/sitemap.xml
+Sitemap: https://www.coinvoyu.com/tw/sitemap.xml

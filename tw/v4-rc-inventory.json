@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-10-08",
+  "htmlFiles": 131,
+  "indexablePages": 98,
+  "articleSchemaPages": 63,
+  "sitemapUrls": 98,
+  "videoFiles": 12,
+  "playableVideoPages": 15,
+  "reusedVideoPages": 3,
+  "compatibilityPages": 32,
+  "pureTextVideoPages": 0,
+  "visibleFaqPages": 75,
+  "faqSchemaPages": 64,
+  "referencedLocalAssets": 65,
+  "videoBytes": 49206574,
+  "largestVideos": [
+    {
+      "file": "如何绑定⾝份验证应⽤.mp4",
+      "bytes": 18439060
+    },
+    {
+      "file": "如何进⾏OKX官⽅渠道验证.mp4",
+      "bytes": 9117615
+    },
+    {
+      "file": "okx-anti-phishing-code.mp4",
+      "bytes": 9006369
+    },
+    {
+      "file": "如何设置通⾏密钥.mp4",
+      "bytes": 5225007
+    },
+    {
+      "file": "如何进行链上充值提币.mp4",
+      "bytes": 1455604
+    }
+  ],
+  "hubs": [
+    "/tw/learn/",
+    "/tw/buy/",
+    "/tw/exchanges/",
+    "/tw/exchanges/comparison/",
+    "/tw/security/",
+    "/tw/articles/",
+    "/tw/videos/",
+    "/tw/insights/"
+  ]
+}

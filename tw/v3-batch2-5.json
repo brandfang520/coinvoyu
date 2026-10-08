@@ -1,0 +1,26 @@
+{
+  "version": "CoinVoyu Taiwan V3 Batch 2.5",
+  "scope": "Taiwan-only display copy",
+  "updated": "2026-10-08",
+  "pages": [
+    "/tw/",
+    "/tw/learn/",
+    "/tw/buy/",
+    "/tw/exchanges/",
+    "/tw/exchanges/comparison/"
+  ],
+  "changed": [
+    "visible hub labels",
+    "visible entry labels",
+    "visible operation-route labels"
+  ],
+  "unchanged": [
+    "article body",
+    "URL",
+    "Title",
+    "Meta description",
+    "Canonical",
+    "referral links",
+    "Hub structure"
+  ]
+}

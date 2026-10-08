@@ -1,0 +1,7 @@
+# Taiwan production rule fragment. Because robots.txt is served at the shared
+# domain root, this file must be merged by the production owner; do not deploy
+# it over coinvoyu.com/robots.txt from the Taiwan preview workflow.
+User-agent: *
+Allow: /tw/
+
+Sitemap: https://www.coinvoyu.com/tw/sitemap.xml
