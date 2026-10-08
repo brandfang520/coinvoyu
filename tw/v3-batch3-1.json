@@ -1,0 +1,40 @@
+{
+  "version": "CoinVoyu Taiwan V3 Batch 3.1",
+  "scope": "Taiwan-only technical SEO and conversion cluster",
+  "updated": "2026-10-08",
+  "baseline": "55fbf4c",
+  "newArticles": [
+    "/tw/exchanges/okx/buy-crypto.html",
+    "/tw/exchanges/okx/spot-trading.html",
+    "/tw/exchanges/gate/buy-crypto.html",
+    "/tw/exchanges/gate/spot-trading.html"
+  ],
+  "faqSchema": [
+    "/tw/buy-crypto/twd-buy-crypto/",
+    "/tw/buy-crypto/withdraw-to-bank/",
+    "/tw/learn/crypto-beginner-guide/",
+    "/tw/learn/spot-vs-futures/",
+    "/tw/compare/binance-vs-gate/",
+    "/tw/compare/binance-vs-okx/",
+    "/tw/compare/binance-vs-max/"
+  ],
+  "redirects": {
+    "/tw/buy-crypto/": "/tw/buy/",
+    "/tw/compare/": "/tw/exchanges/comparison/"
+  },
+  "resourcePages": [
+    "/tw/videos/auth/",
+    "/tw/videos/official/",
+    "/tw/videos/passkey/"
+  ],
+  "referrals": {
+    "okx": {
+      "code": "TW1866",
+      "url": "https://www.mitxcqvwnhj.com/join/TW1866"
+    },
+    "gate": {
+      "code": "VOYUTWFF",
+      "url": "https://www.gatesites.cc/share/VOYUTWFF"
+    }
+  }
+}

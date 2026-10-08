@@ -1,0 +1,106 @@
+{
+  "version": "CoinVoyu Taiwan V3 Batch 2.2",
+  "scope": "Taiwan-only",
+  "updated": "2026-10-08",
+  "htmlFiles": 112,
+  "indexableUrls": 92,
+  "uniqueArticleAssets": 46,
+  "learning": {
+    "bitcoin": [
+      "Bitcoin是什麼",
+      "台灣怎麼買Bitcoin",
+      "台灣銀行買Bitcoin",
+      "台灣可以買虛擬貨幣"
+    ],
+    "usdt": [
+      "USDT是什麼",
+      "台灣怎麼買USDT",
+      "TRC20/ERC20",
+      "穩定幣",
+      "USDT換回台幣"
+    ],
+    "walletSafety": [
+      "錢包是什麼",
+      "冷熱錢包",
+      "助記詞",
+      "私鑰安全",
+      "帳戶安全",
+      "交易所安全",
+      "詐騙防範"
+    ],
+    "tradingBasics": [
+      "加密貨幣入門",
+      "現貨與合約",
+      "台灣法規"
+    ]
+  },
+  "buying": {
+    "bitcoin": [
+      "台灣怎麼買Bitcoin",
+      "銀行買Bitcoin"
+    ],
+    "usdt": [
+      "台灣怎麼買USDT",
+      "USDT換回台幣"
+    ],
+    "twd": [
+      "新台幣買加密貨幣",
+      "銀行資金買Bitcoin",
+      "台灣買幣平台"
+    ],
+    "withdrawal": [
+      "USDT換回台幣",
+      "出金到銀行"
+    ]
+  },
+  "exchanges": {
+    "binance": [
+      "註冊",
+      "邀請碼",
+      "KYC",
+      "安全",
+      "手續費",
+      "充值",
+      "交易",
+      "提幣"
+    ],
+    "okx": [
+      "註冊",
+      "邀請碼",
+      "安全",
+      "手續費",
+      "充值",
+      "提幣"
+    ],
+    "gate": [
+      "註冊",
+      "邀請碼",
+      "安全",
+      "手續費",
+      "充值",
+      "提幣"
+    ]
+  },
+  "comparisons": [
+    "Binance vs OKX",
+    "Binance vs Gate",
+    "Binance vs MAX",
+    "三平台比較",
+    "台灣本地與海外平台"
+  ],
+  "videos": {
+    "physicalPages": 23,
+    "curatedEntries": 13,
+    "categories": [
+      "新手教學",
+      "買幣教學",
+      "平台教學",
+      "安全教學"
+    ]
+  },
+  "referrals": {
+    "binance": "https://www.bsmkweb.cc/join?ref=TW1866",
+    "okx": "https://www.mitxcqvwnhj.com/join/TW1866",
+    "gate": "https://www.gatesites.cc/share/VOYUTWFF"
+  }
+}

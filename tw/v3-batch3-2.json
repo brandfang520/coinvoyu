@@ -1,0 +1,15 @@
+{
+  "version": "CoinVoyu Taiwan V3 Batch 3.2",
+  "scope": "Taiwan-only topic cluster and homepage FAQ",
+  "updated": "2026-10-08",
+  "baseline": "51051e0cad5ba47ae5153e389a7387ad878659b2",
+  "newArticles": [
+    "/tw/learn/bitcoin/why-bitcoin-price-moves.html",
+    "/tw/learn/bitcoin/bitcoin-etf-guide.html",
+    "/tw/learn/usdt/is-usdt-safe.html",
+    "/tw/learn/crypto-exchange-guide.html",
+    "/tw/security/after-buying-crypto-storage.html"
+  ],
+  "homepageFAQ": "always-visible",
+  "referrals": "unchanged"
+}

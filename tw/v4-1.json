@@ -1,0 +1,47 @@
+{
+  "version": "CoinVoyu Taiwan V4.1",
+  "baseline": "6260e52d09a3a2d7c42f75bc62549658babe8ede",
+  "built_at": "2026-10-08",
+  "hub": "/tw/insights/",
+  "sitemap_urls_before": 93,
+  "sitemap_urls_after": 99,
+  "articles": [
+    {
+      "url": "/tw/insights/taiwan-virtual-asset-services-act-2026/",
+      "event_date": "2026-07-22",
+      "verified_at": "2026-10-08",
+      "primary_source": "https://law.fsc.gov.tw/LawContent.aspx?id=GL004301",
+      "cover": "/tw/assets/insights/taiwan-virtual-asset-services-act-2026.webp"
+    },
+    {
+      "url": "/tw/insights/us-genius-act-stablecoin-rules-2026/",
+      "event_date": "2026-08-17",
+      "verified_at": "2026-10-08",
+      "primary_source": "https://home.treasury.gov/news/press-releases/sb0605",
+      "cover": "/tw/assets/insights/us-genius-act-stablecoin-rules-2026.webp"
+    },
+    {
+      "url": "/tw/insights/fed-rate-hike-september-2026-crypto/",
+      "event_date": "2026-09-16",
+      "verified_at": "2026-10-08",
+      "primary_source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "cover": "/tw/assets/insights/fed-rate-hike-september-2026-crypto.webp"
+    },
+    {
+      "url": "/tw/insights/crypto-etp-in-kind-redemption/",
+      "event_date": "2025-07-29",
+      "verified_at": "2026-10-08",
+      "primary_source": "https://www.sec.gov/newsroom/press-releases/2025-101-sec-permits-kind-creations-redemptions-crypto-etps",
+      "cover": "/tw/assets/insights/crypto-etp-in-kind-redemption.webp"
+    },
+    {
+      "url": "/tw/insights/tether-q4-2025-reserves-attestation/",
+      "event_date": "2026-01-30",
+      "verified_at": "2026-10-08",
+      "primary_source": "https://tether.io/news/tether-delivers-10b-profits-in-2025-6-3b-in-excess-reserves-and-record-141-billion-exposure-in-u-s-treasury-holdings/",
+      "cover": "/tw/assets/insights/tether-q4-2025-reserves-attestation.webp"
+    }
+  ],
+  "preview_robots": "Disallow: /",
+  "production_deployed": false
+}

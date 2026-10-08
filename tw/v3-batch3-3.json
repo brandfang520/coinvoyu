@@ -1,0 +1,38 @@
+{
+  "version": "CoinVoyu Taiwan V3 Batch 3.3",
+  "date": "2026-10-08",
+  "baseline": "20464ec7d63acfe36205dee324608a36edcc8948",
+  "independentVideoFiles": 12,
+  "playableVideoPages": 16,
+  "reusedVideoPages": 4,
+  "pureTextVideoPages": 0,
+  "legacyCompatibilityPages": [
+    "/tw/videos/binance-buy/",
+    "/tw/videos/binance-withdraw/",
+    "/tw/videos/gate-buy/",
+    "/tw/videos/gate-register/",
+    "/tw/videos/seed-phrase-security/",
+    "/tw/videos/buy-bitcoin/",
+    "/tw/videos/buy-usdt/",
+    "/tw/videos/usdt/"
+  ],
+  "newVideos": [
+    {
+      "title": "OKX C2C買幣教學：付款與訂單核對",
+      "url": "/tw/videos/okx-c2c-buy/",
+      "file": "/tw/assets/videos/okx-c2c-buy.mp4",
+      "source": "OKX官方教學素材；主站只讀複製"
+    },
+    {
+      "title": "OKX防釣魚碼怎麼設定？辨識官方郵件教學",
+      "url": "/tw/videos/okx-anti-phishing/",
+      "file": "/tw/assets/videos/okx-anti-phishing-code.mp4",
+      "source": "OKX官方教學素材；主站只讀複製"
+    }
+  ],
+  "notes": [
+    "Gate沒有真實影片，不顯示Gate影片分類或占位卡",
+    "Binance啟航站買幣或提幣檔案在目前工作區不可存取，未虛構接入",
+    "Preview靜態託管是否回傳HTTP 301需以部署後真實狀態碼為準"
+  ]
+}

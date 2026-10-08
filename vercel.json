@@ -1,14 +1,140 @@
 {
-  "redirects": [
+  "routes": [
     {
-      "source": "/index.html",
-      "destination": "/",
-      "permanent": true
+      "src": "/index.html",
+      "headers": {
+        "Location": "/"
+      },
+      "status": 308
     },
     {
-      "source": "/btc-usdt-difference.html",
-      "destination": "/bitcoin-usdt.html",
-      "permanent": true
+      "src": "/btc-usdt-difference.html",
+      "headers": {
+        "Location": "/bitcoin-usdt.html"
+      },
+      "status": 308
+    },
+    {
+      "src": "/tw/buy-crypto/",
+      "headers": {
+        "Location": "/tw/buy/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/tw/compare/",
+      "headers": {
+        "Location": "/tw/exchanges/comparison/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/tw/videos/binance-buy/",
+      "headers": {
+        "Location": "/tw/exchanges/binance/spot-trading.html"
+      },
+      "status": 301
+    },
+    {
+      "src": "/tw/videos/binance-withdraw/",
+      "headers": {
+        "Location": "/tw/exchanges/binance/withdraw.html"
+      },
+      "status": 301
+    },
+    {
+      "src": "/tw/videos/gate-buy/",
+      "headers": {
+        "Location": "/tw/exchanges/gate/spot-trading.html"
+      },
+      "status": 301
+    },
+    {
+      "src": "/tw/videos/gate-register/",
+      "headers": {
+        "Location": "/tw/exchanges/gate/register.html"
+      },
+      "status": 301
+    },
+    {
+      "src": "/tw/videos/seed-phrase-security/",
+      "headers": {
+        "Location": "/tw/security/seed-phrase-security.html"
+      },
+      "status": 301
+    },
+    {
+      "src": "/tw/videos/buy-bitcoin/",
+      "headers": {
+        "Location": "/tw/videos/spot/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/tw/videos/buy-usdt/",
+      "headers": {
+        "Location": "/tw/buy/how-to-buy-usdt-taiwan.html"
+      },
+      "status": 301
+    },
+    {
+      "src": "/tw/videos/usdt/",
+      "headers": {
+        "Location": "/tw/learn/usdt/what-is-usdt.html"
+      },
+      "status": 301
+    },
+    {
+      "src": "/tw/videos/bitcoin/",
+      "headers": {
+        "Location": "/tw/learn/bitcoin/what-is-bitcoin.html"
+      },
+      "status": 301
+    },
+    {
+      "src": "/tw/videos/binance-register/",
+      "headers": {
+        "Location": "/tw/exchanges/binance/register.html"
+      },
+      "status": 301
+    },
+    {
+      "src": "/tw/videos/binance-kyc/",
+      "headers": {
+        "Location": "/tw/exchanges/binance/kyc.html"
+      },
+      "status": 301
+    },
+    {
+      "src": "/tw/assets/(.*)",
+      "headers": {
+        "Cache-Control": "public, max-age=86400"
+      },
+      "continue": true
+    },
+    {
+      "src": "/tw/(.*)",
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Frame-Options": "SAMEORIGIN"
+      },
+      "continue": true
+    },
+    {
+      "src": "/(.*)",
+      "headers": {
+        "X-Robots-Tag": "noindex, nofollow"
+      },
+      "continue": true
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/tw/(.*)",
+      "dest": "/tw/404.html",
+      "status": 404
     }
   ]
 }

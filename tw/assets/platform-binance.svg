@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Binance</title>
+  <rect width="64" height="64" rx="16" fill="#0B0E11"/>
+  <g fill="#F3BA2F">
+    <path d="M32 12.5 40.5 21 36 25.5 32 21.5 28 25.5 23.5 21 32 12.5Z"/>
+    <path d="M42.5 23.5 51 32l-8.5 8.5-4.5-4.5 4-4-4-4 4.5-4.5ZM21.5 23.5 26 28l-4 4 4 4-4.5 4.5L13 32l8.5-8.5Z"/>
+    <path d="M32 27.5 36.5 32 32 36.5 27.5 32 32 27.5Z"/>
+    <path d="M32 42.5 36 38.5l4.5 4.5L32 51.5 23.5 43l4.5-4.5 4 4Z"/>
+  </g>
+</svg>
