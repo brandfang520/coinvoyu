@@ -1,0 +1,85 @@
+{
+  "version": "CoinVoyu Taiwan V3 Batch 2.3",
+  "scope": "Taiwan-only",
+  "updated": "2026-10-08",
+  "articleAssets": 46,
+  "hubTypes": {
+    "learn": "Topic Hub",
+    "buy": "Journey Hub",
+    "exchanges": "Conversion Hub",
+    "comparison": "Decision Hub"
+  },
+  "clusters": {
+    "topic": {
+      "bitcoin": [
+        "Bitcoin是什麼",
+        "台灣買Bitcoin",
+        "銀行買Bitcoin",
+        "台灣買幣資格"
+      ],
+      "usdt": [
+        "USDT是什麼",
+        "台灣買USDT",
+        "TRC20/ERC20",
+        "穩定幣",
+        "USDT換台幣"
+      ],
+      "wallet": [
+        "錢包",
+        "冷熱錢包",
+        "助記詞",
+        "私鑰",
+        "帳戶安全",
+        "詐騙",
+        "交易所安全"
+      ],
+      "trading": [
+        "加密貨幣入門",
+        "現貨與合約",
+        "台灣法規"
+      ]
+    },
+    "conversion": {
+      "binance": [
+        "註冊",
+        "邀請碼",
+        "KYC",
+        "安全",
+        "手續費",
+        "充值",
+        "買幣與交易",
+        "提幣"
+      ],
+      "okx": [
+        "註冊",
+        "邀請碼",
+        "安全",
+        "手續費",
+        "充值",
+        "買幣教學",
+        "提幣"
+      ],
+      "gate": [
+        "註冊",
+        "邀請碼",
+        "安全",
+        "手續費",
+        "充值",
+        "買幣教學",
+        "提幣"
+      ],
+      "comparison": [
+        "Binance vs OKX",
+        "Binance vs Gate",
+        "Binance vs MAX",
+        "三平台比較",
+        "台灣本地與海外平台"
+      ]
+    },
+    "referrals": {
+      "binance": "https://www.bsmkweb.cc/join?ref=TW1866",
+      "okx": "https://www.mitxcqvwnhj.com/join/TW1866",
+      "gate": "https://www.gatesites.cc/share/VOYUTWFF"
+    }
+  }
+}

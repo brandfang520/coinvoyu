@@ -1,0 +1,65 @@
+# CoinVoyu Taiwan
+
+繁體中文加密資產教育，先學習，再核對平台與資金路徑。
+
+- [加密貨幣入門完整指南](https://www.coinvoyu.com/tw/learn/crypto-beginner-guide/): 從 Bitcoin、USDT 到交易所、錢包與轉帳，依台灣使用情境建立完整學習路線。
+- [台灣怎麼買比特幣？2026完整指南](https://www.coinvoyu.com/tw/buy/how-to-buy-bitcoin-taiwan.html): 比較新台幣直接買 BTC 與經 USDT 買入的路徑，整理 KYC、下單、費用、保管和賣出檢查。
+- [台灣怎麼買USDT？新台幣買USDT完整指南](https://www.coinvoyu.com/tw/buy/how-to-buy-usdt-taiwan.html): 從台幣購買、交易對、網路到換回 TWD，整理 USDT 操作閉環與常見詐騙風險。
+- [台灣加密貨幣交易所怎麼選？完整比較](https://www.coinvoyu.com/tw/exchanges/): 以入出金、產品、費用、安全與地區資格比較 Binance、OKX、Gate、MAX 和 BitoPro。
+- [USDT是什麼？](https://www.coinvoyu.com/tw/learn/usdt/what-is-usdt.html): 看懂 USDT 的發行、美元目標價值、儲備、用途、網路與保管風險。
+- [Binance台灣使用教學](https://www.coinvoyu.com/tw/exchanges/binance/): 從地區資格、官方 App、註冊與 KYC 到現貨、充提幣和銀行出金路徑，完整瞭解 Binance。
+- [OKX台灣使用教學](https://www.coinvoyu.com/tw/exchanges/okx/): 分清交易所帳號與 Web3 錢包，整理 OKX 註冊、驗證、現貨、划轉、提領及 TWD 限制。
+- [Gate台灣使用教學](https://www.coinvoyu.com/tw/exchanges/gate/): 瞭解 Gate 市場與交易工具，按資格、驗證、安全、現貨與充提幣順序使用。
+- [Binance vs OKX完整比較](https://www.coinvoyu.com/tw/compare/binance-vs-okx/): 以台灣資金路徑、交易產品、Web3、費用與帳戶安全比較 Binance 和 OKX。
+- [Binance vs Gate完整比較](https://www.coinvoyu.com/tw/compare/binance-vs-gate/): 從市場深度、資產支援、交易工具、費用與地區規則比較 Binance 和 Gate。
+- [新台幣怎麼買加密貨幣？](https://www.coinvoyu.com/tw/buy-crypto/twd-buy-crypto/): 以 NT$ 為起點，拆解銀行、平台、USDT 與 BTC 之間的資金路線與費用。
+- [USDT怎麼換回新台幣？](https://www.coinvoyu.com/tw/buy/usdt-to-twd.html): 拆解 USDT 轉入本地平台、賣出 TWD 和提領到銀行，說明網路、門檻與費用。
+- [加密貨幣怎麼出金到銀行帳戶？](https://www.coinvoyu.com/tw/buy-crypto/withdraw-to-bank/): 分清鏈上提幣與法幣出金，整理不同資產的轉換、平台審核、銀行綁定和紀錄保存。
+- [Binance vs MAX：海外與台灣交易所比較](https://www.coinvoyu.com/tw/compare/binance-vs-max/): 以新台幣銀行路徑與海外市場需求，比較 Binance 和 MAX 的角色、費用、驗證與監管事實。
+- [Bitcoin是什麼？](https://www.coinvoyu.com/tw/learn/bitcoin/what-is-bitcoin.html): 瞭解 Bitcoin 的起源、共識、挖礦、供應、分割持有、金鑰與價格風險。
+- [現貨與合約有什麼不同？](https://www.coinvoyu.com/tw/learn/spot-vs-futures/): 從持有資產、槓桿、保證金、強制平倉與費用，區分現貨和合約。
+- [冷錢包與熱錢包差在哪？](https://www.coinvoyu.com/tw/security/hot-wallet-vs-cold-wallet.html): 分開理解聯網與離線金鑰、託管與自託管，建立備份、收款與簽署檢查。
+- [TRC20、ERC20是什麼？轉USDT前先看懂](https://www.coinvoyu.com/tw/learn/usdt/trc20-vs-erc20.html): 以 USDT 提領情境說明網路、地址、Gas、門檻與到賬，並提供逐項檢查表。
+- [加密貨幣常見詐騙有哪些？](https://www.coinvoyu.com/tw/security/crypto-scam-guide.html): 辨識台灣 LINE 投資群、假平台、假客服、釣魚與提款費騙局，並整理證據與求助流程。
+- [助記詞、私鑰與2FA安全指南](https://www.coinvoyu.com/tw/security/account-security.html): 分清登入密碼、驗證器、私鑰與錢包恢復資料，提供備份、簽署、官方查證與轉帳清單。
+
+- [穩定幣是什麼？USDT、USDC差異與風險](https://www.coinvoyu.com/tw/learn/what-is-stablecoin/): 比較發行、儲備、用途、轉帳網路與脫鉤風險。
+- [加密貨幣交易所安全嗎？](https://www.coinvoyu.com/tw/security/exchange-safety/): 從監管、保管、帳戶控制與提領測試檢查平台風險。
+- [Binance台灣註冊教學](https://www.coinvoyu.com/tw/exchanges/binance/register.html): 整理註冊、KYC、安全設定與台灣資金路徑。
+- [Binance邀請碼怎麼填？](https://www.coinvoyu.com/tw/exchanges/binance/referral-code.html): 說明TW1866、推薦關係核對與常見問題。
+- [Binance手續費完整指南](https://www.coinvoyu.com/tw/exchanges/binance/fees.html): 說明Maker、Taker、提幣費與總成本。
+- [Binance安全嗎？](https://www.coinvoyu.com/tw/exchanges/binance/security.html): 檢查2FA、防釣魚碼、白名單與使用者責任。
+- [Binance KYC認證教學](https://www.coinvoyu.com/tw/exchanges/binance/kyc.html): 整理文件準備、驗證步驟與失敗處理。
+- [OKX台灣註冊教學](https://www.coinvoyu.com/tw/exchanges/okx/register.html): 整理註冊、KYC、安全與入金路徑。
+- [OKX邀請碼怎麼填？](https://www.coinvoyu.com/tw/exchanges/okx/referral-code.html): 說明TW1866專屬入口與綁定核對。
+- [OKX手續費說明](https://www.coinvoyu.com/tw/exchanges/okx/fees.html): 整理Maker、Taker、帳戶等級與提幣成本。
+- [Gate台灣註冊教學](https://www.coinvoyu.com/tw/exchanges/gate/register.html): 整理Gate註冊、KYC、安全與資金轉入。
+- [Gate邀請碼怎麼填？](https://www.coinvoyu.com/tw/exchanges/gate/referral-code.html): 說明VOYUTWFF專屬入口與推薦關係。
+- [Gate手續費完整說明](https://www.coinvoyu.com/tw/exchanges/gate/fees/): 整理現貨費率、VIP條件、提幣費與總成本。
+
+- [Bitcoin價格為什麼會漲跌？](https://www.coinvoyu.com/tw/learn/bitcoin/why-bitcoin-price-moves.html): 從供需、宏觀流動性、ETF資金、減半、槓桿與情緒理解價格形成，不提供保證預測。
+- [Bitcoin ETF是什麼？](https://www.coinvoyu.com/tw/learn/bitcoin/bitcoin-etf-guide.html): 區分美國現貨Bitcoin ETP、期貨ETF與直接持有，整理費用、追蹤、托管與台灣資格核對。
+- [USDT安全嗎？](https://www.coinvoyu.com/tw/learn/usdt/is-usdt-safe.html): 說明儲備報告、脫鉤、凍結、平台托管、假代幣與轉錯網路風險。
+- [加密貨幣交易所是什麼？](https://www.coinvoyu.com/tw/learn/crypto-exchange-guide.html): 比較CEX與DEX，連起註冊、買幣、交易、提領、費用與平台安全。
+- [買幣後怎麼保管？](https://www.coinvoyu.com/tw/security/after-buying-crypto-storage.html): 比較交易所、熱錢包與冷錢包，整理小額測試、備份與助記詞安全。
+
+## Transparency
+- [關於 CoinVoyu 台灣](https://www.coinvoyu.com/tw/about/)
+- [作者與編輯團隊](https://www.coinvoyu.com/tw/about/author/)
+- [編輯政策與資料查證](https://www.coinvoyu.com/tw/about/editorial-policy/)
+- [風險揭露](https://www.coinvoyu.com/tw/about/risk-disclosure/)
+- [利益揭露與推薦連結](https://www.coinvoyu.com/tw/about/affiliate-disclosure/)
+- [內容更正政策](https://www.coinvoyu.com/tw/about/corrections/)
+- [隱私權政策](https://www.coinvoyu.com/tw/about/privacy/)
+- [聯絡我們與內容反饋](https://www.coinvoyu.com/tw/about/contact/)
+
+## 熱點解讀
+
+- https://www.coinvoyu.com/tw/insights/
+- https://www.coinvoyu.com/tw/insights/taiwan-virtual-asset-services-act-2026/
+- https://www.coinvoyu.com/tw/insights/us-genius-act-stablecoin-rules-2026/
+- https://www.coinvoyu.com/tw/insights/fed-rate-hike-september-2026-crypto/
+- https://www.coinvoyu.com/tw/insights/crypto-etp-in-kind-redemption/
+- https://www.coinvoyu.com/tw/insights/tether-q4-2025-reserves-attestation/
+- https://www.coinvoyu.com/tw/videos/okx-internal-transfer/
+- https://www.coinvoyu.com/tw/videos/okx-official-support/

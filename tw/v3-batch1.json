@@ -1,0 +1,41 @@
+{
+  "version": "CoinVoyu Taiwan V3 Batch 1",
+  "updated": "2026-10-07",
+  "scope": "Taiwan-only",
+  "canonicalPages": [
+    "/tw/exchanges/binance/register.html",
+    "/tw/exchanges/binance/referral-code.html",
+    "/tw/exchanges/binance/fees.html",
+    "/tw/exchanges/binance/kyc.html",
+    "/tw/exchanges/okx/register.html",
+    "/tw/exchanges/okx/referral-code.html",
+    "/tw/exchanges/okx/fees.html",
+    "/tw/exchanges/gate/register.html",
+    "/tw/exchanges/gate/referral-code.html",
+    "/tw/learn/bitcoin/what-is-bitcoin.html",
+    "/tw/buy/how-to-buy-bitcoin-taiwan.html",
+    "/tw/learn/usdt/what-is-usdt.html",
+    "/tw/buy/how-to-buy-usdt-taiwan.html",
+    "/tw/learn/usdt/trc20-vs-erc20.html",
+    "/tw/security/hot-wallet-vs-cold-wallet.html",
+    "/tw/buy/usdt-to-twd.html",
+    "/tw/exchanges/comparison.html",
+    "/tw/security/crypto-wallet-guide.html",
+    "/tw/security/seed-phrase-guide.html",
+    "/tw/buy/can-taiwan-buy-crypto.html"
+  ],
+  "referrals": {
+    "binance": {
+      "code": "TW1866",
+      "url": "https://www.bsmkweb.cc/join?ref=TW1866"
+    },
+    "okx": {
+      "code": "TW1866",
+      "url": "https://www.mitxcqvwnhj.com/join/TW1866"
+    },
+    "gate": {
+      "code": "VOYUTWFF",
+      "url": "https://www.gatesites.cc/share/VOYUTWFF"
+    }
+  }
+}

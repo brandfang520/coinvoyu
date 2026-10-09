@@ -1,0 +1,43 @@
+{
+  "version": "CoinVoyu Taiwan V4 Release Candidate",
+  "date": "2026-10-08",
+  "baseline": "2adeddaebd7f58007525b61e38bfb5ba8f56499e",
+  "independentVideoFiles": 12,
+  "newVideoFiles": [
+    {
+      "title": "OKX內部轉帳怎麼操作？收款資料核對教學",
+      "file": "/tw/assets/videos/okx-internal-transfer.mp4",
+      "url": "/tw/videos/okx-internal-transfer/",
+      "source": "OKX官方教學素材；主站媒體庫唯讀複製"
+    },
+    {
+      "title": "OKX官方客服怎麼聯絡？App內查找教學",
+      "file": "/tw/assets/videos/okx-official-support.mp4",
+      "url": "/tw/videos/okx-official-support/",
+      "source": "OKX官方教學素材；主站媒體庫唯讀複製"
+    }
+  ],
+  "videoCandidatesReviewed": 32,
+  "mainSiteCandidatesNotPreviouslyIntegrated": 20,
+  "selectedCandidates": 2,
+  "gateVideoCategory": false,
+  "launchStationFilesAccessible": false,
+  "notes": [
+    "未接入OKX iOS下載影片：要求海外Apple ID，地區適用性與流程穩定性不足",
+    "未接入新手合集：內容與已接入的註冊、KYC、C2C、劃轉及現貨影片重複",
+    "未接入合約、策略與理財影片：超出台灣站新手教育優先範圍且風險較高",
+    "未找到可核驗的Binance Launch Station買幣或提幣檔案",
+    "未找到真實可用Gate影片，因此不展示Gate影片分類或占位"
+  ],
+  "videoQualityFix": {
+    "date": "2026-10-08",
+    "removed": [
+      "bitcoin-what-is.mp4",
+      "binance-register.mp4"
+    ],
+    "reason": "Bitcoin影片缺少教學內容；Binance影片原始語音節奏與編碼品質不適合保留為正式教學。",
+    "playablePages": 15,
+    "compatibilityVideoPages": 11,
+    "previewSeekFallback": "當媒體伺服器不提供HTTP Byte Range時，以同源完整檔案Blob載入，完成後提供可拖動進度。"
+  }
+}

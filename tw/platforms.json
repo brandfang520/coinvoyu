@@ -1,0 +1,29 @@
+{
+  "binance": {
+    "name": "Binance",
+    "officialUrl": "https://www.binance.com/",
+    "officialRegisterUrl": "https://accounts.binance.com/en/register",
+    "referralUrl": "https://www.bsmkweb.cc/join?ref=TW1866",
+    "referralCode": "TW1866",
+    "lastVerified": "2026-10-07",
+    "status": "publisher-confirmed dedicated referral link; invitee benefits not claimed"
+  },
+  "okx": {
+    "name": "OKX",
+    "officialUrl": "https://www.okx.com/",
+    "officialRegisterUrl": "https://app.okx.com/account/register",
+    "referralUrl": "https://www.mitxcqvwnhj.com/join/TW1866",
+    "referralCode": "TW1866",
+    "lastVerified": "2026-10-07",
+    "status": "publisher-confirmed dedicated referral link; invitee benefits not claimed"
+  },
+  "gate": {
+    "name": "Gate",
+    "officialUrl": "https://www.gate.com/",
+    "officialRegisterUrl": "https://www.gate.com/signup",
+    "referralUrl": "https://www.gatesites.cc/share/VOYUTWFF",
+    "referralCode": "VOYUTWFF",
+    "lastVerified": "2026-10-07",
+    "status": "publisher-confirmed dedicated referral link; invitee benefits not claimed"
+  }
+}

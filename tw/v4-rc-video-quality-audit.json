@@ -1,0 +1,53 @@
+{
+  "version": "CoinVoyu Taiwan V4 RC video quality fix",
+  "date": "2026-10-08",
+  "baseline": "3b71976a356e6714c55c1a93f99ecc3178b48987",
+  "method": [
+    "ffprobe stream, duration, time-base and codec inspection",
+    "ffmpeg full-file decode validation",
+    "moov/mdat atom order and keyframe inspection",
+    "six-point contact-sheet review across each full timeline",
+    "visible tutorial sequence, title promise, platform and referral-code review"
+  ],
+  "originalAssets": [
+    {"file":"bitcoin-what-is.mp4","duration":180,"resolution":"640x360","video":"H.264 24fps","audio":"none","faststart":true,"content":"Three minutes of decorative Bitcoin animation without narration, subtitles or meaningful instruction.","status":"不適合保留","action":"撤下檔案與影片入口；導向成熟Bitcoin圖文教學"},
+    {"file":"binance-register.mp4","duration":337.104,"resolution":"360x640","video":"H.264 variable low frame rate","audio":"AAC 22050Hz mono","faststart":false,"content":"Registration/KYC/security slide sequence; source narration is abnormally slow and unnatural.","status":"需要替換","action":"無合格替代素材，因此撤下檔案與兩個播放頁；導向註冊與KYC圖文教學"},
+    {"file":"okx-anti-phishing-code.mp4","duration":32.266,"resolution":"1080x1920","video":"H.264 29.97fps","audio":"AAC 48000Hz stereo","faststart":true,"content":"OKX anti-phishing-code setup with labelled app steps.","status":"通過","action":"保留"},
+    {"file":"okx-c2c-buy.mp4","duration":36.736,"resolution":"720x1280","video":"H.264 25fps","audio":"AAC 48000Hz stereo","faststart":true,"content":"OKX C2C payment and order-check flow.","status":"通過","action":"保留"},
+    {"file":"okx-internal-transfer.mp4","duration":44.675,"resolution":"720x1280","video":"H.264 30fps","audio":"AAC 44100Hz stereo","faststart":true,"content":"OKX internal transfer and recipient-data confirmation.","status":"通過","action":"保留"},
+    {"file":"okx-official-support.mp4","duration":21.098,"resolution":"720x1280","video":"H.264 29.97fps","audio":"AAC 48000Hz stereo","faststart":true,"content":"Locating official OKX support inside the app.","status":"通過","action":"保留"},
+    {"file":"如何拥有自己的OKX账户.mp4","duration":18.688,"resolution":"720x1280","video":"H.264 25fps","audio":"AAC 48000Hz stereo","faststart":true,"content":"OKX account creation sequence with on-screen labels.","status":"通過","action":"保留"},
+    {"file":"如何绑定⾝份验证应⽤.mp4","duration":53.72,"resolution":"1080x1920","video":"H.264 29.97fps","audio":"AAC 48000Hz stereo","faststart":true,"content":"Authenticator-app binding steps and security prompts.","status":"通過","action":"保留"},
+    {"file":"如何设置通⾏密钥.mp4","duration":19.737,"resolution":"1080x1920","video":"H.264 30fps","audio":"AAC 44100Hz stereo","faststart":false,"content":"Passkey setup sequence with labelled app steps.","status":"可修復","action":"無損重新封裝為faststart後保留"},
+    {"file":"如何进⾏OKX官⽅渠道验证.mp4","duration":27.594,"resolution":"1080x1920","video":"H.264 29.97fps","audio":"AAC 48000Hz stereo","faststart":true,"content":"Official-channel verification flow.","status":"通過","action":"保留"},
+    {"file":"如何进行现货交易.mp4","duration":30.805,"resolution":"720x1280","video":"H.264 30fps","audio":"AAC 48000Hz stereo","faststart":true,"content":"Spot interface and order-entry sequence.","status":"通過","action":"保留"},
+    {"file":"如何进行账户资金划转.mp4","duration":36.885,"resolution":"720x1280","video":"H.264 30fps","audio":"AAC 48000Hz stereo","faststart":true,"content":"Funding/trading-account transfer sequence.","status":"通過","action":"保留"},
+    {"file":"如何进行身份认证.mp4","duration":16.32,"resolution":"720x1280","video":"H.264 25fps","audio":"AAC 48000Hz stereo","faststart":true,"content":"Identity-verification entry and submission sequence.","status":"通過","action":"保留"},
+    {"file":"如何进行链上充值提币.mp4","duration":54.826,"resolution":"720x1280","video":"H.264 29.97fps","audio":"AAC 48000Hz stereo","faststart":true,"content":"On-chain deposit/withdrawal and network-selection flow.","status":"通過","action":"保留"}
+  ],
+  "originalPlayablePageMap": {
+    "bitcoin-what-is.mp4": ["/tw/videos/bitcoin/"],
+    "binance-register.mp4": ["/tw/videos/binance-register/", "/tw/videos/binance-kyc/"],
+    "如何拥有自己的OKX账户.mp4": ["/tw/videos/account/", "/tw/videos/okx-register/"],
+    "如何绑定⾝份验证应⽤.mp4": ["/tw/videos/auth/", "/tw/videos/account-security/"],
+    "如何设置通⾏密钥.mp4": ["/tw/videos/passkey/"],
+    "如何进⾏OKX官⽅渠道验证.mp4": ["/tw/videos/official/"],
+    "如何进行现货交易.mp4": ["/tw/videos/spot/", "/tw/videos/okx-buy/"],
+    "如何进行账户资金划转.mp4": ["/tw/videos/fund/"],
+    "如何进行身份认证.mp4": ["/tw/videos/kyc/"],
+    "如何进行链上充值提币.mp4": ["/tw/videos/onchain/"],
+    "okx-c2c-buy.mp4": ["/tw/videos/okx-c2c-buy/"],
+    "okx-anti-phishing-code.mp4": ["/tw/videos/okx-anti-phishing/"],
+    "okx-internal-transfer.mp4": ["/tw/videos/okx-internal-transfer/"],
+    "okx-official-support.mp4": ["/tw/videos/okx-official-support/"]
+  },
+  "result": {
+    "retainedIndependentVideos": 12,
+    "removedIndependentVideos": 2,
+    "currentPlayablePages": 15,
+    "sharedVideoExtraPages": 3,
+    "videoCompatibilityPages": 11,
+    "replacementVideos": 0,
+    "launchStationAssetsAccessible": false
+  }
+}

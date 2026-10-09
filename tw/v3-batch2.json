@@ -1,0 +1,50 @@
+{
+  "version": "CoinVoyu Taiwan V3 Batch 2",
+  "updated": "2026-10-07",
+  "scope": "Taiwan-only",
+  "baseline": "CoinVoyu Taiwan V3 Batch 1",
+  "pages": [
+    "/tw/buy/can-taiwan-buy-crypto.html",
+    "/tw/learn/taiwan-crypto-regulation.html",
+    "/tw/exchanges/taiwan-exchange-guide.html",
+    "/tw/buy/bank-buy-bitcoin-taiwan.html",
+    "/tw/exchanges/binance/security.html",
+    "/tw/exchanges/binance/deposit.html",
+    "/tw/exchanges/binance/withdraw.html",
+    "/tw/exchanges/binance/spot-trading.html",
+    "/tw/exchanges/okx/security.html",
+    "/tw/exchanges/okx/deposit.html",
+    "/tw/exchanges/okx/withdraw.html",
+    "/tw/exchanges/gate/security.html",
+    "/tw/exchanges/gate/deposit.html",
+    "/tw/exchanges/gate/withdraw.html",
+    "/tw/security/crypto-scam-guide.html",
+    "/tw/security/account-security.html",
+    "/tw/security/seed-phrase-security.html",
+    "/tw/buy/usdt-to-twd.html"
+  ],
+  "referrals": {
+    "binance": {
+      "code": "TW1866",
+      "url": "https://www.bsmkweb.cc/join?ref=TW1866"
+    },
+    "okx": {
+      "code": "TW1866",
+      "url": "https://www.mitxcqvwnhj.com/join/TW1866"
+    },
+    "gate": {
+      "code": "VOYUTWFF",
+      "url": "https://www.gatesites.cc/share/VOYUTWFF"
+    }
+  },
+  "videoPages": [
+    "/tw/videos/binance-register/",
+    "/tw/videos/binance-kyc/",
+    "/tw/videos/binance-buy/",
+    "/tw/videos/binance-withdraw/",
+    "/tw/videos/okx-register/",
+    "/tw/videos/okx-buy/",
+    "/tw/videos/gate-register/",
+    "/tw/videos/gate-buy/"
+  ]
+}

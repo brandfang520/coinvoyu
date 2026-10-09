@@ -1,0 +1,19 @@
+{
+  "version": "CoinVoyu Taiwan V3 Batch 2.4",
+  "scope": "Taiwan-only brand assets",
+  "updated": "2026-10-08",
+  "platformLogoContract": {
+    "canvas": "256x256",
+    "primaryClass": "platform-logo",
+    "footerClass": "footer-platform-logo",
+    "assets": {
+      "binance": "/tw/assets/platform-binance.png",
+      "okx": "/tw/assets/platform-okx.png",
+      "gate": "/tw/assets/platform-gate.webp"
+    }
+  },
+  "contentChanged": false,
+  "urlsChanged": false,
+  "seoChanged": false,
+  "referralsChanged": false
+}

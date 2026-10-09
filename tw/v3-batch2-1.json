@@ -1,0 +1,94 @@
+{
+  "version": "CoinVoyu Taiwan V3 Batch 2.1",
+  "updated": "2026-10-08",
+  "scope": "Taiwan-only",
+  "topicClusters": {
+    "bitcoin": {
+      "articles": 4,
+      "covered": [
+        "Bitcoin是什麼",
+        "台灣怎麼買Bitcoin",
+        "銀行買Bitcoin",
+        "台灣買幣法規",
+        "市場基礎與FAQ"
+      ],
+      "missing": [
+        "獨立的Bitcoin市場基礎文章"
+      ]
+    },
+    "usdt": {
+      "articles": 5,
+      "covered": [
+        "USDT是什麼",
+        "台灣怎麼買USDT",
+        "TRC20/ERC20",
+        "USDT換台幣",
+        "穩定幣",
+        "USDT安全與FAQ"
+      ],
+      "missing": [
+        "獨立的USDT安全文章"
+      ]
+    },
+    "wallet": {
+      "articles": 5,
+      "covered": [
+        "錢包原理",
+        "冷熱錢包",
+        "助記詞",
+        "私鑰安全",
+        "帳戶安全"
+      ],
+      "missing": []
+    }
+  },
+  "conversionClusters": {
+    "binance": {
+      "pages": 7,
+      "covered": [
+        "註冊",
+        "邀請碼",
+        "KYC",
+        "安全",
+        "充值",
+        "提幣",
+        "現貨交易"
+      ],
+      "missing": []
+    },
+    "okx": {
+      "pages": 5,
+      "covered": [
+        "註冊",
+        "邀請碼",
+        "安全",
+        "充值",
+        "提幣"
+      ],
+      "missing": []
+    },
+    "gate": {
+      "pages": 5,
+      "covered": [
+        "註冊",
+        "邀請碼",
+        "安全",
+        "充值",
+        "提幣"
+      ],
+      "missing": []
+    }
+  },
+  "videoCenter": {
+    "requiredEntries": 13,
+    "added": [
+      "/tw/videos/buy-usdt/",
+      "/tw/videos/seed-phrase-security/"
+    ]
+  },
+  "referrals": {
+    "binance": "https://www.bsmkweb.cc/join?ref=TW1866",
+    "okx": "https://www.mitxcqvwnhj.com/join/TW1866",
+    "gate": "https://www.gatesites.cc/share/VOYUTWFF"
+  }
+}
