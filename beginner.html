@@ -36,7 +36,7 @@
 .b56-practice{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .b56-practice>div{padding:27px;border:1px solid #dfe6f0;border-radius:18px;background:#fff}.b56-practice h3{margin:0 0 10px;font-size:21px}.b56-practice p{margin:0 0 18px;color:#68758a}.b56-checks{margin:0;padding-left:20px;color:#59677c}.b56-checks li{margin:8px 0}
 .b56-table-wrap{overflow-x:auto;border:1px solid #dfe6f0;border-radius:18px;background:#fff;box-shadow:0 8px 24px rgba(20,33,61,.035)}
-.b56-table{width:100%;min-width:760px;border-collapse:collapse}.b56-table th,.b56-table td{padding:17px 18px;text-align:left;vertical-align:top;border-bottom:1px solid #e5eaf2}.b56-table th{background:#f3f7ff;color:#17315f;font-size:13px}.b56-table td{color:#5e6c82;font-size:14px}.b56-table tr:last-child td{border-bottom:0}.b56-table strong{color:#17233b}
+.b56-table{width:100%;min-width:760px;border-collapse:collapse}.b56-table th,.b56-table td{padding:17px 18px;text-align:left;vertical-align:top;border-bottom:1px solid #e5eaf2}.b56-table th{background:#f3f7ff;color:#17315f;font-size:13px}.b56-table td{color:#5e6c82;font-size:14px}.b56-table tr:last-child td{border-bottom:0}.b56-table strong{color:#17233b}.b56-table a{color:#2458d3;font-weight:800;text-decoration:none}
 .b56-reading{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.b56-reading a{display:block;padding:23px;border:1px solid #dfe6f0;border-radius:16px;background:#fff}.b56-reading span{color:#71809a;font-size:11px;font-weight:900;letter-spacing:.09em}.b56-reading h3{margin:10px 0 8px;font-size:19px}.b56-reading p{margin:0 0 14px;color:#6d798c;font-size:14px}.b56-reading b{color:#2458d3;font-size:13px}
 .b56-copy{max-width:860px}.b56-copy h2{margin:0 0 18px;font-size:34px}.b56-copy p{color:#5e6c82}.b56-copy ul{padding-left:22px;color:#5e6c82}.b56-copy li{margin:10px 0}.b56-faq{display:grid;gap:12px;max-width:900px}.b56-faq details{padding:18px 20px;border:1px solid #dfe6f0;border-radius:14px;background:#fff}.b56-faq summary{cursor:pointer;font-weight:800;color:#17233b}.b56-faq details p{margin:12px 0 0;color:#5e6c82}
 .b56-meta{padding:18px 0 12px}.b56-meta-panel{display:grid;grid-template-columns:1.08fr .92fr;gap:34px;padding:32px 34px;border:1px solid #dfe6f1;border-radius:20px;background:#fff;box-shadow:0 12px 34px rgba(20,33,61,.045)}
@@ -85,23 +85,6 @@
     </div>
   </section>
 
-  <section class="b56-section b56-alt">
-    <div class="container b56-copy">
-      <p class="b56-kicker">CORE CONCEPTS</p>
-      <h2>什么是数字资产？新手需要先了解什么？</h2>
-      <p>数字资产是以数字形式记录、持有或转移的资产。加密货币只是其中一类，不同资产的发行方式、用途、价格机制和风险可能完全不同。新手不必先背大量术语，但要先分清下面六个基础概念。</p>
-      <ul>
-        <li><strong>Bitcoin：</strong>比特币网络的原生资产，总量规则公开，价格会随市场供需明显波动。</li>
-        <li><strong>稳定币：</strong>通常以美元等资产为参考目标，常用于计价和交易中转，但并不代表没有发行方、储备或脱锚风险。</li>
-        <li><strong>交易所：</strong>提供注册、买卖和充提等服务的平台；使用前要确认入口、地区规则、费用和账户安全。</li>
-        <li><strong>钱包：</strong>用于管理地址和密钥的工具。钱包真正控制的是签名权限，不是把资产文件保存在手机里。</li>
-        <li><strong>交易：</strong>现货交易是直接买卖资产；杠杆和合约风险更高，不适合作为零基础用户的第一步。</li>
-        <li><strong>安全意识：</strong>验证码、私钥和助记词不能交给任何人，转账前必须核对币种、网络、地址和金额。</li>
-      </ul>
-      <p>建立这些概念后，再沿着本页的六步路线学习 <a href="bitcoin-guide.html">Bitcoin</a>、<a href="exchange.html">交易所</a>、<a href="wallet-basics.html">钱包</a>与<a href="crypto-security-first.html">资产安全</a>，会比直接开始频繁交易更稳妥。</p>
-    </div>
-  </section>
-
   <section class="b56-section">
     <div class="container">
       <div class="b56-heading"><p class="b56-kicker">START HERE</p><h2>新手按这 6 步学，最不容易乱</h2><p>每一步先解决一个关键问题，看懂当前内容以后再进入下一步。</p></div>
@@ -133,10 +116,10 @@
         <table class="b56-table">
           <thead><tr><th>阶段</th><th>优先掌握</th><th>暂时不要急</th><th>完成标志</th></tr></thead>
           <tbody>
-            <tr><td><strong>建立概念</strong></td><td>Bitcoin、区块链、USDT 的基本区别</td><td>预测短期价格</td><td>能用自己的话解释三者用途</td></tr>
-            <tr><td><strong>准备操作</strong></td><td>交易所、钱包、地址和网络</td><td>同时注册很多平台</td><td>知道资产放在哪里、如何转移</td></tr>
-            <tr><td><strong>第一次实践</strong></td><td>核对入口、金额、网络并小额测试</td><td>杠杆、合约和高频交易</td><td>能独立完成检查而不依赖陌生人</td></tr>
-            <tr><td><strong>长期学习</strong></td><td>风险管理、资料核对和账户安全</td><td>所谓“稳赚”或“带单”方案</td><td>遇到宣传时会先验证来源与风险</td></tr>
+            <tr><td><strong>建立概念</strong></td><td>Bitcoin、区块链、USDT 的基本区别<br><a href="bitcoin.html">进入 Bitcoin 基础页面 →</a></td><td>预测短期价格</td><td>能用自己的话解释三者用途</td></tr>
+            <tr><td><strong>准备操作</strong></td><td>交易所、钱包、地址和网络<br><a href="exchange.html">进入交易所教程 →</a></td><td>同时注册很多平台</td><td>知道资产放在哪里、如何转移</td></tr>
+            <tr><td><strong>第一次实践</strong></td><td>核对入口、金额、网络并小额测试<br><a href="btc-buying-methods.html">进入买币教程 →</a></td><td>杠杆、合约和高频交易</td><td>能独立完成检查而不依赖陌生人</td></tr>
+            <tr><td><strong>长期学习</strong></td><td>风险管理、资料核对和账户安全<br><a href="security.html">进入钱包安全中心 →</a></td><td>所谓“稳赚”或“带单”方案</td><td>遇到宣传时会先验证来源与风险</td></tr>
           </tbody>
         </table>
       </div>
@@ -144,6 +127,23 @@
   </section>
 
   <section class="b56-section b56-alt">
+    <div class="container b56-copy">
+      <p class="b56-kicker">CORE CONCEPTS</p>
+      <h2>什么是数字资产？新手需要先了解什么？</h2>
+      <p>数字资产是以数字形式记录、持有或转移的资产。加密货币只是其中一类，不同资产的发行方式、用途、价格机制和风险可能完全不同。新手不必先背大量术语，但要先分清下面六个基础概念。</p>
+      <ul>
+        <li><strong>Bitcoin：</strong>比特币网络的原生资产，总量规则公开，价格会随市场供需明显波动。</li>
+        <li><strong>稳定币：</strong>通常以美元等资产为参考目标，常用于计价和交易中转，但并不代表没有发行方、储备或脱锚风险。</li>
+        <li><strong>交易所：</strong>提供注册、买卖和充提等服务的平台；使用前要确认入口、地区规则、费用和账户安全。</li>
+        <li><strong>钱包：</strong>用于管理地址和密钥的工具。钱包真正控制的是签名权限，不是把资产文件保存在手机里。</li>
+        <li><strong>交易：</strong>现货交易是直接买卖资产；杠杆和合约风险更高，不适合作为零基础用户的第一步。</li>
+        <li><strong>安全意识：</strong>验证码、私钥和助记词不能交给任何人，转账前必须核对币种、网络、地址和金额。</li>
+      </ul>
+      <p>建立这些概念后，再沿着本页的六步路线学习 <a href="bitcoin-guide.html">Bitcoin</a>、<a href="exchange.html">交易所</a>、<a href="wallet-basics.html">钱包</a>与<a href="crypto-security-first.html">资产安全</a>，会比直接开始频繁交易更稳妥。</p>
+    </div>
+  </section>
+
+  <section class="b56-section">
     <div class="container">
       <div class="b56-heading"><p class="b56-kicker">CONTINUE LEARNING</p><h2>完成入门后，继续阅读这些内容</h2><p>按照自己的进度选择下一篇，不需要一次全部读完。</p></div>
       <div class="b56-reading">
