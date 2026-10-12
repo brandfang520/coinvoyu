@@ -79,7 +79,7 @@
 <body>
 <header class="site-header"><div class="container nav">
 <a class="brand" href="/" aria-label="CoinVoyu 首页"><img class="brand-logo" src="assets/brand/coinvoyu-logo.svg" width="188" height="44" alt="CoinVoyu"></a>
-<nav aria-label="主导航"><a href="/">首页</a><a href="beginner.html">新手入门</a><a href="exchange.html">交易所</a><a href="security.html">钱包安全</a><a href="web3.html">Ethereum / Web3</a><a class="active" href="articles.html">文章</a><a href="videos.html">视频教程</a><a href="tools.html">工具</a><a href="about.html">关于</a><a href="/tw/" lang="zh-TW" aria-label="CoinVoyu 台灣站">台灣站 ↗</a></nav>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="打开主导航"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button><nav id="site-navigation" aria-label="主导航"><a href="/">首页</a><a href="beginner.html">新手入门</a><a href="exchange.html">交易所</a><a href="security.html">钱包安全</a><a href="web3.html">Ethereum / Web3</a><a class="active" href="articles.html">文章</a><a href="videos.html">视频教程</a><a href="tools.html">工具</a><a href="about.html">关于</a><a class="region-link" href="/tw/" lang="zh-TW" aria-label="CoinVoyu 台灣站">台灣站 ↗</a></nav>
 </div></header>
 <main class="v25-page">
 <div class="v25-wrap">
@@ -371,5 +371,5 @@ function applyFilter(f){activeFilter=f;buttons.forEach(b=>b.classList.toggle('ac
 function v28ApplySearch(){apply();return false}
 buttons.forEach(b=>b.addEventListener('click',()=>applyFilter(b.dataset.filter)));input.addEventListener('input',apply);const initial=new URLSearchParams(location.search).get('search')||'';if(initial)input.value=initial;apply();
 </script>
-</body>
+<script src="site-nav.js" defer></script></body>
 </html>
