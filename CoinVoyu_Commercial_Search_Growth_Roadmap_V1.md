@@ -352,7 +352,7 @@ Binance Launch Station 当前没有确认存在“新用户如何填写 Binance 
 
 ## 2026-10-16 — Hot Topics Content Update
 
-**Status:** PRODUCTION CANDIDATE — WAITING FOR USER ACCEPTANCE
+**Status:** COMPLETE — PRODUCTION DEPLOYED
 
 ### Articles
 
@@ -374,22 +374,28 @@ Binance Launch Station 当前没有确认存在“新用户如何填写 Binance 
 - Branch: `feature/hot-topics-20261016`
 - Content Commit SHA: `c31db02d8c9d539c11707d8ba7ce842cfe855a65`
 - Homepage Hotspots Fix Commit SHA: `c50ac0ee3942ae883fa1774dc9d96c8fccf3fbb6`
+- Candidate Commit SHA: `92677c3f640bf9f0eedbb891a3452a44df73e5ce`
+- Production Merge Commit SHA: `28625589b760e3faf4781fd1748afc7876649d34`
+- Pull Request: `#13` — merged
+- Production deployed: `2026-10-16 22:59 CST`（Vercel deployment status: success）
 - Preview: `https://coinvoyu-git-feature-hot-topics-20261016-brandfang520.vercel.app/`
+- Production: `https://www.coinvoyu.com/`
 - Homepage hotspots: PASS — 在原有「热点解读」模块内部更新为本轮 3 篇文章；模块位置未改变，后续相邻模块仍为「最新文章」，首页其他结构未修改。
 - Cover images: PASS — 3 original 1200 × 675 WebP assets; all three load at native dimensions in Preview.
 - Sitemap: PASS — XML parses; 3 new canonical URLs are present once each; no duplicate URL.
 - Desktop QA: PASS — Preview rendered at 1363 × 936; hotspots, articles and all three new pages have no horizontal overflow, broken new images or missing H1/Footer.
-- Mobile QA: NOT AVAILABLE — static responsive rules and document structure pass, but the available cloud browser could not switch to a 390px viewport. A real 390px visual check remains part of user acceptance.
+- Mobile Manual QA: PASS — 站长已完成移动端人工验收并明确授权 Production 发布。
 - Scope isolation: PASS — only 3 articles, 3 covers, homepage existing hotspots module, hotspots/articles indexes, Sitemap and this Roadmap differ from the baseline.
 - GSC data read in this task: NOT AVAILABLE — 本轮未读取新的GSC数据，沿用此前审计基线。
 - Pre-existing issue recorded, not modified: `hotspots.html` currently references 12 older cover files that return broken images in Preview. None belongs to the three new articles, and the issue was not expanded into this task.
 
 ### Release State
 
-- PRODUCTION: WAITING FOR USER ACCEPTANCE
-- USER ACCEPTANCE: WAITING
-- Merge / Production deploy: NOT PERFORMED
+- PRODUCTION: DEPLOYED
+- USER ACCEPTANCE: PASS
+- Merge / Production deploy: COMPLETE
+- Production verification: PASS — 首页热点入口、热点中心、3 篇文章、3 张封面与 Sitemap 均已在线核对。
 
 ### Next Step
 
-站长在 Preview 中完成移动端人工验收，并明确回复“通过”或“发布”后，才允许合并与正式发布。
+本轮 Hot Topics 已完成发布；保持范围冻结，后续按既定 V74 商业搜索基础规划推进。
