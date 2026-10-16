@@ -123,3 +123,16 @@
     }
   });
 })();
+
+(function () {
+  'use strict';
+
+  if (window.location.pathname === '/tw' || window.location.pathname.indexOf('/tw/') === 0) return;
+  if (document.querySelector('script[data-cv-analytics="main"]')) return;
+
+  var script = document.createElement('script');
+  script.src = '/analytics-main.js';
+  script.defer = true;
+  script.dataset.cvAnalytics = 'main';
+  document.head.appendChild(script);
+})();
