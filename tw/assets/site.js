@@ -63,3 +63,14 @@
   if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)anchors.forEach(anchor=>anchor.classList.toggle('active',anchor.hash==='#'+entry.target.id))})},{rootMargin:'-100px 0px -65% 0px'});document.querySelectorAll('.article-body h2[id]').forEach(heading=>observer.observe(heading))}
   document.getElementById('download-feedback')?.addEventListener('click',()=>{const text=`CoinVoyu 內容回報草稿\n頁面網址：${document.getElementById('feedback-page').value}\n問題與資料來源：${document.getElementById('feedback-text').value}\n此檔案尚未送出；請依聯絡頁已公布的正式渠道提交。`;const url=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'}));const anchor=document.createElement('a');anchor.href=url;anchor.download='CoinVoyu-feedback.txt';anchor.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});
 })();
+
+(()=>{
+  'use strict';
+  if(!(location.pathname==='/tw'||location.pathname.startsWith('/tw/')))return;
+  if(document.querySelector('script[data-cv-analytics="taiwan"]'))return;
+  const script=document.createElement('script');
+  script.src='/tw/assets/analytics.js';
+  script.defer=true;
+  script.dataset.cvAnalytics='taiwan';
+  document.head.appendChild(script);
+})();
