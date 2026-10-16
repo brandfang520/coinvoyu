@@ -373,12 +373,14 @@ Binance Launch Station 当前没有确认存在“新用户如何填写 Binance 
 
 - Branch: `feature/hot-topics-20261016`
 - Content Commit SHA: `c31db02d8c9d539c11707d8ba7ce842cfe855a65`
+- Homepage Hotspots Fix Commit SHA: `c50ac0ee3942ae883fa1774dc9d96c8fccf3fbb6`
 - Preview: `https://coinvoyu-git-feature-hot-topics-20261016-brandfang520.vercel.app/`
+- Homepage hotspots: PASS — 在原有「热点解读」模块内部更新为本轮 3 篇文章；模块位置未改变，后续相邻模块仍为「最新文章」，首页其他结构未修改。
 - Cover images: PASS — 3 original 1200 × 675 WebP assets; all three load at native dimensions in Preview.
 - Sitemap: PASS — XML parses; 3 new canonical URLs are present once each; no duplicate URL.
 - Desktop QA: PASS — Preview rendered at 1363 × 936; hotspots, articles and all three new pages have no horizontal overflow, broken new images or missing H1/Footer.
 - Mobile QA: NOT AVAILABLE — static responsive rules and document structure pass, but the available cloud browser could not switch to a 390px viewport. A real 390px visual check remains part of user acceptance.
-- Scope isolation: PASS — only 3 articles, 3 covers, hotspots/articles indexes, Sitemap and this Roadmap differ from the baseline.
+- Scope isolation: PASS — only 3 articles, 3 covers, homepage existing hotspots module, hotspots/articles indexes, Sitemap and this Roadmap differ from the baseline.
 - GSC data read in this task: NOT AVAILABLE — 本轮未读取新的GSC数据，沿用此前审计基线。
 - Pre-existing issue recorded, not modified: `hotspots.html` currently references 12 older cover files that return broken images in Preview. None belongs to the three new articles, and the issue was not expanded into this task.
 
