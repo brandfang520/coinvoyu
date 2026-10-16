@@ -352,7 +352,7 @@ Binance Launch Station 当前没有确认存在“新用户如何填写 Binance 
 
 ## 2026-10-16 — Hot Topics Content Update
 
-**Status:** PRODUCTION CANDIDATE IN PROGRESS
+**Status:** PRODUCTION CANDIDATE — WAITING FOR USER ACCEPTANCE
 
 ### Articles
 
@@ -372,14 +372,15 @@ Binance Launch Station 当前没有确认存在“新用户如何填写 Binance 
 ### Delivery
 
 - Branch: `feature/hot-topics-20261016`
-- Commit SHA: PENDING
-- Preview: PENDING
-- Cover images: 3 original 1200 × 675 WebP assets, QA PENDING
-- Sitemap: 3 new URLs added, validation PENDING
-- Desktop QA: PENDING
-- Mobile QA: PENDING
-- Scope isolation: PENDING
+- Content Commit SHA: `c31db02d8c9d539c11707d8ba7ce842cfe855a65`
+- Preview: `https://coinvoyu-git-feature-hot-topics-20261016-brandfang520.vercel.app/`
+- Cover images: PASS — 3 original 1200 × 675 WebP assets; all three load at native dimensions in Preview.
+- Sitemap: PASS — XML parses; 3 new canonical URLs are present once each; no duplicate URL.
+- Desktop QA: PASS — Preview rendered at 1363 × 936; hotspots, articles and all three new pages have no horizontal overflow, broken new images or missing H1/Footer.
+- Mobile QA: NOT AVAILABLE — static responsive rules and document structure pass, but the available cloud browser could not switch to a 390px viewport. A real 390px visual check remains part of user acceptance.
+- Scope isolation: PASS — only 3 articles, 3 covers, hotspots/articles indexes, Sitemap and this Roadmap differ from the baseline.
 - GSC data read in this task: NOT AVAILABLE — 本轮未读取新的GSC数据，沿用此前审计基线。
+- Pre-existing issue recorded, not modified: `hotspots.html` currently references 12 older cover files that return broken images in Preview. None belongs to the three new articles, and the issue was not expanded into this task.
 
 ### Release State
 
@@ -389,4 +390,4 @@ Binance Launch Station 当前没有确认存在“新用户如何填写 Binance 
 
 ### Next Step
 
-完成代码、内容、图片、SEO、桌面与移动端 Preview QA 后，将本节中的 Commit、Preview 与 QA 状态更新为真实结果；等待站长明确回复“通过”或“发布”后，才允许合并与正式发布。
+站长在 Preview 中完成移动端人工验收，并明确回复“通过”或“发布”后，才允许合并与正式发布。
