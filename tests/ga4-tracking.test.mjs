@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import test from 'node:test';
 
 const read = (path) => readFileSync(new URL(`../${path}`, import.meta.url), 'utf8');
@@ -31,6 +31,26 @@ test('both loaders wait for explicit consent and guard duplicate configuration',
 test('shared site scripts load the correct isolated analytics entry point', () => {
   assert.match(read('site-nav.js'), /src = '\/analytics-main\.js'/);
   assert.match(read('tw/assets/site.js'), /src='\/tw\/assets\/analytics\.js'/);
+});
+
+test('Taiwan pages use a versioned site script so GA4 loader changes bypass stale CDN caches', () => {
+  const paths = readdirSync(new URL('../tw/', import.meta.url), {
+    recursive: true,
+    withFileTypes: true,
+  })
+    .filter((entry) => entry.isFile() && entry.name.endsWith('.html'))
+    .map((entry) => new URL(entry.name, new URL(`${entry.parentPath.replaceAll('\\\\', '/')}/`, import.meta.url)));
+
+  let versionedPages = 0;
+  for (const path of paths) {
+    const source = readFileSync(path, 'utf8');
+    assert.doesNotMatch(source, /src="\/tw\/assets\/site\.js"/);
+    if (source.includes('/tw/assets/site.js')) {
+      assert.match(source, /src="\/tw\/assets\/site\.js\?v=20261016-ga4"/);
+      versionedPages += 1;
+    }
+  }
+  assert.ok(versionedPages > 0);
 });
 
 test('privacy notices describe consent-gated analytics', () => {
