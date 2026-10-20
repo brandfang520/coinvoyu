@@ -3,7 +3,7 @@
 项目：CoinVoyu Main（`brandfang520/coinvoyu`）
 正式网站：<https://www.coinvoyu.com/>
 首次整理：2026-10-12
-最近更新：2026-10-16
+最近更新：2026-10-20
 文件性质：长期项目总控文件；所有新增记录按日期追加，不覆盖历史基线。
 
 ---
@@ -81,7 +81,7 @@ V70+ 阶段形成并保留的长期基础包括：
 
 状态：**PLANNED — NOT STARTED**
 
-重点方向：Binance / OKX / Gate 商业搜索基础入口，尤其关注注册、下载、安装、邀请码、买币、充值、提现，以及第一批 Binance 官方教学素材。
+重点方向：Binance / OKX / Gate 商业搜索基础入口，尤其关注注册、下载、安装、邀请码、买币、充值、提现，以及官方教学素材。视频教程中心的扩充范围限定为 Binance 与 OKX；Gate 仍可按真实数据参与商业搜索分析，但不增加 Gate 视频教程。
 
 V74 最终页面范围暂不锁死，必须共同参考：
 
@@ -280,7 +280,8 @@ Binance Launch Station 当前没有确认存在“新用户如何填写 Binance 
 - 依据早期商业搜索信号优化 Binance / OKX 现有承接页。
 - 对 Gate 维持监测，除非出现足够数据或明确内容缺口。
 - 逐项判断注册、下载、安装、邀请码是否需要独立页面。
-- 第一批 Binance 官方教学素材优先采用官方来源页链接卡片。
+- 第一批 Binance 官方教学素材优先采用官方来源页链接卡片，并审计 OKX 官方教学视频的可用性。
+- 视频中心按 Binance / OKX 两个一级平台分类，再按用户任务与商业搜索意图设置二级分类。
 - 不改动稳定 URL，不批量制造页面，不破坏现有 Conversion Cluster。
 
 ## V75
@@ -346,7 +347,7 @@ Binance Launch Station 当前没有确认存在“新用户如何填写 Binance 
 | V75 Commercial Decision Layer | PLANNED | 等 V74 基础入口与数据反馈 |
 | V76 Beginner Conversion Funnel | PLANNED | 串联完整新手操作路径 |
 
-当前下一步：在不扩大范围的前提下，根据 GSC 早期商业信号确定 V74 的最小施工清单和验收指标；V74 施工开始前重新核对最新 `main`、Production、GSC 窗口及官方视频来源页状态。
+当前下一步：在不扩大范围的前提下，根据 GSC 早期商业信号确定 V74 的最小施工清单和验收指标；将视频教程中心的 Binance / OKX 分类架构与商业搜索优先级纳入 V75 + V74 合并批次。施工开始前重新核对最新 `main`、Production、GSC 窗口及官方视频来源页状态。
 
 ---
 
@@ -399,3 +400,499 @@ Binance Launch Station 当前没有确认存在“新用户如何填写 Binance 
 ### Next Step
 
 本轮 Hot Topics 已完成发布；保持范围冻结，后续按既定 V74 商业搜索基础规划推进。
+
+
+---
+
+## 2026-10-17 — Video Tutorial Center Commercial Search Expansion Decision
+
+**Status:** PLANNED — TO BE AUDITED AND IMPLEMENTED WITH THE 2026-10-20 V75 + V74 WORK BATCH
+
+### 1. Scope decision
+
+CoinVoyu 视频教程中心后续只规划两个一级平台分类：
+
+- **币安教程（Binance Tutorials）**
+- **欧易教程（OKX Tutorials）**
+
+**明确排除：不增加 Gate 视频教程。** 当前 CoinVoyu 没有 Gate 注册入口，因此 Gate 不属于本视频中心的教程与注册转化路径。该决定仅限定视频教程中心，不自动取消 V75 其他位置对 Binance vs Gate 等交易所比较主题的评估。
+
+### 2. Proposed information architecture
+
+每个平台依据实际可用素材与搜索需求，考虑以下二级分类；分类不应在没有合格内容时显示空栏目：
+
+1. 下载、注册与身份认证（KYC）
+2. 入金、购买 USDT 与充值
+3. 现货交易与订单操作
+4. 提现、转账与资金管理
+5. 账户安全与常见问题排查
+6. 进阶功能与交易工具（例如合约、理财、跟单；仅在确有合适素材和搜索需求时启用）
+
+Binance 与 OKX 使用相近的分类框架，但内容必须对应各平台真实界面、功能与规则；不为追求对称而强行补齐视频数量。
+
+### 3. Commercial-search selection priority
+
+素材选择优先满足明确的操作型、商业型搜索意图：
+
+- 平台下载、注册与 KYC
+- 买 USDT、C2C / P2P、入金与充值网络选择
+- 现货下单与订单管理
+- 提现、转账及资金安全
+- 账户保护与高频操作问题排查
+- 进阶功能作为后续补充，而非第一批硬性目标
+
+这是一份选题优先级，不代表相关视频已找到、已授权嵌入或已上线。正式选材前必须先盘点 CoinVoyu 当前视频，避免重复建设，并结合 GSC 真实数据、现有承接页和关键词重叠风险决定优先级。
+
+### 4. Official source and playback constraints
+
+- Binance Launch Station 继续作为 Binance 候选素材来源之一；同时审计 OKX 官方教学资源。
+- 对每个候选项记录主题、语言、官方来源 URL、页面可访问性、播放器稳定性、嵌入许可及对应 CoinVoyu 承接页面。
+- 不将 Notion 临时签名 MP4 URL 当作长期视频地址；不下载官方视频后重新托管；未确认稳定性和许可前不强行嵌入 iframe。
+- 如果无法确认稳定、合规的嵌入方式，优先采用链接至官方来源页的卡片，并在 CoinVoyu 页面提供原创中文操作说明和相关内链。
+- 不虚构素材、不设置假视频或空占位入口；无合适素材时，先保留图文教程。
+
+### 5. SEO and conversion path
+
+目标路径：
+
+`Google Search → 对应平台/操作教程 → 视频或官方来源 → 相关图文指南 / FAQ → 对应 Binance 或 OKX 注册入口（仅在相关且合适时展示）`
+
+每个视频条目应有独立、准确的中文标题和原创说明；分类页与教程页需要有清晰的标题、描述、内部链接和移动端体验。避免将视频中心做成单纯推广页，也不因分类调整而批量创建重复 URL。上线后的效果根据 GSC 展示、点击、查询词和页面表现继续观察，不预设排名或流量结果。
+
+### 6. Required work on 2026-10-20
+
+纳入既定合并批次：`V75 + V74 Commercial Search Architecture & Capture`，执行顺序仍为 `V75 → V74`。开始施工前重新检查最新仓库状态、Production、页面与视频中心现状。
+
+必须完成：
+
+1. 审计当前视频中心、已有视频、分类结构、播放方式和相关 URL。
+2. 核实 Binance Launch Station 候选素材，并审计 OKX 官方教学素材。
+3. 按商业搜索意图确定第一批候选；不强制新增固定数量。
+4. 设计并实施 Binance / OKX 两个一级分类及适用的二级分类；仅展示有合格内容的分类。
+5. 检查相关页面、内链、平台注册入口、桌面端和移动端体验、稳定播放与版权边界。
+6. 执行回归 QA，确认不破坏现有视频、导航、稳定 URL、Conversion Cluster、台湾站 `/tw/` 或其他不在本次范围的页面。
+7. 更新本 Roadmap，准确记录完成项、未完成项、QA 和最终发布状态；未完成事项不得写为完成。
+
+### 7. Status
+
+- Video tutorial platform scope: **BINANCE + OKX ONLY**
+- Gate video tutorials: **OUT OF SCOPE — DO NOT ADD**
+- Commercial-search-first video audit: **PLANNED**
+- Binance official source review: **AUDITED PREVIOUSLY; REVALIDATE BEFORE IMPLEMENTATION**
+- OKX official source review: **PENDING**
+- Video center taxonomy redesign: **PLANNED — NOT IMPLEMENTED**
+- Website/Production changes from this decision: **NONE**
+
+---
+
+## Roadmap Update — 2026-10-17
+
+本次仅更新规划文档，未修改网站代码、未部署 Production、未读取新的 GSC 数据。现有代码与 GSC 基线仍以本文件此前记录为准，开始 V75 + V74 前必须重新核验。
+
+**ROADMAP UPDATE: PASS**
+
+---
+
+## Current Handoff Snapshot — 2026-10-17
+
+> This is a planning handoff snapshot, not a substitute for live repository verification. Re-check the remote repository and Production state before starting work on 2026-10-20.
+
+### Current Branch
+**NOT REVALIDATED** — verify the current remote branch and working tree before implementation. The latest documented release in this roadmap is the Hot Topics Production release.
+
+### Latest Commit
+**NOT REVALIDATED AGAINST CURRENT REMOTE `main`.**
+
+Latest documented Production merge commit in the Hot Topics release record:
+`28625589b760e3faf4781fd1748afc7876649d34`
+
+Do not assume this is still the latest `main` commit; verify before creating or updating any work branch.
+
+### Completed
+- V72 Hot Topics system: documented as complete and in Production.
+- V73 Header & Mobile UX: documented as complete and in Production.
+- 2026-10-16 Commercial Search / GSC audit: complete; early signals only.
+- Binance Launch Station asset audit: completed previously; candidates must be revalidated before implementation.
+- 2026-10-16 Hot Topics batch: documented as merged, deployed, and production-verified.
+- 2026-10-17 video tutorial strategy decision: documented in this roadmap only; no website changes made.
+
+### Pending
+- V75 Commercial Decision Layer and information architecture.
+- V74 Commercial Search Capture / Foundation.
+- Audit existing video center and avoid duplicate tutorials.
+- Revalidate Binance Launch Station candidates and audit official OKX tutorial resources.
+- Implement video center taxonomy for Binance and OKX only, with subcategories shown only when qualified content exists.
+- Prioritize video topics by commercial search intent and actual GSC/page evidence.
+- Full regression QA, manual acceptance, and one Production release after approval.
+- Continue monitoring GSC and the SEO effects of V73.
+- Update this roadmap after implementation and after Production release.
+
+### Next Batch
+**`V75 + V74 Commercial Search Architecture & Capture`**
+
+Execution order: **`V75 → V74 → Full QA → User Manual Acceptance → One Production Release`**
+
+Target window: **2026-10-20 to 2026-10-21 (planned; reconfirm on the day).**
+
+### Known Issues
+- GSC data volume is still small; commercial queries are early signals, not mature traffic evidence.
+- V73 SEO impact remains `MONITORING`.
+- Binance Launch Station media may use temporary signed URLs; do not use temporary MP4 URLs as permanent assets.
+- OKX official tutorial/source audit is still `PENDING`.
+- A dedicated Binance invitation-code video has not been confirmed; do not misrepresent a generic registration video as an invitation-code tutorial.
+- Previously recorded older cover-image failures on `hotspots.html` remain a known issue and were not modified in the 2026-10-16 Hot Topics batch.
+- Current remote branch, latest `main` commit, and live Production state must be rechecked before 2026-10-20 implementation.
+
+### Video Tutorial Scope — Final Decision
+- In scope: **Binance tutorials + OKX tutorials**.
+- Out of scope: **Gate video tutorials**; CoinVoyu has no Gate registration entry.
+- Proposed subcategories: download/registration/KYC; deposit and buying USDT; spot trading/orders; withdrawals/transfers/fund management; account security/troubleshooting; advanced features where supported by suitable material.
+- Selection principle: commercial-search value first, verified official source and stable/legal playback second, avoid empty categories and quantity targets.
+
+**Handoff status:** Roadmap updated for planning continuity. Website code and Production were not changed by this planning update.
+
+---
+
+# SEO Audit & Commercial Search Optimization — 2026-10-20
+
+**Status:** DIAGNOSIS COMPLETE / ROADMAP UPDATED / IMPLEMENTATION NOT STARTED
+
+本章节追加记录 2026-10-20 完成的 CoinVoyu SEO AI 只读诊断、Production/main 重定向核查、商业搜索优化优先级，以及 V75 + V74 与视频教程中心的待施工范围。所有数据与结论均来自本轮已保存的阶段 A/B1 证据；本章节没有重新执行 GSC 抽取，也没有修改网站业务代码、数据库、OAuth、Preview 或 Production。
+
+## 1. Audit scope and verified technical baseline
+
+- Audit date: `2026-10-20`（Asia/Shanghai）
+- Latest complete GSC date used: `2026-10-17`
+- GSC Property: `sc-domain:coinvoyu.com`
+- Property scope: CoinVoyu Main + `/tw/`
+- Main-only aggregate: **NOT AVAILABLE**。Domain 汇总不能直接视为主站独立数据；本轮主站 Query/Page 机会按页面 URL 排除 `/tw/` 后判断。
+- CoinVoyu remote `main` latest verified during Stage A: `752a2ef195040290d5bb63f8d187437084f137da`
+- CoinVoyu SEO AI remote `main` latest verified during Stage A: `6481cfe5ac3c65709dc7ee96cadfa98c2e254c55`
+- SEO AI Production: connected to GSC in read-only mode; Production UI marker recorded as `V2 quality-20261009 · 基线 6d4ae604`。
+- SEO AI V6 Preview live data: **NOT AVAILABLE**。访问遇到 Google 未验证应用 / OAuth 权限流程；本轮未授权、未修改 OAuth。
+- Data state: GSC request uses `dataState=final`；本轮没有执行手动同步或数据库写入。
+
+## 2. GSC period comparison
+
+| Period | Clicks | Impressions | CTR | Average Position |
+|---|---:|---:|---:|---:|
+| 2026-10-11—2026-10-17 | 0 | 285 | 0.00% | 53.62 |
+| 2026-10-04—2026-10-10 | 2 | 77 | 2.60% | 28.04 |
+| 2026-09-20—2026-10-17 | 3 | 413 | 0.73% | 44.89 |
+| 2026-08-23—2026-09-19 | 1 | 33 | 3.03% | 6.42 |
+
+Interpretation:
+
+1. 最近 7 天曝光比前 7 天增加 208（+270.13%），但点击从 2 降至 0，CTR 下降 2.60 个百分点。
+2. 最近 28 天曝光比前 28 天增加 380，点击增加 2；平均排名变化受到新增 Query/Page 组合影响。
+3. 当前证据显示 Google 正在扩大测试更多低排名查询与页面，并不支持“全站曝光周环比下降”的结论。
+4. 平均排名不能脱离 Query/Page 构成直接解释为整站排名下降，也没有证据将变化归因于 V73 或 Google 算法惩罚。
+5. 10 月 14 日单日曝光 78，至 10 月 17 日为 35；样本量和时间窗口不足以判断技术性故障。
+
+## 3. Main-site Query/Page evidence
+
+以下均为 28 天 final 数据中的早期信号，样本量小，不代表成熟流量。
+
+| Query | Intended / observed page | Clicks | Impressions | CTR | Position |
+|---|---|---:|---:|---:|---:|
+| `referral code 怎么填` | `/binance-referral-code.html` | 0 | 4 | 0% | 7.00 |
+| `btc usdt 意思` | historical `/btc-usdt-difference.html` attribution | 0 | 3 | 0% | 4.67 |
+| `币安邀请码没输入` | `/binance-missed-referral-code.html` | 0 | 3 | 0% | 17.67 |
+| `sec faq` | `/sec-crypto-faq-september-2026.html` | 0 | 3 | 0% | 11.00 |
+| `欧易邀请码` | `/okx-referral-code.html` | 1 | 2 | 50% | 50.50 |
+| `okx 取引招待` | `/okx-referral-code.html` | 0 | 2 | 0% | 23.50 |
+| `欧易邀请码填不了` | `/okx-referral-code.html` | 0 | 2 | 0% | 53.50 |
+| `欧易注册下载` | `/okx-guide.html` | 0 | 2 | 0% | 30.00 |
+| `how to buy bitcoin on okx` | `/okx-buy-bitcoin.html` | 0 | 2 | 0% | 54.50 |
+| `okx referral code` | `/okx-referral-code.html` | 0 | 1 | 0% | 2.00 |
+| `币安身份认证失败` | `/binance-kyc-failed.html` | 0 | 1 | 0% | 12.00 |
+| `币安重置kyc` | `/binance-kyc-failed.html` | 0 | 1 | 0% | 18.00 |
+| `okx withdrawal pending` | `/okx-withdrawal-not-arrived.html` | 0 | 1 | 0% | 27.00 |
+| `欧易注册邀请码` | `/okx-referral-code.html` | 0 | 1 | 0% | 36.00 |
+| `币安和欧易` | `/exchange.html` | 0 | 1 | 0% | 37.00 |
+| `欧易和币安` | `/binance-vs-okx.html` | 0 | 1 | 0% | 50.00 |
+| `币安和欧易哪个好` | `/binance-vs-okx.html` | 0 | 1 | 0% | 68.00 |
+| `币安怎么提币` | `/binance-withdraw-usdt.html` | 0 | 1 | 0% | 59.00 |
+
+Page-level evidence:
+
+| Page | Clicks | Impressions | CTR | Position | Decision |
+|---|---:|---:|---:|---:|---|
+| historical `/btc-usdt-difference.html` attribution | 0 | 19 | 0% | 6.21 | Highest-position zero-click signal; optimize the current target URL only after migration check |
+| `/okx-referral-code.html` | 1 | 16 | 6.25% | 23.38 | Protect current positioning; conservative enhancement only |
+| `/binance-referral-code.html` | 0 | 10 | 0% | 16.50 | Improve exact answer and task path; do not create a duplicate referral page |
+| `/binance-missed-referral-code.html` | 0 | 5 | 0% | 34.00 | Focused decision-path refinement, not a rewrite |
+| `/exchange.html` | 1 | 6 | 16.67% | 14.00 | Strengthen Hub-to-guide and comparison paths |
+| `/okx-guide.html` | 0 | 4 | 0% | 31.00 | Existing registration/download page; do not create a duplicate URL |
+| `/binance-kyc-failed.html` | 0 | 2 | 0% | 15.00 | Expand exact failure/reset scenarios on the existing page |
+| `/binance-vs-okx.html` | 0 | 4 | 0% | 32.75 | V75 decision-layer candidate; data remains early |
+
+Potential cannibalization remains **UNCONFIRMED**: `欧易注册下载` triggered `/articles.html` once around position 70 while `/okx-guide.html` ranked around position 30. Use internal linking and index-page snippet discipline first; do not create another registration/download URL.
+
+## 4. Production/main redirect investigation
+
+- Old URL: `/btc-usdt-difference.html`
+- Current target URL: `/bitcoin-usdt.html`
+- GitHub main `vercel.json`: permanent redirect from the old URL to the target URL.
+- Production request to the old URL resolves to `/bitcoin-usdt.html`.
+- Production final Title/H1: `BTC 和 USDT 有什么区别？新手一次看懂`.
+- GitHub main target-page Title/H1: `BTC 和 USDT 有什么区别？新手一次看懂`.
+- GitHub main target-page Meta Description: `BTC 和 USDT 有什么区别？从用途、价格特点、使用场景和风险几个方面，帮助数字资产新手建立基础认识。`
+
+Conclusion: the previously reported Production/main drift was a **false drift signal caused by comparing the old source file with the redirected Production target page**. No confirmed single-page deployment anomaly was found.
+
+Remaining verification: whether Google has fully migrated indexing and GSC attribution from the old URL to `/bitcoin-usdt.html` is **NOT YET CONFIRMED**.
+
+Mandatory implementation rule: future SEO work must target `/bitcoin-usdt.html`; do not continue treating `/btc-usdt-difference.html` as the live SEO page.
+
+Pre-release checks for the next implementation batch:
+
+- Sitemap contains the appropriate current target URL and no unintended old canonical entry.
+- Internal links point to `/bitcoin-usdt.html`.
+- Canonical points to `/bitcoin-usdt.html`.
+- Google index status and GSC attribution of both URLs are reviewed.
+
+These are safety checks, not confirmed P0 failures, and were not changed during this audit.
+
+## 5. P0 / P1 / P2 action matrix
+
+### P0 — Confirmed critical issues
+
+**NONE CONFIRMED.**
+
+No evidence currently supports labeling an index, canonical, broken-page, deployment or site-wide technical fault as P0. New/old URL migration and URL consistency remain required pre-release verification items.
+
+### P1 — Priority existing-page optimization
+
+#### A. `/bitcoin-usdt.html`
+
+- Evidence: historical old-URL page attribution 0 clicks / 19 impressions / position 6.21; query `btc usdt 意思` 0 / 3 / position 4.67.
+- Confirmed opportunity: high-position, zero-click signal with small sample.
+- Candidate Title: `BTC/USDT 是什么意思？BTC 与 USDT 的区别｜CoinVoyu`
+- Candidate Meta direction: directly explain BTC, USDT, what the BTC/USDT trading pair means, price behavior and beginner risks.
+- H1/intro: answer “BTC/USDT 是什么意思” in the first visible paragraph; keep the BTC-vs-USDT comparison and risk explanation.
+- Preconditions: verify index/GSC migration and target the current URL only.
+- Validation: compare complete 28-day windows for target Query, clicks, impressions, CTR, position and new/old URL attribution.
+- Risk: the evidence is small; do not infer that a title change guarantees clicks.
+
+#### B. `/binance-referral-code.html`
+
+- Evidence: 0 clicks / 10 impressions / position 16.50; `referral code 怎么填` 0 / 4 / position 7.00.
+- Current Title/H1 are already strongly matched; no broad rewrite recommended.
+- Add a direct first-screen explanation that “Referral Code” means invitation/referral code.
+- Present registration-time entry steps, binding-status checks, and a clear branch for users who forgot to enter it.
+- Add visible FAQ and matching FAQ schema only for questions actually answered on-page.
+- Preserve the existing referral configuration and relevant CTA.
+- Validation: exact-query CTR and ranking, plus referral-path clicks after a complete 28-day window.
+
+#### C. `/binance-missed-referral-code.html`
+
+- Evidence: query `币安邀请码没输入` 0 / 3 / position 17.67; page aggregate 0 / 5 / position 34.00.
+- Preserve current Title and Meta.
+- Reorganize the first-screen answer into status branches: registration unfinished; registered but not funded; possible time-limit/eligibility condition.
+- Any 90-day statement must retain a reliable source, eligibility boundary and non-guarantee wording.
+- Connect naturally back to the standard Binance referral guide and official support route.
+- Validation: query position, CTR, engagement with decision links and referral-path clicks.
+
+#### D. `/okx-referral-code.html`
+
+- Evidence: 1 click / 16 impressions / position 23.38; multiple referral-related variants; `okx referral code` briefly appeared at position 2.
+- Protect current Title, Meta, H1, DS1888 information and conversion path.
+- Do not perform a broad rewrite.
+- Evaluate one visible FAQ/troubleshooting section for `欧易邀请码填不了`, with schema kept exactly consistent with visible content.
+- Validation: preserve existing clicks while monitoring variant-query coverage and CTR.
+
+#### E. `/binance-kyc-failed.html`
+
+- Evidence: page 0 / 2 / position 15; `币安身份认证失败` position 12 and `币安重置kyc` position 18.
+- Preserve the page’s failure-troubleshooting positioning.
+- Add a focused section: `币安 KYC 可以重置吗？`
+- Separate review pending, rejection, identity-data change, face-verification failure and official appeal/support paths.
+- Use verifiable Binance official sources; do not promise that every account can reset KYC.
+- Validation: exact-query impressions, position and clicks over a complete 28-day window.
+
+#### F. `/exchange.html`
+
+- Evidence: 1 click / 6 impressions / position 14.00.
+- Keep the core Title and Hub identity.
+- Strengthen the path: platform choice → registration/KYC → buy/deposit → trade → withdraw → security.
+- Add natural descriptive links to Binance/OKX guides and the existing comparison page without turning the Hub into a referral landing page.
+- Validation: GSC Hub queries, clicks to guides/comparison pages and preservation of existing conversion entry points.
+
+#### G. `/okx-guide.html`
+
+- Evidence: `欧易注册下载` 0 / 2 / position 30; current Title/Meta already directly target registration and download.
+- Preserve Title, Meta and H1; do not create a duplicate registration/download URL.
+- Improve descriptive internal links from the article center, exchange Hub and future video center.
+- Validation: registration/download query coverage, target-page CTR and whether `/articles.html` overlap disappears or remains negligible.
+
+### P2 — Monitoring and later opportunities
+
+- `/binance-vs-okx.html`: include in V75 as the existing decision page; strengthen rather than create a synonymous comparison page.
+- `/articles.html` overlap for `欧易注册下载`: monitor only; current evidence is insufficient to confirm cannibalization.
+- Video commercial search demand: planning opportunity, not verified by new GSC evidence in this audit.
+- Other-language OKX referral variants: monitor; do not build multilingual pages from isolated impressions.
+- Gate commercial pages: continue monitoring. No new evidence in this audit supports bulk creation, and Gate remains out of scope for the video tutorial center.
+
+## 6. V75 + V74 implementation scope
+
+Execution order remains:
+
+`V75 → V74 → Full QA → User Manual Acceptance → One Production Release`
+
+### V75 — Commercial Decision Layer
+
+Status: **PLANNED — NOT IMPLEMENTED**
+
+Scope:
+
+1. Strengthen the existing `binance-vs-okx.html` decision path; do not create a synonym page.
+2. Review Binance vs Gate and platform-safety/selection opportunities against actual page coverage before deciding whether any new URL is justified.
+3. Connect `exchange.html` to platform guides, problem-solving pages and comparison pages with descriptive, non-mechanical internal links.
+4. Clarify Topic Cluster vs Conversion Cluster relationships so educational pages lead to the correct Hub or task page without every page becoming promotional.
+5. Review navigation relationships among Hot Topics, article categories, video tutorials and commercial guides; preserve stable URLs and the V73 Header baseline.
+6. Define one intended page for each commercial intent and document cannibalization protections before editing.
+
+### V74 — Commercial Search Foundation / Capture
+
+Status: **PLANNED — NOT IMPLEMENTED**
+
+Evidence-led scope:
+
+1. Optimize `/bitcoin-usdt.html` for “BTC/USDT 是什么意思” only after redirect/index checks.
+2. Improve the first-screen answer, steps and FAQ on `/binance-referral-code.html` without duplicating the page.
+3. Refine the decision path on `/binance-missed-referral-code.html`; preserve sourced eligibility conditions.
+4. Conservatively expand `/okx-referral-code.html` for failed-entry troubleshooting while protecting current clicks and DS1888 path.
+5. Expand `/binance-kyc-failed.html` with exact failure/reset scenarios and official-source boundaries.
+6. Improve internal linking for `/exchange.html` and `/okx-guide.html`.
+7. Use Title/Meta/H1 changes only where evidence shows intent mismatch; do not batch-rewrite stable pages.
+8. Preserve existing URLs, CTA logic, referral values, V70–V73 UI, `/tw/` isolation and current Conversion Clusters.
+
+New pages are not assumed. Any new URL requires a separate-intent justification, proof that existing pages cannot serve it, and a cannibalization review.
+
+## 7. Video tutorial center plan
+
+Status: **PLANNED — NOT IMPLEMENTED**
+
+Final platform scope:
+
+- Binance tutorials
+- OKX tutorials
+- Gate video tutorials: **OUT OF SCOPE — DO NOT ADD**
+
+Candidate subcategories, displayed only when qualified material exists:
+
+1. 下载、注册与 KYC。
+2. 入金、购买 USDT 与充值。
+3. 现货交易与订单操作。
+4. 提现、转账与资金管理。
+5. 账户安全与常见问题排查。
+6. 进阶功能与交易工具（仅在有合格素材时启用）。
+
+Implementation requirements:
+
+- Inventory CoinVoyu’s existing videos first and avoid rebuilding covered topics.
+- Revalidate Binance Launch Station candidates and audit official OKX tutorial materials.
+- Prioritize explicit commercial/task intent: download, registration, KYC, C2C/P2P and buying USDT, deposit/network choice, spot orders, withdrawals and account security.
+- Do not use temporary signed MP4 URLs as permanent assets.
+- Do not download and re-host official videos without permission.
+- If stable and compliant embedding cannot be confirmed, use an official-source link card plus original Chinese explanation and internal links.
+- Do not show empty categories, fake videos or placeholder entries.
+- A Binance invitation-code video remains unconfirmed; do not present a generic registration video as an invitation-code tutorial.
+
+## 8. Validation metrics for the implementation batch
+
+Use complete 28-day GSC windows after release. Record:
+
+- Target Query clicks, impressions, CTR and average position.
+- New vs old URL attribution for the BTC/USDT page.
+- Whether priority commercial queries enter or hold the top 10/top 20.
+- Whether zero-click pages begin receiving clicks without losing relevant impressions.
+- Whether one intent continues to surface multiple unintended pages.
+- Internal navigation clicks from Hub/video pages to the intended task and commercial pages.
+
+Do not judge success from a single day or a partially processed GSC date.
+
+## 9. Current handoff snapshot — 2026-10-20
+
+### Current Branch
+
+`NOT AVAILABLE` — no website work branch was created or revalidated in this diagnosis task.
+
+### Latest Commit
+
+- Latest verified CoinVoyu remote `main` during Stage A: `752a2ef195040290d5bb63f8d187437084f137da`
+- Current Production deployment commit: `NOT REVALIDATED` in B2.
+- Do not assume the verified Stage A SHA remains current when implementation starts; recheck before branch creation.
+
+### Completed
+
+- SEO AI Production read-only connectivity/property verification.
+- Final 7-day and 28-day period comparisons through 2026-10-17.
+- Main-site Query/Page evidence extraction with `/tw/` URL separation.
+- Focused evidence review for eight priority pages.
+- Stage A diagnosis and checkpoint.
+- B1 Production/main redirect investigation.
+- B1 P0/P1/P2 recommendation draft.
+- B2 V75/V74/video-center integration into this Roadmap.
+- Website business-code changes in this audit: **NONE**.
+- Database/OAuth/deployment changes in this audit: **NONE**.
+
+### Pending
+
+- Create a new implementation branch from the then-current remote `main`.
+- Verify Google index/GSC migration for `/btc-usdt-difference.html` → `/bitcoin-usdt.html`.
+- Audit Sitemap, internal links and canonical consistency for those URLs before editing.
+- Implement V75 decision-layer scope.
+- Implement V74 evidence-led page optimizations.
+- Inventory current videos, revalidate Binance candidates and complete the official OKX material audit.
+- Implement the Binance/OKX-only video taxonomy where qualified materials exist.
+- Full desktop/mobile/SEO/schema/link/referral regression QA.
+- User manual acceptance.
+- One Production release only after approval.
+- Compare complete post-release 28-day data and append results to this Roadmap.
+
+### Next Batch
+
+**`V75 + V74 Commercial Search Architecture & Capture`**
+
+Required order: **`V75 → V74 → Full QA → User Manual Acceptance → One Production Release`**
+
+### Known Issues
+
+- GSC Domain Property contains Main and `/tw/`; strict Main-only aggregate remains `NOT AVAILABLE`.
+- GSC commercial samples remain small; they are early signals, not stable traffic proof.
+- Google index/GSC migration from the old BTC/USDT URL is not yet confirmed.
+- SEO AI V6 Preview remains blocked by the Google unverified-app/OAuth warning; no permission was granted or changed.
+- Production Dashboard CSV export was not captured; Query/Page evidence came from the built-in final comparison output.
+- GA4 visible schema did not expose source/medium in this audit, so GA4 cannot explain organic-search CTR.
+- Bing and PageSpeed integrations were not configured in the observed SEO AI state.
+- Binance Launch Station media may use expiring signed URLs.
+- OKX official tutorial-source audit remains pending.
+- Older broken-cover references previously recorded on `hotspots.html` remain outside this scope.
+
+### Preview / Production / QA
+
+- Preview created for this audit: **NO**
+- Production changed by this audit: **NO**
+- Website-code QA: **NOT RUN — NO WEBSITE CODE CHANGED**
+- Data/diagnostic QA: **PASS**
+- Roadmap append verification: performed after file write.
+
+### Next minimum action
+
+At the start of implementation, re-read current remote `main` and Production, verify the BTC/USDT redirect/index/canonical/Sitemap/internal-link state, then create one isolated V75 + V74 branch. Do not repeat the completed GSC extraction unless a new complete comparison window is intentionally requested.
+
+---
+
+## Roadmap Update — 2026-10-20
+
+- Historical baseline preserved: **YES**
+- Stage A/B1 findings appended: **YES**
+- P0/P1/P2 matrix appended: **YES**
+- V75/V74 implementation scope appended: **YES**
+- Binance/OKX video-center plan appended: **YES**
+- Website code changed: **NO**
+- Production changed: **NO**
+
+**ROADMAP UPDATE: PASS**
