@@ -51,6 +51,38 @@
     document.body.appendChild(panel);
   }
 
+  function trackEvent(name, params) {
+    if (!window.cvAnalyticsConsent || typeof window.gtag !== 'function') return;
+    window.gtag('event', name, params);
+  }
+
+  document.addEventListener('click', function (event) {
+    var referralLink = event.target.closest('a[href]');
+    if (referralLink) {
+      var href = referralLink.getAttribute('href') || '';
+      var platform = href.indexOf('bsmkweb.cc') !== -1 ? 'binance' : (href.indexOf('mitxcqvwnhj.com') !== -1 ? 'okx' : '');
+      if (platform) {
+        trackEvent('referral_click', {
+          platform: platform,
+          link_domain: platform === 'binance' ? 'bsmkweb.cc' : 'mitxcqvwnhj.com',
+          page_path: window.location.pathname
+        });
+      }
+    }
+
+    var copyButton = event.target.closest('[data-code]');
+    if (copyButton) {
+      var code = copyButton.getAttribute('data-code') || '';
+      var copyPlatform = code === 'DS1886' ? 'binance' : (code === 'DS1888' ? 'okx' : '');
+      if (copyPlatform) {
+        trackEvent('referral_code_copy', {
+          platform: copyPlatform,
+          page_path: window.location.pathname
+        });
+      }
+    }
+  });
+
   var consent = readConsent();
   if (consent === 'granted') loadAnalytics();
   else if (consent !== 'denied') showConsent();
