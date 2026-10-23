@@ -1748,3 +1748,160 @@ Exact 390 px viewport QA: **NOT VERIFIED**. The available cloud browser did not 
 - `MAIN MERGED: NO`
 
 **ROADMAP UPDATE: PASS**
+
+
+---
+
+# 2026-10-23 — V75 + V74 Final Merge, Production Release & Post-Deployment QA
+
+## Release status
+
+Status: **COMPLETE — MERGED AND DEPLOYED TO PRODUCTION**
+
+- Functional branch: `feature/v75-v74-commercial-search`
+- Final reviewed branch HEAD: `1ce21d36a2cb18b23e83be8ff7d5f9d9b71bdd75`
+- Pull Request: [#14](https://github.com/brandfang520/coinvoyu/pull/14)
+- PR changed files: 36
+- PR commits: 12
+- Main merge commit: `0fa076da76d6ce82ce87a7658eaad85aa22223ab`
+- Production environment: Vercel Production
+- Production deployment: **READY**
+- Production deployment source: `main` at `0fa076da76d6ce82ce87a7658eaad85aa22223ab`
+- Deployment ID: `DB5H9yXAAw8jm7k3KmxM6cowJdyC`
+- Production URL: <https://www.coinvoyu.com/>
+- Deployment completed: 2026-10-23 01:55 UTC
+- User manual Preview/mobile acceptance: **PASS**
+- New GSC extraction in this release task: **NOT AVAILABLE / NOT RUN**
+
+## Final diff and isolation
+
+The complete feature branch was reviewed relative to the previous main `752a2ef195040290d5bb63f8d187437084f137da`.
+
+- Ahead: 12 commits
+- Behind: 0 commits
+- Changed files: 36
+- Modified scope: roadmap, main-site analytics, V75/V74 commercial pages, 12 Binance MP4 files, 12 Binance WebP posters and `videos.html`.
+- `/tw/` files changed: **NO**
+- Equitova changed: **NO**
+- Gate videos added: **NO**
+- No new duplicate commercial URL was created.
+
+## Production referral configuration
+
+Production page configuration was verified on the homepage, exchange Hub, comparison page and affected guide/referral pages.
+
+- Binance referral code: `DS1886`
+- Binance registration URL: `https://www.bsmkweb.cc/register?ref=DS1886`
+- OKX referral code: `DS1888`
+- OKX registration URL: `https://www.mitxcqvwnhj.com/join/DS1888`
+- Visible code and href alignment: **PASS**
+- Binance/OKX cross-use in affected pages: **NOT FOUND**
+- Old `topzhjdgxcb.com` residue in reviewed release diff: **NOT FOUND**
+- Affiliate-domain final redirect and partner-backend commission attribution: **NOT VERIFIED / NOT CLAIMED**
+
+## Production video QA
+
+Production `videos.html` was opened after the main deployment and checked against the deployed release.
+
+- Binance video count: **12**
+- OKX video count: **32**
+- Total video cards: **44**
+- Empty/source-only placeholder cards: **0**
+- `一个视频搞懂区块链网络`: **ABSENT**
+- `如何在币安 APP 启用双重身份验证`: **ABSENT**
+- Visible Binance play-button label: **播放**
+- Broken video-cover images in the checked page: **0**
+- Binance filter result: **12**
+- OKX filter result: **32**
+- First Binance local MP4: HTTP resource loaded, `readyState = 4`, duration 45.903991 seconds and `currentTime` advanced during playback.
+- Pause/resume control state was exercised in Production; the player remained on the same CoinVoyu page.
+- No external-page-only playback card remains.
+
+The user's prior manual mobile Preview acceptance is retained. Production was additionally checked in the available cloud browser; an exact new 390 px viewport emulation was not available in this environment and is not claimed as a second device-level test.
+
+## Production page and SEO QA
+
+Production pages checked:
+
+- `/`
+- `/exchange.html`
+- `/binance-vs-okx.html`
+- `/bitcoin-usdt.html`
+- `/binance-referral-code.html`
+- `/binance-missed-referral-code.html`
+- `/okx-referral-code.html`
+- `/binance-kyc-failed.html`
+- `/binance-guide.html`
+- `/okx-guide.html`
+- `/videos.html`
+
+Results:
+
+- Expected Title, H1 and canonical: **PASS**
+- JSON-LD parsing on checked pages: **PASS**
+- Visible FAQ and FAQPage exact consistency on the two final corrected pages: **PASS**
+- Broken images on checked pages: **0**
+- Approved referral links on applicable pages: **PASS**
+- Old `/btc-usdt-difference.html` redirected to `/bitcoin-usdt.html`: **PASS**
+- Formal `/bitcoin-usdt.html` canonical: **PASS**
+- Sitemap contains `/bitcoin-usdt.html`: **PASS**
+- Sitemap does not contain the retired `/btc-usdt-difference.html`: **PASS**
+- Google index/GSC attribution migration for the old URL: **NOT VERIFIED**
+- Registration, commission or SEO uplift: **NOT AVAILABLE / NOT CLAIMED**
+
+## Final delivery state
+
+### Completed
+
+- V75 commercial decision layer merged.
+- V74 commercial search foundation merged.
+- Twelve Binance direct-play videos and thirty-two OKX videos deployed.
+- Referral codes and approved main-site URLs deployed.
+- BTC/USDT intent, referral-code and KYC page improvements deployed.
+- GA4 consent guard, event deduplication and `/tw/` isolation preserved.
+- Production deployment and post-deployment browser QA completed.
+- Historical roadmap retained and this release record appended.
+
+### Pending / monitoring
+
+- Monitor a complete 28-day GSC window before judging CTR or ranking effects.
+- Verify Google index/GSC signal migration from the old BTC/USDT URL when data becomes available.
+- Affiliate commission attribution remains outside page-code verification.
+- Existing older hotspot-cover issue remains outside this release scope.
+
+### Next batch
+
+Do not reopen V75/V74 unless Production evidence shows a regression. The next minimum action is monitoring: compare the target queries and pages after a complete 28-day GSC window, while protecting the stable URLs and deployed conversion paths.
+
+### Current handoff
+
+- Current functional branch: `feature/v75-v74-commercial-search`
+- Functional release commit: `0fa076da76d6ce82ce87a7658eaad85aa22223ab`
+- Current Production URL: <https://www.coinvoyu.com/>
+- V75: **COMPLETE / PRODUCTION**
+- V74: **COMPLETE / PRODUCTION**
+- Preview QA: **PASS**
+- User manual mobile Preview QA: **PASS**
+- Production QA: **PASS**
+- Production deployment: **PASS**
+- Roadmap release record: **APPENDED**
+
+`V75: MERGED`
+
+`V74: MERGED`
+
+`BINANCE VIDEO COUNT: 12`
+
+`OKX VIDEO COUNT: 32`
+
+`VIDEO PLAY BUTTON LABEL: 播放`
+
+`BINANCE REFERRAL CODE: DS1886`
+
+`OKX REFERRAL CODE: DS1888`
+
+`TAIWAN SITE CHANGED: NO`
+
+`EQUITOVA CHANGED: NO`
+
+**ROADMAP UPDATE: PASS**
