@@ -1569,3 +1569,182 @@ No further V75 coding batch is planned. The next action is human Preview accepta
 - `V74 STARTED: NO`
 
 **ROADMAP UPDATE: PASS**
+
+
+---
+
+# 2026-10-23 — V74 Commercial Search Foundation & SEO Growth
+
+## Scope and evidence
+
+Status: **IMPLEMENTED ON PREVIEW BRANCH — NOT MERGED / NOT IN PRODUCTION**
+
+This V74 batch reused the verified GSC evidence already recorded in the 2026-10-20 audit. No new GSC extraction or SEO AI refresh was run.
+
+- GSC property: `sc-domain:coinvoyu.com` (includes the main site and `/tw/`; aggregate metrics are not a main-site-only total).
+- `/btc-usdt-difference.html`: 19 impressions, average position 6.21; query `btc usdt 意思`: 3 impressions, average position 4.67.
+- `/binance-referral-code.html`: 10 impressions, average position 16.50; query `referral code 怎么填`: average position 7.00.
+- `币安邀请码没输入`: confirmed early query signal for `/binance-missed-referral-code.html`.
+- `/okx-referral-code.html`: existing commercial click must be protected.
+- GSC sample sizes remain small. No traffic, CTR, ranking, registration or commission improvement is claimed.
+
+## Actual implementation
+
+### 1. `/bitcoin-usdt.html`
+
+- Updated Title and H1 to: `BTC/USDT 是什么意思？BTC 与 USDT 的区别`.
+- Updated Meta Description, Open Graph copy and Article headline/description to match the real page intent.
+- Rewrote the opening paragraph to answer the query immediately.
+- Added an early explanation of base asset, quote asset, how to read a BTC/USDT price, and the risks that remain with USDT.
+- Added natural links to `spot-trading.html` and `exchange.html`.
+- Updated the genuine page review/dateModified value to 2026-10-23.
+- Preserved canonical: `https://www.coinvoyu.com/bitcoin-usdt.html`.
+
+### 2. `/binance-referral-code.html`
+
+- Kept the existing Title, Meta Description and H1.
+- Changed the opening answer to state directly that “Referral Code” means 邀请码 / 推荐码.
+- Preserved the approved main-site Binance code `DS1886` and existing approved link.
+- Existing visible FAQ and FAQPage schema remain aligned.
+- Updated the genuine page review/dateModified value to 2026-10-23.
+
+### 3. `/binance-missed-referral-code.html`
+
+- Kept the existing Title and Meta Description.
+- Reframed the opening as a state-based path: registration not completed, registered account, and possible recall eligibility.
+- Explicitly states that “90 days” is not a universal guarantee.
+- Adjusted source-scope language so changing account eligibility and current Binance support results take precedence.
+- Preserved `DS1886` and existing natural links.
+- Updated the genuine page review/dateModified value to 2026-10-23.
+
+### 4. `/okx-referral-code.html`
+
+- Kept the existing Title, Meta Description, H1 and conversion path.
+- Preserved main-site OKX code `DS1888` and approved link `https://www.mitxcqvwnhj.com/join/DS1888`.
+- Added a visible FAQ: “欧易邀请码填不了怎么办？” with a matching FAQPage entity.
+- The answer follows current OKX guidance: reopen the referral link or input field before registration is completed; a completed account generally cannot add or change the code.
+- Updated source-review and dateModified values to 2026-10-23.
+
+### 5. `/binance-kyc-failed.html`
+
+- Kept the existing Title, Meta Description, H1 and troubleshooting structure.
+- Added “Binance KYC 可以重置吗？” as a visible section and matching FAQPage entity.
+- The answer distinguishes account-specific update/reset/appeal entry points from a universal reset promise.
+- Added a direct Binance official-support path and retained the warning not to create duplicate accounts.
+- Updated source-review and dateModified values to 2026-10-23.
+
+### 6. `/videos.html`
+
+- Changed all 12 Binance poster-button labels from “站内播放” to the concise visible label “播放”.
+- Retained the play icon, descriptive `aria-label`, player behavior, assets and filters.
+- Binance count remains 12; OKX count remains 32.
+
+## Deliberately not modified
+
+- `/okx-guide.html`: its current Title, Meta, H1 and links already support registration/download intent; no evidence justified another rewrite.
+- `/exchange.html` and `/binance-vs-okx.html`: V75 content remained unchanged; only regression checks were performed.
+- Homepage hot topics: the latest repository-backed, sitemap-listed set remains dated 2026-10-16. No newer verified content exists in the current branch, so `index.html` was not changed and no date/news was fabricated.
+- `/tw/`: no files changed.
+- No new URL was created; no broad article rewrite was performed.
+
+## Technical SEO and conversion QA
+
+- Old URL `/btc-usdt-difference.html` remains a permanent Vercel redirect to `/bitcoin-usdt.html`.
+- Sitemap contains the formal target URL once and the old URL zero times.
+- Target canonical points to `https://www.coinvoyu.com/bitcoin-usdt.html`.
+- Modified-page JSON-LD parsed successfully.
+- Visible FAQ and FAQPage entities match on the two pages where FAQ items were added.
+- Internal-link and asset-path validation against the 678-entry branch tree found no missing target among modified pages; `/tw/` is a valid directory route.
+- `robots.txt` remains open to OAI-SearchBot, PerplexityBot and general crawlers and points to both sitemaps.
+- Existing GA4 logic was inspected and left unchanged: consent is required, duplicate initialization is guarded, referral clicks and referral-code copy actions are delegated once, and `/tw/` exits before main-site analytics loads.
+- Google index migration from the old BTC/USDT URL remains **NOT VERIFIED**.
+- Commission attribution and final affiliate-backend ownership remain **NOT AVAILABLE**.
+
+## Preview browser QA
+
+Preview checked at:
+
+`https://coinvoyu-git-feature-v75-v74-commercial-search-brandfang520.vercel.app/`
+
+Desktop browser checks completed for:
+
+- `bitcoin-usdt.html`
+- `binance-referral-code.html`
+- `binance-missed-referral-code.html`
+- `okx-referral-code.html`
+- `binance-kyc-failed.html`
+- `exchange.html`
+- `binance-vs-okx.html`
+- `okx-guide.html`
+- `videos.html`
+
+Results:
+
+- Correct Title, H1 and canonical on inspected pages.
+- No broken images on inspected pages.
+- JSON-LD parsed on inspected pages.
+- No page-content console errors were observed; cloud-browser extension metadata errors were external to the site.
+- The legacy BTC/USDT URL navigated to the formal target URL in Preview.
+- Video filter displayed exactly 12 Binance cards and 32 OKX cards.
+- All 12 Binance buttons exposed visible wording “播放”.
+- First Binance video loaded metadata, reached `readyState=4`, started playback and advanced `currentTime`; pause/replay logic is unchanged from V75.
+- Desktop screenshot inspection showed normal card layout and play controls.
+
+Exact 390 px viewport QA: **NOT VERIFIED**. The available cloud browser did not expose viewport resizing/emulation. This must remain a manual acceptance item and is not reported as a simulated or real-device pass.
+
+## Git and deployment state
+
+- Current branch: `feature/v75-v74-commercial-search`.
+- V74 implementation commit: `cf513b2f66b9d73fab8e18d6a23ba27255225711`.
+- Vercel status for the implementation commit: success.
+- Production: unchanged.
+- Main: not merged.
+- This roadmap update is documentation only; its commit is reported in the delivery summary after Git assigns the SHA.
+
+## Completed
+
+- V74 commercial search changes for the five evidence-backed pages.
+- Conservative FAQ/content additions for OKX referral and Binance KYC.
+- BTC/USDT search-intent alignment on the formal target URL.
+- Binance video button copy correction.
+- Targeted canonical, redirect, sitemap, robots, Schema, internal-link and GA4 review.
+- Desktop Preview regression of V74 pages and V75 core pages.
+- Homepage hotspot freshness review with a no-change decision based on available content.
+- `/tw/` isolation preserved.
+
+## Pending
+
+- Manual 390 px Preview acceptance.
+- User review of this V75 + V74 release candidate.
+- PR/merge and Production deployment only after explicit authorization.
+- Post-release complete 28-day GSC comparison for the target queries and pages.
+- Google old/new BTC/USDT URL index attribution verification.
+
+## Next Batch
+
+1. User manually checks the Preview at 390 px, focusing on the six changed pages and video filters.
+2. Review the exact PR diff from main to this branch.
+3. If accepted, merge V75 + V74 once and perform one Production release.
+4. After a complete 28-day window, record clicks, impressions, CTR and position for the target queries; do not use daily fluctuations as the success criterion.
+
+## Known Issues / Objective Limitations
+
+- Exact 390 px render is not available in this execution environment.
+- GSC evidence is early and low-volume.
+- Google index migration for `/btc-usdt-difference.html` → `/bitcoin-usdt.html` is not confirmed.
+- Current public Binance search results did not independently establish the “90-day” rule as a universal policy; the page therefore retains conditional wording and defers to account-specific official results.
+- Affiliate commission attribution is not verifiable from page code.
+- Homepage hot topics remain at 2026-10-16 because no newer verified article set exists in the current branch.
+
+## V74 Candidate Status
+
+- `V74 IMPLEMENTATION: COMPLETE ON BRANCH`
+- `DESKTOP PREVIEW QA: PASS`
+- `MOBILE 390PX QA: NOT VERIFIED`
+- `SCHEMA / CANONICAL / REDIRECT / SITEMAP: PASS`
+- `VIDEO LABEL / FILTER / DIRECT PLAY REGRESSION: PASS`
+- `TAIWAN SITE CHANGED: NO`
+- `PRODUCTION CHANGED: NO`
+- `MAIN MERGED: NO`
+
+**ROADMAP UPDATE: PASS**
