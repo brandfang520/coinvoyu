@@ -896,3 +896,258 @@ At the start of implementation, re-read current remote `main` and Production, ve
 - Production changed: **NO**
 
 **ROADMAP UPDATE: PASS**
+
+---
+
+# V75 Commercial Decision Layer & Conversion Infrastructure — 2026-10-23
+
+## 1. Status and safety baseline
+
+- Status: **IMPLEMENTED ON ISOLATED BRANCH — PREVIEW AVAILABLE — WAITING FOR USER ACCEPTANCE**
+- Baseline `main`: `752a2ef195040290d5bb63f8d187437084f137da`
+- Current Branch: `feature/v75-v74-commercial-search`
+- V75 code Commit: `cfd782f808716f31d7aec20370d87ba89fd2163a`
+- Preview: <https://coinvoyu-git-feature-v75-v74-commercial-search-brandfang520.vercel.app/>
+- Production changed: **NO**
+- Main merged: **NO**
+- GSC / SEO AI data extraction repeated in this batch: **NO**
+- `/tw/`: **NO CHANGE**
+- Equitova: **NO CHANGE**
+
+This entry records the implemented V75 branch candidate. It does not represent a Production release or measured conversion uplift.
+
+## 2. Main-site referral configuration audit
+
+Approved Main configuration:
+
+| Platform | Display code | Approved page URL |
+|---|---|---|
+| Binance | `DS1886` | `https://www.bsmkweb.cc/register?ref=DS1886` (existing approved channel retained) |
+| OKX | `DS1888` | `https://www.mitxcqvwnhj.com/join/DS1888` |
+
+Audited promotion surfaces:
+
+| File / surface | Binance result | OKX result | Action |
+|---|---|---|---|
+| `index.html` | DS1886 + approved existing URL | DS1888 + approved URL | No change required |
+| `exchange.html` | DS1886 + approved existing URL | DS1888 + approved URL | Verified after V75 edit |
+| `binance-vs-okx.html` | DS1886 + approved existing URL | DS1888 + approved URL | Verified after V75 edit |
+| `binance-guide.html` | DS1886 + approved existing URL | N/A | Verified after V75 edit |
+| `binance-registration-guide-2026.html` | DS1886 + approved existing URL | N/A | No change required |
+| `binance-referral-code.html` | DS1886 + approved existing URL | N/A | No change required |
+| `binance-missed-referral-code.html` | DS1886 + approved existing URL | N/A | No change required |
+| `okx-guide.html` | N/A | DS1888 + approved URL | Verified after V75 edit |
+| `okx-referral-code.html` | N/A | DS1888 + approved URL | No change required |
+| `videos.html` | DS1886 + approved existing URL | DS1888 + approved URL | Added and verified |
+
+Audit conclusions:
+
+- `topzhjdgxcb.com` residue: **NONE FOUND** in the completed Main-site scan.
+- Binance/OKX code cross-over: **NONE FOUND**.
+- Main codes in `/tw/`: **NO CHANGE / NOT INTRODUCED**.
+- HTML display text and `href` configuration: **PASS**.
+- External final redirect from the affiliate domains: **NOT VERIFIED**. The current cloud browser returned “Site Unavailable” for both affiliate domains, so this batch does not claim final redirect or commission attribution verification.
+- Partner-backend commission ownership: **NOT AVAILABLE / NOT CLAIMED**.
+
+## 3. Implemented V75 changes
+
+### `exchange.html`
+
+- Preserved the stable URL, Title, Meta Description and H1.
+- Added an objective platform-selection decision layer.
+- Added the full task path: selection → registration/KYC → buy/deposit → spot → withdrawal → security.
+- Added descriptive links to `binance-vs-okx.html`, platform guides, task tutorials and platform-filtered video views.
+- Preserved appropriate referral disclosure and existing visual language.
+- Updated visible and structured modification date to 2026-10-23.
+
+### `binance-vs-okx.html`
+
+- Preserved the stable URL, core Title, Meta Description, H1 and neutral positioning.
+- Added conditional recommendations for different user needs, without declaring an absolute winner.
+- Added official-rule verification reminders for region availability, fees and product functions.
+- Added post-comparison Binance and OKX guide paths and appropriately placed registration entries.
+- Added FAQPage JSON-LD matching the four visible FAQs.
+- Updated visible and structured modification date to 2026-10-23.
+
+### Platform guides and natural internal links
+
+- `binance-guide.html`: added natural links back to the Hub, comparison page and Binance-filtered video center.
+- `okx-guide.html`: added natural links back to the Hub, comparison page and OKX-filtered video center.
+- The implemented semantic path is:
+  `Exchange Hub → Comparison → Platform Guide → Task Tutorial → Appropriate Registration Entry`.
+
+## 4. Video tutorial center implementation
+
+Platform scope:
+
+- Binance tutorials: **IMPLEMENTED**
+- OKX tutorials: **IMPLEMENTED**
+- Gate tutorials: **NOT ADDED**
+
+Changes to `videos.html`:
+
+- Added platform filters for All / Binance / OKX.
+- Added task filters for onboarding/KYC, funds, spot, security and advanced functions.
+- Added URL filter support through `platform` and `task` query parameters.
+- Retained all 32 existing self-hosted videos and categorized them under OKX/task paths.
+- Added 9 Binance official-source link cards:
+  1. iOS App download
+  2. Account registration
+  3. Identity verification
+  4. C2C buying/selling
+  5. Blockchain networks
+  6. Correct network selection
+  7. Spot trading
+  8. Crypto withdrawal
+  9. Two-factor authentication
+- Each Binance card has original Chinese guidance and a related CoinVoyu article link.
+- Binance materials use verified Binance Launch Station source pages. No temporary signed MP4 URL, iframe or downloaded/re-hosted official media was used.
+- Existing OKX videos remain self-hosted materials. The page provides an OKX Help Center rules/source link and does not mislabel every legacy media file as a newly verified official OKX asset.
+- Empty categories are not displayed.
+
+Known video limitation:
+
+- Binance Launch Station source-page availability can change.
+- Stable, explicitly permitted video embedding was not confirmed, so official-source link cards are the safe implementation.
+- No standalone Binance invitation-code video was represented or fabricated.
+
+## 5. Homepage hotspot freshness
+
+Current homepage hotspot module was rechecked on the V75 Preview. It displays the three 2026-10-16 articles:
+
+1. BTC 短暂跌破 8 万美元：杠杆为何放大跌势？
+2. Strategy 会被 MSCI 指数剔除吗？
+3. 银行托管 BTC 和 ETH 意味着什么？
+
+Conclusion: the previously suspected 9/17 stale block is not present in the current baseline. `index.html` was not modified by V75.
+
+## 6. GA4 interaction measurement
+
+`analytics-main.js` now adds consent-gated delegated events:
+
+- `referral_click`
+- `referral_code_copy`
+
+Controls:
+
+- Events run only after Main-site analytics consent and when `gtag` is available.
+- Existing `/tw/` early return remains in place.
+- Platform/code inference is limited to the approved Main referral domains/codes.
+- No database schema, OAuth, paid service or GA4 property setting was changed.
+- No conversion uplift is claimed; registration and commission outcomes remain unavailable.
+
+## 7. QA and validation
+
+### Static / structural QA
+
+- Modified HTML pages have one H1 each: **PASS**
+- HTML section/article/div balance checks: **PASS**
+- JSON-LD parse checks: **PASS**
+- Comparison FAQ schema matches visible FAQ content: **PASS**
+- New internal target files exist: **PASS**
+- Binance/OKX code/link cross-over check: **PASS**
+- Old OKX domain residue check: **PASS**
+- 9 Binance cards + 32 retained OKX cards: **PASS**
+- Filter query-state behavior: **PASS** (Binance view showed 9 cards; OKX spot view showed the matching OKX card)
+- Broken images on checked Preview pages: **NONE**
+- Key desktop pages: no usable horizontal scrollbar; global overflow protection remains active.
+
+### Preview pages checked in a real browser
+
+- Home
+- `exchange.html`
+- `binance-vs-okx.html`
+- `videos.html?platform=binance`
+- `videos.html?platform=okx&task=spot`
+- `binance-guide.html`
+- `okx-guide.html`
+
+Desktop browser width was approximately 1363px. H1, footer, referral configuration, JSON-LD parsing and image loading passed on checked pages.
+
+### Mobile QA limitation
+
+- Responsive CSS breakpoints and single-column rules were reviewed.
+- Exact 390px browser-emulation execution: **NOT VERIFIED** because the available cloud-browser control could not change viewport size and the local Playwright runtime had no installed browser binary.
+- Human 390px acceptance remains required before merge/Production.
+
+### Scope isolation
+
+Diff from baseline `main` contains:
+
+- `CoinVoyu_Commercial_Search_Growth_Roadmap_V1.md`
+- `analytics-main.js`
+- `binance-guide.html`
+- `binance-vs-okx.html`
+- `exchange.html`
+- `okx-guide.html`
+- `videos.html`
+
+No file under `/tw/` is in the Diff. No files were deleted or renamed.
+
+## 8. Handoff snapshot
+
+### Current Branch
+
+`feature/v75-v74-commercial-search`
+
+### Latest code Commit
+
+`cfd782f808716f31d7aec20370d87ba89fd2163a`
+
+### Completed
+
+- Main-site referral configuration audit and consistency verification.
+- Exchange Hub decision-path implementation.
+- Binance-vs-OKX conditional decision implementation.
+- Hub/comparison/platform-guide natural links.
+- Binance/OKX video taxonomy and first Binance official-source card implementation.
+- Homepage hotspot freshness verification.
+- Consent-gated GA4 referral interaction events.
+- Static, structural and desktop Preview QA.
+- Scope-isolation review.
+- Roadmap update.
+
+### Pending
+
+- Human exact-390px mobile acceptance.
+- External affiliate-domain final redirect verification from a network where both domains are reachable.
+- Partner-backend commission attribution verification, if separately available to the site owner.
+- User acceptance of the V75 Preview.
+- PR creation/merge and Production release: **NOT AUTHORIZED IN THIS BATCH**.
+- V74 evidence-led page optimization after V75 acceptance.
+
+### Next Batch
+
+**V74 Commercial Search Foundation / Capture**, after V75 human acceptance.
+
+Expected V74 scope remains evidence-led:
+
+- `/bitcoin-usdt.html`
+- `/binance-referral-code.html`
+- `/binance-missed-referral-code.html`
+- conservative `/okx-referral-code.html` enhancement
+- `/binance-kyc-failed.html`
+- supporting internal-link refinements
+
+Do not create duplicate registration/download/referral URLs without separate-intent and cannibalization evidence.
+
+### Known Issues
+
+- Exact 390px automated browser QA is not available in this environment.
+- Affiliate domains were not reachable in the cloud browser; final redirect and commission ownership are unverified.
+- GSC samples remain small; no SEO or conversion gain is claimed.
+- Google index/GSC migration for the old BTC/USDT URL remains pending verification.
+- Binance Launch Station source-page stability may change over time.
+- Older broken-cover references previously recorded on `hotspots.html` remain outside V75 scope.
+
+### Preview / Production / QA
+
+- Preview: **AVAILABLE**
+- Desktop Preview QA: **PASS**
+- Mobile exact 390px QA: **NOT VERIFIED**
+- Production changed: **NO**
+- Main merged: **NO**
+- User acceptance: **PENDING**
+
+**ROADMAP UPDATE: PASS**
+
