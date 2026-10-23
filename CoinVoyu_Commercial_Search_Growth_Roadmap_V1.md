@@ -1230,3 +1230,125 @@ After one of these is available, the existing OKX `<video controls>` card struct
 - Next action: obtain stable permitted Binance playback sources; do not start V74 automatically.
 
 **ROADMAP UPDATE: PASS**
+
+
+---
+
+# 2026-10-23 — V75 Binance Direct Playback Recovery (Equitova V43 Reference)
+
+## Scope and safety
+
+- Repository: `brandfang520/coinvoyu`
+- Branch: `feature/v75-v74-commercial-search`
+- Starting HEAD: `d7d68bb264e3126c4339b265fe18bf6cad8f4322`
+- Implementation commit: `944dcf0dbc0f42ec9eab44352478b237473dda07`
+- Reference repository (read only): `brandfang520/equitova`
+- Accepted Equitova reference commit: `def075da390278a61886e1f8a4c9231db2cf999b`
+- Original Equitova V43 video asset commit: `c99cbbf5acf9fc098900f74d4690acbbcabf3a1c`
+- Preview: https://coinvoyu-git-feature-v75-v74-commercial-search-brandfang520.vercel.app/videos.html
+- Production: **NO CHANGE**
+- Main: **NOT MERGED**
+- Equitova: **NO CHANGE**
+- V74: **NOT STARTED**
+
+This recovery supersedes the earlier same-day blocker for the seven videos listed below. The earlier check only evaluated expiring Notion media URLs. The additional Equitova V43 audit found already processed, user-controlled, previously accepted Binance Launch Station assets. The current task explicitly authorized reuse after source and content matching. No expired signed URL was reused.
+
+## Verified Equitova implementation
+
+The accepted V43 implementation uses a poster button first and creates the HTML5 player only after a user click. Its effective player configuration is:
+
+- local MP4 asset;
+- H.264 video + AAC LC audio;
+- `controls`;
+- `playsInline`;
+- `preload="metadata"`;
+- poster image;
+- no `autoplay` attribute;
+- click-to-load / click-to-play;
+- category filtering without empty categories.
+
+Media inspection of the reused assets confirmed 1280×720 for five files and 1276×222 for the original C2C and spot source renders. All seven use H.264/AAC. The MP4 `moov` atom precedes `mdat` in every inspected file, confirming fast-start layout. Durations match the V43 lesson map.
+
+## Recovered CoinVoyu assets
+
+| CoinVoyu lesson | Stable MP4 | Poster | Duration | Result |
+|---|---|---|---:|---|
+| 苹果—币安 APP 下载指南 | `assets/videos/binance/app-download.mp4` | `assets/images/video-covers/binance/app-download.webp` | 45.904s | DIRECT PLAY PASS |
+| 如何注册币安账户 | `assets/videos/binance/register.mp4` | `assets/images/video-covers/binance/register.webp` | 29.348s | DIRECT PLAY PASS |
+| 如何完成币安身份验证 | `assets/videos/binance/kyc.mp4` | `assets/images/video-covers/binance/kyc.webp` | 32.135s | DIRECT PLAY PASS |
+| 如何通过币安 C2C 自选区买卖加密货币 | `assets/videos/binance/c2c.mp4` | `assets/images/video-covers/binance/c2c.webp` | 48.133s | DIRECT PLAY PASS |
+| 如何正确选择网络，避免转账错误 | `assets/videos/binance/network-selection.mp4` | `assets/images/video-covers/binance/network-selection.webp` | 41.376s | DIRECT PLAY PASS |
+| 如何在币安 APP 交易现货 | `assets/videos/binance/spot.mp4` | `assets/images/video-covers/binance/spot.webp` | 72.073s | DIRECT PLAY PASS |
+| 如何在币安进行加密货币提现 | `assets/videos/binance/withdraw.mp4` | `assets/images/video-covers/binance/withdraw.webp` | 40.981s | DIRECT PLAY PASS |
+
+Each direct-play card retains the Binance Launch Station / Binance official teaching attribution, original Chinese explanation, task category, official source link and related CoinVoyu article link.
+
+## Two entries still limited by source matching
+
+| CoinVoyu lesson | Status | Reason |
+|---|---|---|
+| 一个视频搞懂区块链网络 | OFFICIAL SOURCE LINK ONLY | No distinct, content-matched reusable local asset was found. The recovered network video specifically covers network selection and is used only for that matching lesson. |
+| 如何在币安 APP 启用双重身份验证 | OFFICIAL SOURCE LINK ONLY | Equitova V43 contains anti-phishing and passkey lessons, but no matching 2FA video. Those assets were not mislabelled or substituted. |
+
+The full inventory remains **9 Binance entries + 32 OKX videos**. Gate video content was not added.
+
+## CoinVoyu implementation
+
+- `videos.html` now uses a lightweight native HTML5 player for the seven verified Binance assets.
+- Initial HTML contains poster buttons, not seven active video elements.
+- On click, JavaScript creates one local `<video controls playsinline preload="metadata">`, loads the matching MP4 and starts playback from the user gesture.
+- There is no autoplay attribute and no temporary Notion MP4 URL.
+- The two unmatched entries remain clearly identifiable official-source cards.
+- Binance/OKX platform filtering and existing task filtering are preserved.
+- The 32 existing OKX videos and their source files are unchanged.
+
+## Preview QA (2026-10-23 01:07 UTC)
+
+- Vercel deployment status for implementation commit: **SUCCESS**
+- Seven local MP4 URLs returned loadable media on Preview: **PASS**
+- Seven players reached `readyState=4`, reported their expected duration, and had no media error: **PASS**
+- Seven players advanced `currentTime` after the user clicked play: **PASS**
+- Pause and replay interaction: **PASS**
+- `controls`, `playsinline`, `preload="metadata"`: **PASS**
+- Initial on-demand state: 7 poster buttons and 0 active Binance video elements before click: **PASS**
+- Binance filter: 9 visible Binance entries / 0 OKX entries: **PASS**
+- OKX filter: 32 visible OKX entries / 0 Binance entries: **PASS**
+- All filter: 9 Binance + 32 OKX: **PASS**
+- Existing OKX sample playback (`video-account`) reached `readyState=4` and advanced `currentTime`: **PASS**
+- Page-origin console errors: **0**. Observed browser-extension metadata messages are external to CoinVoyu.
+- Desktop visual inspection: cards, posters, controls and filters render correctly: **PASS**
+- Body-level horizontal overflow on tested desktop viewport: **NONE**
+- Exact 390px browser emulation: **NOT VERIFIED** in the available browser control; manual mobile acceptance remains required.
+- `/tw/`: **NO CHANGE**
+- Referral configuration: **NO CHANGE**
+
+## Files changed in this recovery
+
+- Modified: `videos.html`
+- Added: 7 files under `assets/videos/binance/`
+- Added: 7 files under `assets/images/video-covers/binance/`
+- Updated: `CoinVoyu_Commercial_Search_Growth_Roadmap_V1.md`
+
+No other site page, shared CSS, shared JavaScript, referral configuration, Taiwan file or Equitova file was changed.
+
+## Handoff
+
+### Completed
+
+- Equitova V43 implementation and assets audited against real code and repository blobs.
+- Seven content-matched assets recovered and implemented as true in-page playback.
+- Preview media, playback controls, filters and an existing OKX player tested.
+- Roadmap updated without deleting prior history.
+
+### Pending
+
+- User manual acceptance, especially 390px mobile visual inspection.
+- Stable, content-matched assets or embeds for the general blockchain-network lesson and Binance 2FA lesson.
+- Merge and Production deployment only after user approval.
+- V74 remains paused.
+
+### Next batch
+
+User manual Preview acceptance. If accepted, review the exact branch diff before any merge. Do not start V74 automatically.
+
+**ROADMAP UPDATE: PASS**
