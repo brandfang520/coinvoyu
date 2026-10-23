@@ -1352,3 +1352,220 @@ No other site page, shared CSS, shared JavaScript, referral configuration, Taiwa
 User manual Preview acceptance. If accepted, review the exact branch diff before any merge. Do not start V74 automatically.
 
 **ROADMAP UPDATE: PASS**
+
+
+---
+
+# 2026-10-23 — V75 Final Completion: 12-Video Integration & Release-Candidate QA
+
+## Scope and repository state
+
+- Repository: `brandfang520/coinvoyu`
+- Branch: `feature/v75-v74-commercial-search`
+- Starting HEAD: `27c3b981770772a662c60a5055e392c068ea6c55`
+- Asset / video-center commit: `357f79b79a68facce9f74a16f5d1fdfd8c51718b`
+- Visible-count correction commit: `a8b35a93676e52e224da7d3916b61293a6cad352`
+- Preview: https://coinvoyu-git-feature-v75-v74-commercial-search-brandfang520.vercel.app/videos.html
+- Preview deployment for `a8b35a9`: **SUCCESS**
+- Production: **NO CHANGE**
+- Main: **NOT MERGED**
+- Equitova: **READ ONLY / NO CHANGE**
+- Taiwan site `/tw/`: **NO CHANGE**
+- V74: **NOT STARTED**
+- Open PR for this branch at final QA time: **NONE FOUND**
+
+This section supersedes the earlier seven-video handoff. The current branch now contains twelve real, local, direct-play Binance videos and no source-only placeholder cards.
+
+## Five Equitova assets migrated
+
+The five files below were copied as exact, already processed Equitova V43 assets after content and SHA checks. No transcoding or renewed download was needed. All use H.264 video, AAC LC audio and fast-start MP4 layout (`moov` before `mdat`).
+
+| Lesson | Equitova source | CoinVoyu MP4 | Poster | Size | Duration | Resolution |
+|---|---|---|---|---:|---:|---:|
+| Binance 防钓鱼码怎么开启？ | `assets/videos/anti-phishing.mp4` | `assets/videos/binance/anti-phishing.mp4` | `assets/images/video-covers/binance/anti-phishing.webp` | 671,866 B | 40.308 s | 1276×222 |
+| Binance 怎么设置 Passkey 通行密钥？ | `assets/videos/passkey.mp4` | `assets/videos/binance/passkey.mp4` | `assets/images/video-covers/binance/passkey.webp` | 656,615 B | 38.427 s | 1276×222 |
+| Binance 怎么设置价格提醒？ | `assets/videos/price-alert.mp4` | `assets/videos/binance/price-alert.mp4` | `assets/images/video-covers/binance/price-alert.webp` | 707,096 B | 33.087 s | 1280×720 |
+| Binance Web3 钱包如何创建和备份？ | `assets/videos/web3-wallet.mp4` | `assets/videos/binance/web3-wallet.mp4` | `assets/images/video-covers/binance/web3-wallet.webp` | 786,443 B | 37.034 s | 1280×720 |
+| Binance bStocks 怎么查看行情与交易美股？ | `assets/videos/bstocks.mp4` | `assets/videos/binance/bstocks.mp4` | `assets/images/video-covers/binance/bstocks.webp` | 786,444 B | 57.305 s | 1280×720 |
+
+Equitova source repository was not modified. The CoinVoyu copies do not use Equitova URLs, expiring Notion URLs or third-party runtime media paths.
+
+## Final Binance catalog
+
+1. 苹果—币安 APP 下载指南
+2. 如何注册币安账户
+3. 如何完成币安身份验证
+4. 如何通过币安 C2C 自选区买卖加密货币
+5. 如何正确选择网络，避免转账错误
+6. 如何在币安 APP 交易现货
+7. 如何在币安进行加密货币提现
+8. Binance 防钓鱼码怎么开启？
+9. Binance 怎么设置 Passkey 通行密钥？
+10. Binance 怎么设置价格提醒？
+11. Binance Web3 钱包如何创建和备份？
+12. Binance bStocks 怎么查看行情与交易美股？
+
+Final counts:
+
+- Binance real direct-play videos: **12**
+- Binance empty/source-only placeholder cards: **0**
+- OKX videos: **32**
+- Total video cards: **44**
+- Gate videos: **0**
+
+The two entries `一个视频搞懂区块链网络` and `如何在币安 APP 启用双重身份验证` were removed completely from visible cards, source-only markup, counters and schema. Obsolete source-card CSS was removed.
+
+## Player, performance and metadata implementation
+
+- Native HTML5 player created only after a poster-button click for all 12 Binance lessons.
+- `controls`, `playsinline`, `preload="metadata"`, poster and no autoplay retained.
+- All 12 Binance MP4 files are local H.264/AAC, fast-start assets.
+- All 32 OKX players remain present; `playsinline` was added and their preload was reduced from `metadata` to `none` so the initial page does not request 32 media files.
+- The visible hero, platform summary, learning-path count and library count now consistently state 12 Binance + 32 OKX.
+- JSON-LD parses successfully and now contains separate 12-item Binance and 32-item OKX `ItemList` objects.
+- New cards include accurate alt text, source attribution and real internal tutorial links.
+
+## Real Preview media QA
+
+### Binance
+
+All twelve Binance cards were clicked in the current Preview. Each created a real `<video>`, reached `readyState = 4`, returned no `MediaError`, and advanced `currentTime`.
+
+| Result | Count |
+|---|---:|
+| Metadata / media ready | 12 / 12 |
+| Playback time advanced | 12 / 12 |
+| Media errors | 0 |
+| External-page-only playback | 0 |
+
+Pause and resume were explicitly verified on the bStocks player: `paused` changed to true and then false, and `currentTime` continued advancing.
+
+### OKX
+
+All 32 existing OKX players were exercised in the Preview in two batches. Every video loaded and advanced playback time; no media error occurred.
+
+- Tested: **32 / 32**
+- Playback PASS: **32 / 32**
+- Failed: **0**
+- No OKX card was removed.
+
+### Filters
+
+- Binance platform filter: **12 visible**
+- OKX platform filter: **32 visible**
+- All platforms: **44 visible**
+- Binance task counts: onboarding 3, funds 3, spot 2, security 3, advanced 1.
+- Removed cards do not appear in the DOM.
+- No duplicate Binance cards were found.
+
+## V75 full-scope regression
+
+### Commercial decision pages
+
+The current Preview was opened and checked for `exchange.html`, `binance-vs-okx.html`, `binance-guide.html` and `okx-guide.html`.
+
+- All pages loaded with their expected Title, H1 and canonical.
+- All JSON-LD blocks parsed.
+- Active navigation was `交易所`.
+- No body-level horizontal overflow was observed at the available 1363 px desktop viewport.
+- `exchange.html` and `binance-vs-okx.html` use Binance `DS1886` and OKX `DS1888` with the approved Main-site URLs.
+- Binance guide contains no OKX referral; OKX guide contains no Binance referral.
+- Internal links added by V75 point to real repository pages.
+
+### Referral configuration
+
+The earlier full Main-site V75 referral audit remains valid. This final batch changed only `videos.html` and local media assets before the roadmap update.
+
+- Main Binance: `DS1886` + `https://www.bsmkweb.cc/register?ref=DS1886`
+- Main OKX: `DS1888` + `https://www.mitxcqvwnhj.com/join/DS1888`
+- `topzhjdgxcb.com`: no residue in the completed V75 scan.
+- `/tw/`: no diff from main and no Main-site codes introduced.
+- Affiliate-domain final redirect and partner-backend commission attribution remain **NOT VERIFIED / NOT CLAIMED**, because they are external-account facts.
+
+### GA4
+
+`analytics-main.js` still gates analytics behind the existing consent choice and defines single delegated handlers for `referral_click` and `referral_code_copy`. No second V75 tracking implementation was added in this batch. Registration or commission improvement is **NOT AVAILABLE / NOT CLAIMED**.
+
+### Homepage hotspots
+
+The Preview homepage currently shows the three 2026-10-16 entries:
+
+- BTC 短暂跌破 8 万美元：杠杆为何放大跌势？
+- Strategy 会被 MSCI 指数剔除吗？
+- 银行托管 BTC 和 ETH 意味着什么？
+
+No homepage code was changed in V75.
+
+### Git scope
+
+Relative to main `752a2ef195040290d5bb63f8d187437084f137da`, the V75 branch changes remain limited to:
+
+- the complete roadmap;
+- `analytics-main.js`;
+- `exchange.html`;
+- `binance-vs-okx.html`;
+- `binance-guide.html`;
+- `okx-guide.html`;
+- `videos.html`;
+- twelve Binance MP4 files;
+- twelve Binance WebP posters.
+
+No `/tw/` file, Equitova file, global navigation file, sitemap or unrelated article was modified.
+
+## Desktop and mobile QA status
+
+- Desktop Preview functional QA: **PASS**
+- Desktop commercial-page regression: **PASS**
+- Desktop body overflow check on the four commercial pages: **PASS**
+- Video cards, posters, filtering and playback: **PASS**
+- Responsive CSS static inspection: **PASS** (one-column video grid at max-width 620 px; platform gateway at max-width 680 px; mobile header rules at max-width 760 px)
+- Exact 390 px rendered browser simulation: **NOT VERIFIED — ENVIRONMENT LIMITATION**
+
+The available cloud browser viewport was fixed at 1363×936. The local Playwright package had no installed Chromium executable, and the browser security policy rejected a data-URL iframe test harness. No prohibited workaround or new browser installation was attempted. This limitation must not be described as a 390 px PASS. User-device manual 390 px acceptance remains the only release-candidate check not completed in this environment.
+
+Cloud-browser console logs contained extension-only metadata errors from `chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/`; no site-script or media decoding error was observed.
+
+## Completed
+
+- Five remaining verified Equitova assets and posters copied to CoinVoyu.
+- Twelve genuine direct-play Binance entries completed.
+- Two empty/source-only entries fully removed.
+- Thirty-two OKX videos retained and all 32 playback-tested.
+- Filter counts, player controls, schema, internal links, metadata, desktop commercial pages, referral configuration and homepage hotspot state checked.
+- Preview deployed successfully for the latest code commit.
+- Full history preserved in this roadmap.
+
+## Pending
+
+- Manual 390 px visual acceptance on a real browser/device or a browser environment that supports viewport emulation.
+- User acceptance of the release candidate.
+- PR creation / merge and Production release only after explicit approval.
+- V74 remains not started.
+
+## Next batch
+
+No further V75 coding batch is planned. The next action is human Preview acceptance, with particular attention to 390 px mobile layout. After acceptance, review the exact PR diff and proceed only under separate merge / Production authorization. V74 must not start automatically.
+
+## Known issues / objective limitations
+
+- Exact 390 px render was not available in this execution environment.
+- Affiliate final redirect and commission attribution are not verified.
+- GSC samples remain small; no SEO or conversion gain is claimed.
+- Google index/GSC migration for the old BTC/USDT URL remains pending separate verification.
+- Older broken hotspot-cover references already recorded outside V75 scope remain unchanged.
+
+## Final V75 release-candidate status
+
+- `BINANCE VIDEO COUNT: 12`
+- `EMPTY PLACEHOLDER CARDS: 0`
+- `OKX VIDEO COUNT: 32`
+- `V75 FULL QA: PARTIAL — EXACT 390PX RENDER NOT VERIFIED`
+- `ROADMAP UPDATE: PASS`
+- `PREVIEW DEPLOYMENT: PASS`
+- `PRODUCTION CHANGED: NO`
+- `MAIN MERGED: NO`
+- `EQUITOVA CHANGED: NO`
+- `TAIWAN SITE CHANGED: NO`
+- `V74 STARTED: NO`
+
+**ROADMAP UPDATE: PASS**
