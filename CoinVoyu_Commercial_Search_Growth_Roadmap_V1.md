@@ -1151,3 +1151,82 @@ Do not create duplicate registration/download/referral URLs without separate-int
 
 **ROADMAP UPDATE: PASS**
 
+---
+
+# V75 Binance Video Direct Playback Correction — 2026-10-23
+
+## Status
+
+**BLOCKED BY SOURCE FORMAT — NO UNSAFE PLAYER CHANGE MADE**
+
+- Repository: `brandfang520/coinvoyu`
+- Branch: `feature/v75-v74-commercial-search`
+- Starting branch Commit: `309e47965a901eeabaa1ec9df3192e0a6b8e5846`
+- Business-code files changed in this correction: **NONE**
+- Production changed: **NO**
+- Main merged: **NO**
+- V74 started: **NO**
+
+## Targeted implementation audit
+
+The current OKX implementation uses native HTML5 `<video controls>` elements with repository-hosted MP4 assets under `assets/videos/`. The current Binance cards use Binance Launch Station public Notion source pages.
+
+The nine Binance cards currently present in `videos.html` were individually opened and tested:
+
+| Binance card | Source result | Stable in-page playback decision |
+|---|---|---|
+| 苹果—币安 APP 下载指南 | `file.notion.so` signed MP4 with `signature` and `expirationTimestamp` | BLOCKED |
+| 如何注册币安账户 | `file.notion.so` signed MP4 with `signature` and `expirationTimestamp` | BLOCKED |
+| 如何完成币安身份验证 | `file.notion.so` signed MP4 with `signature` and `expirationTimestamp` | BLOCKED |
+| 如何通过币安 C2C 自选区买卖加密货币 | `file.notion.so` signed MP4 with `signature` and `expirationTimestamp` | BLOCKED |
+| 一个视频搞懂区块链网络 | `file.notion.so` signed MP4 with `signature` and `expirationTimestamp` | BLOCKED |
+| 如何正确选择网络，避免转账错误 | Source page exposed no playable video element during verification | BLOCKED |
+| 如何在币安 APP 交易现货 | `file.notion.so` signed MP4 with `signature` and `expirationTimestamp` | BLOCKED |
+| 如何在币安进行加密货币提现 | `file.notion.so` signed MP4 with `signature` and `expirationTimestamp` | BLOCKED |
+| 如何在币安 APP 启用双重身份验证 | `file.notion.so` signed MP4 with `signature` and `expirationTimestamp` | BLOCKED |
+
+Eight extracted media URLs had the same signed expiration value, `1792742400000` (2026-10-23 08:00 UTC). No stable YouTube, Vimeo or Binance-hosted embed URL was exposed. The only iframe found on those pages was Notion's internal `aif.notion.so/aif-production.html`, not a reusable video player.
+
+## Decision
+
+The requested direct-play conversion was not implemented because every currently usable Binance media URL violates the fixed safety requirements:
+
+- temporary signed MP4 URLs cannot be used as permanent sources;
+- Binance media cannot be downloaded and re-hosted without confirmed permission;
+- no playback URL may be invented;
+- a false play button or external navigation labeled as direct playback is prohibited.
+
+The existing official-source cards remain unchanged. This is safer than shipping players that expire on the same day.
+
+## Regression verification
+
+- Existing OKX native player source loaded from the V75 Preview: **PASS**
+- Checked OKX video `readyState=4`, native controls enabled, repository-hosted MP4 resolved.
+- OKX onboarding filter: **PASS** (4 visible cards).
+- Current inventory: 32 OKX videos + 9 Binance source cards retained.
+- Binance direct playback: **NOT IMPLEMENTED / BLOCKED**
+- Binance play/pause/replay QA: **NOT AVAILABLE** because no compliant in-page source exists.
+- Desktop/mobile layout changes from this correction: **NONE**
+- `/tw/`: **NO CHANGE**
+- Equitova: **NO CHANGE**
+
+## Required unblocker
+
+Provide at least one of the following for each Binance video:
+
+1. a stable official YouTube/Vimeo/Binance embed URL with embedding permitted;
+2. a stable Binance-hosted public media URL intended for third-party playback;
+3. explicit permission plus approved permanent media files for repository hosting.
+
+After one of these is available, the existing OKX `<video controls>` card structure can be reused without redesigning the video center.
+
+## Handoff
+
+- Correction status: **BLOCKED — WAITING FOR STABLE, PERMITTED BINANCE PLAYBACK SOURCES**
+- Preview remains the existing V75 candidate.
+- Production: **NO CHANGE**
+- Main: **NOT MERGED**
+- User acceptance: **PENDING**
+- Next action: obtain stable permitted Binance playback sources; do not start V74 automatically.
+
+**ROADMAP UPDATE: PASS**
